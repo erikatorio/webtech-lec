@@ -4,3 +4,64 @@
   overflow-x: hidden;
   text-decoration: none;
 }
+header{
+  height: 60px;
+  width: 100%;
+  background-color: rgb(52, 152, 219);
+}
+#logo{
+  position: relative;
+  top: 15px;
+  left: 80px;
+  color: #fff;
+  font-size: 25px;
+  font-family: 'Anton', sans-serif;
+}
+.overlay{
+  height: 500px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+.first-section{
+  height: 500px;
+  width: 100%;
+  /* background-image: url('../asset/asset1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: rgba(0,0,0,0.5);
+}
+#qoutation{
+  text-align: center;
+  position: relative;
+  top:200px;
+  color: rgba(236, 240, 241,1.0);
+  font-size: 90px;
+  font-family: 'Anton', sans-serif;
+}
+/*
+==============
+Second Section
+==============
+*/
+.second-section{
+  height: 700px;
+  width: 100%;
+  background-color: #333;
+}
+#topic-title{
+  background: rgb(41, 128, 185);
+}
+.title{
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+}
+/*
+=============
+Third Section
+=============
+*/
+.third-section{
+
+}
