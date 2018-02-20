@@ -34,7 +34,7 @@ nav{
   font-size: 30px;
   letter-spacing: 5px;
   text-align: left;
-  color: rgb(248, 248, 248);
+  color: #2ecc71;
   position: relative;
   top: 15px;
 }
@@ -73,11 +73,11 @@ nav{
 .banner-info{
   height: 100%;
   display: grid;
-  grid-template-rows: 25% 15% 10% 25% 10%; 
+  grid-template-rows: 25% 15% 10% 25% 10%;
 }
 #course-name{
   text-align: center;
-  
+
 }
 #name-course{
   text-align: center;
@@ -125,10 +125,11 @@ Topic section
 */
 .topic-section{
   display: grid;
-  grid-auto-flow: 100%;
+  grid-auto-rows: auto;
   grid-template-columns: 5% 90% 5%;
-  height: 900px;
-  background-color: rgb(248, 248, 248);
+  height: 700px;
+  background-color: rgb(233, 233, 233);
+  padding-bottom: 200px;
 }
 #course-topics{
   text-align: center;
@@ -142,7 +143,7 @@ Topic section
 #topic-container{
   display: grid;
   grid-row-gap: 10px;
-  grid-template-rows: 10% 45% 45%;
+  grid-template-rows: 10% 50% 50%;
 }
 #topic1{
   display: grid;
@@ -174,4 +175,10 @@ Topic section
 #subtopic6{
   background-color: rgb(255, 255, 255);
 }
-
+/* Footer */
+footer{
+  display: grid;
+  height: 400px;
+  grid-auto-rows: auto;
+  background-color: rgb(255, 255, 255);
+}

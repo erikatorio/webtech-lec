@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+  nav{
+    display: grid;
+    height: 60px;
+    grid-template-columns: 40% 60%;
+    background-color: #333;
+  }
+  .logo{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 5px;
+    text-align: right;
+  }
+  #course-logo{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 5px;
+  }
+  #logo-name{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: left;
+    color: #2ecc71;
+    position: relative;
+    top: 15px;
+  }
+  .nav-bar{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  #nav-divider{
+    height: 100%;
+  }
+  #nav-divider2{
+    height: 100%;
+  }
+  .navigation{
+    padding: 0;
+    margin: 0;
+  }
+  .navigation li{
+    list-style-type: none;
+    display: inline;
+  }
+  .navigation a{
+    color: white;
+    position: relative;
+    top: 25px;
+    margin-left: 30px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 4px;
+  }
+/* hfirst-section */
+.hfirst-section{
+    height: 700px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 5% 90% 5%;
+    background-color: teal;
+}
+#h-introduction{
+    height: 700px;
+    background-color: #2ecc71;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+#h-sidebar{
+    height: 100%;
+    background-color: red;
+}
+#h-content{
+    height: 100%;
+    background-color: yellow;
+}
