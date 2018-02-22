@@ -1,0 +1,35 @@
+WWW
+	- Collection of web resources and applications which provides access through the medium called the Internet
+	Types of Web Resources**
+		1. Static
+		2. Dynamic
+			- Produced on the fly
+
+	Types of Web Applications
+		1. Web Server
+			- Hosts the resources and handle the client requests
+		2. Web Client
+			- Example include web browsers
+	- Web resources back then were text-based, now it is hypermedia**
+
+Tim Berners-Lee
+	- The father of the modern World Wide Web
+	- His first proposal happened in 1989 and came up with three technologies:
+		- HTML
+		- HTTP
+		- URL
+	- He was working in CERN*** in Switzerland.
+
+WWW vs Internet
+	The internet is merely an infrastructure being utilized by the World Wide Web
+
+The Internet
+	Components
+		1. Hosts: The end devices
+		2. Media: Wires
+		3. Protocols: Rules and Procedures
+
+How does the Web Work?
+	URL (Uniform Resource Locator)
+		- 
+

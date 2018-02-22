@@ -1,0 +1,181 @@
+HTTP
+	- is an application layer communication protocol that is used to access resources on the World Wide Web
+	- Jointly developed by the W3C nad the IETF
+
+Version History
+	HTTP 0.9
+		- 1991
+		- Provides only html files
+		- You would need constant connecting to the server for you to utilize it.
+		- METHODS: GET
+
+	HTTP 1.0
+		- May 1996
+		- METHODS: GET, POST, HEAD
+
+	HTTP 1.1
+		- January 1997
+		- Multimedia integration, and 8 additional methods
+		- Compression of data was now possible
+		- It can accomodate persistent connections
+	HTTP 2
+		- May 2015
+		- Changes were made on client and server transmission
+		- Added feature of pipelining or having concurrency
+		- Header compression
+
+HTTP Fundamentals
+	- The HTTP structure is based on the client-server architecture.
+	A client establishes a connection with a server and sends a request to the server in the form of a request method, URI, and protocol version, followed by a MIME-like message containing request modifiers, client information, and possible body content. The server responds with a status line, including the message's protocol version and a success or error code, followed by a MIME-like message containing server information, entity metainformation, and possible body content.
+		Servers
+			- also known as origin servers or where the resources reside.
+		Clients
+			- also known as user agents.
+	- HTTP uses a request-response protocol
+	- HTTP is a stateless communications protocol
+
+HTTP Resource Addressing
+	- HTTP resources are identified using URLs
+											- Unique identifier indicating the location of a specific resource
+											- PARTS:
+												- Scheme (http, ftp, https)
+												- Authority
+													- deprecated
+													- host: domain name
+													- port number
+												- Path
+													- refers to resource path which is either static or dynamic
+												- Query
+													- Key = Value pairs
+												- Fragment Identifier
+													- Starts with the hashtag
+HTTP Message
+	HTTP Request Message
+		1. Request Line
+			- Method
+			- Request Target
+			- Protocol Version
+		2. Message Headers
+			- Requires at least the "Host: " header
+		3. Empty Line (required)
+		4. Message Body
+	HTTP Response Message
+		1. Status Line
+			- Protocol Version
+			-Status Code
+			- Reason Phrase
+		2. Message Headers
+		3. Empty Line (required)
+		4. Message Body
+
+	Types of Message Headers
+	1. General Purpose
+		- Gives information that is general about the message
+	2. Request/Response
+		- Specific to a request or response message
+	3. Entity
+		- Pertains to the content
+
+HTTP Methods
+	GET
+		- Transfers resource
+	HEAD
+		- Identical to the GET method except it retrieves metadata about the target resource.
+	POST
+		- Requests that the target resource perform resource-specific processing.
+	PUT
+		- Creates or replaces target resource
+	OPTIONS
+		- Requests information about he communication options available for the target resource
+	DELETE
+		- Removal of resource
+	TRACE
+		- This method is used for testing or diagnostics. It also replicates the request in the response message body
+	CONNECT
+		- Establishes a tunnel between the server and client.
+
+	Types of methods
+	SAFE METHODS
+		- Read-only methods
+		- GET, HEAD, OPTIONS, TRACE
+
+	IDEMPOTENT METHODS
+		- Has the same effect when requested once
+		- GET, HEAD, OPTIONS, TRACE, PUT, DELETE
+
+	CACHEABLE METHODS
+		- The response to a method is allowed to be stored for future reuse
+		- GET, HEAD, POST
+
+HTTP Status Codes
+	Informational (1xx)
+		100 Continue
+		101 Switching Protocols
+	Success (2xx)
+		201 Created
+		202 Accepted
+		203 Non-Authoritative Information
+		204 No Content
+		205 Reset Content
+		206 Partial Content
+	Redirection (3xx)
+		300 Multiple Choices
+		301 Moved Permanently
+		302 Found
+		303 See Other
+		304 Not Modified
+		305 Use Proxy
+		306 (Now an unused code)
+		307 Temporary Redirect
+	Client Error (4xx)
+		400 Bad Request
+		401 Unauthorized
+		402 Payment Required
+		403 Forbidden
+		404 Not Found
+		405 Method Not Allowed
+		406 Not Acceptable
+		407 Proxy Authentication Required
+		408 Request Timeout
+		409 Conflict
+		410 Gone
+		411 Length Required
+		412 Precondition Failed
+		413 Request Entity Too Large
+		414 Request-URI Too Long
+		415 Unsupported Media Type
+		416 Request Range Not Satisfiable
+		417 Expectation Failed
+	Server Error (5xx)
+		500 Internal Server Error
+		501 Not Implemented
+		502 Bad Gateway
+		503 Service Unavailable
+		504 Gateway Timeout
+		505 HTTP Version Not Supported
+
+HTTP Extensions
+	- WebDAV
+	- Research more***
+
+Other information:
+	Content negotiation
+		- For situations wherein the resource may have multiple formats.
+		- Headers (Client):
+			- Accept
+			- Accept-Charset
+			- more ***
+		- Header (Server):
+			- Vary
+
+	Range Request
+		- Occurs when an HTTP client requests for partial resource/s that is specified by a range.
+		- Header (Client):
+			- Range
+		- Header (Server):
+			- Accept-Ranges
+
+	Authorization/Authentication
+		- When accessing a resource, it would need user information and password
+		- Header:
+			- WWW-Authenticate

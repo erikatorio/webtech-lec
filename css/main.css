@@ -153,12 +153,50 @@ Topic section
 #subtopic1{
   height: 100%;
   background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-rows: 40% 60%;
+  cursor: pointer;
+}
+#subtopic1:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.topic-name{
+  height: 100%;
+}
+.name-topic{
+  text-align: center;
+  margin: 30px auto;
+  color: rgb(39, 174, 96);
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.course-description{
+  text-align: justify;
+  color: #333;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 #subtopic2{
+  height: 100%;
   background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-rows: 40% 60%;
+  cursor: pointer;
+}
+#subtopic2:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #subtopic3{
+  height: 100%;
   background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-rows: 40% 60%;
+  cursor: pointer;
+}
+#subtopic3:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #topic2{
   display: grid;
@@ -168,12 +206,32 @@ Topic section
 #subtopic4{
   height: 100%;
   background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-rows: 40% 60%;
+  cursor: pointer;
+}
+#subtopic4:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #subtopic5{
+  height: 100%;
   background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-rows: 40% 60%;
+  cursor: pointer;
+}
+#subtopic5:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #subtopic6{
+  height: 100%;
   background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-rows: 40% 60%;
+  cursor: pointer;
+}
+#subtopic6:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* Footer */
 footer{

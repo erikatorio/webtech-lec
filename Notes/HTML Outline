@@ -1,0 +1,29 @@
+HTML (Hypertext Markup Language)
+	- language used to markup documents in the World Wide Web**
+	- It is an application of the SGML (Standard Generalized Markup Language)
+	- In the modern times, HTML is used for semantic specification of web page structure and content
+
+HISTORY (check mashable.com for history of html)
+	Pre-standardization
+	 - HTML tags (1991) by Tim Berners-Lee
+	 - HTML Internet Draft by Tim Berners-Lee & Dan Connolly
+	 - HTML+ by Dave Ragett
+
+	*Somewhere in between the FIRST BROWSER WAR*
+
+	Standards (Check w3.org/TR/2002)
+	- HTML 2.0 (Nov 1995)
+		- IETF
+	- HTML 3.2 (Jan 1997)
+		- W3C
+	- HTML 4.0 (Dec 1997)
+		- W3C
+	- XHTML
+		- Was created to fixed the very messy, malformed and non-standard HTML.
+		- Provided interoperability between HTML and XML-based systems
+	- XHTML 1.0 (Jan 2000)
+	- XHTML 1.1 (May 2001)
+		- Module-based XHTML (May 2001)
+		- W3C
+	- HTML5
+		- Arose from the effor to evolve HTML
