@@ -80,6 +80,7 @@
         </ul>
         <li>Message Body</li>
     </ol>
+    <!-- INSERT HTTP request message sample here (img)-->
     <h2>HTTP Response Message</h2>
     <ol>
         <li>Status Line</li>
@@ -98,6 +99,7 @@
         </ul>
         <li>Message Body</li>
     </ol>
+    <!-- INSERT HTTP request message sample here (img)-->
     <h2>Types of Message Headers</h2>
     <ol>
         <li>General Purpose</li>
@@ -172,21 +174,90 @@
         <li>The response to a method is allowed to be stored for future reuse</li>
         <li>GET, HEAD, POST</li>
     </ul>
-    
+<!-- Accordion effect for the status codes-->    
 <h1>HTTP Status Codes</h1>
     <h2>Informational (1xx)</h2>
+    <ul>
+        <li>100 Continue</li>
+        <li>101 Switching Protocols</li>
+    </ul>
     <h2>Success (2xx)</h2>
+    <ul>
+        <li>201 Created</li>
+        <li>202 Accepted</li>
+        <li>203 Non-Authoritative Information</li>
+        <li>204 No Content</li>
+        <li>205 Reset Content</li>
+        <li>206 Partial Content</li>
+    </ul>
     <h2>Redirection (3xx)</h2>
+    <ul>
+        <li>300 Multiple Choices</li>
+        <li>301 Moved Permanently</li>
+        <li>302 Found</li>
+        <li>303 See Other</li>
+        <li>304 Not Modified</li>
+        <li>305 Use Proxy</li>
+        <li>306 (Now an unused code)</li>
+        <li>307 Temporary Redirect</li>
+    </ul>
     <h2>Client Error (4xx)</h2>
+    <ul>
+        <li>400 Bad Request</li>
+        <li>401 Unauthorized</li>
+        <li>402 Payment Required</li>
+        <li>403 Forbidden</li>
+        <li>404 Not Found</li>
+        <li>405 Method Not Allowed</li>
+        <li>406 Not Acceptable</li>
+        <li>407 Proxy Authentication Required</li>
+        <li>408 Request Timeout</li>
+        <li>409 Conflict</li>
+        <li>410 Gone</li>
+        <li>411 Length Required</li>
+        <li>412 Precondition Failed</li>
+        <li>413 Request Entity Too Large</li>
+        <li>414 Request-URI Too Long</li>
+        <li>415 Unsupported Media Type</li>
+        <li>416 Request Range Not Satisfiable</li>
+        <li>417 Expectation Failed</li>
+    </ul>
     <h2>Server Error (5xx)</h2>
+    <ul>
+        <li>500 Internal Server Error</li>
+        <li>501 Not Implemented</li>
+        <li>502 Bad Gateway</li>
+        <li>503 Service Unavailable</li>
+        <li>504 Gateway Timeout</li>
+        <li>505 HTTP Version Not Supported</li>
+    </ul>
     
 <h1>HTTP Extensions</h1>
-<!---ADD HERE--->
+    <h2>WebDAV</h2>
+    <h3>Some methods added by WebDAV: </h3>
+    <ul>
+        <li>MKCOL</li>
+        <li>COPY</li>
+        <li>MOVE</li>
+        <li>SEARCH</li>
+        <li>SUBSCRIBE</li>
+        <li>NOTIFY</li>
+        <li>LOCK</li>
+        <li>UNLOCK</li>
+        <li>UNSUBSCRIBE</li>
+        <li>NOTIFY</li>
+    </ul>
+    
     
 <h1>Content Negotiation</h1>
+    <p>Content negotiation occur when a resource may have multiple formats.</p>
+    
+    <p>An HTTP client can negotiate which of the available resource formats they prefer. This can be seen in the Accept and Accept-Language header. On the server side, it is indicated by the Vary header.</p>
 
 <h1>Range Request</h1>
+    <p>Range request occur when a client request for only a part of the resource (i.e. downloading) specified by a range. Range request information can be seen in the Accept-Ranges header.</p>
     
 <h1>Authorization/Authentication</h1>
+    <p>Resources on the web can ask for user authentication before a client can access its contents or resources. Information regarding authentication or authorization can be seen in the WWW-Authenticate header.</p>
 </body>
 </html>
