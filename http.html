@@ -1,60 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>WEB NINJA</title>
-        <link rel="shortcut icon" type="image/png" href="asset/Logo75x.png">
-        <link rel="stylesheet" href="css/http.css">
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-      </head>
+<head>
+    <meta charset="UTF-8">
+    <title>HTTP</title>
+</head>
 <body>
-    <nav>
-        <div class="logo">
-            <a href="index.hmtl"><img src="asset/Logo1x.png" alt="Logo75x.png" id="course-logo"></a>
-        </div>
-        <div class="nav-bar">
-          <div id="nav-divider">
-  
-          </div>
-          <div id="nav-divider2">
-              <ul class="navigation">
-                <li><a href="index.html">CATALOGS</a></li>
-                <li><a href="index.html">ABOUT</a></li>
-              </ul>
-          </div>
-        </div>
-      </nav>
-      <section class="hfirst-section">
-          <div>
+<h1>HTTP</h1>
+    <p>HTTP is an application layer communication protocol that is used to access resources on the World Wide Web</p>
+    
+    <p>HTTP was jointly developed by the W3C and the IETF</p>
+    
+<h1>Version History</h1>
+    <h2>HTTP 0.9</h2>
+    <ul>
+        <li>Date Established: 1991</li>
+        <li>Provides only html files</li>
+        <li>You would need constant connecting to the server for you to utilize it.</li>
+        <li>Methods: GET</li>
+    </ul>
+    <h2>HTTP 1.0</h2>
+    <ul>
+        <li>Date Established: May 1996</li>
+        <li>Methods: GET, POST, HEAD</li>
+    </ul>
+    <h2>HTTP 1.1</h2>
+    <ul>
+        <li>Date Established: January 1997</li>
+        <li>Multimedia integration, and 8 additional methods</li>
+        <li>Compression of data was now possible</li>
+        <li>It can accomodate persistent connections</li>
+    </ul>
+    <h2>HTTP 2</h2>
+    <ul>
+        <li>Date Established: May 2015</li>
+        <li>Changes were made on client and server transmission</li>
+        <li>Added feature of pipelining or having concurrency</li>
+        <li>Header compression</li>
+    </ul>
+    
+<h1>HTTP Fundamentals</h1>
+    <p>The HTTP structure is based on the client-server architecture. A client establishes a connection with a server and sends a request to the server in the form of a request method, URI, and protocol version, followed by a MIME-like message containing request modifiers, client information, and possible body content. The server responds with a status line, including the message's protocol version and a success or error code, followed by a MIME-like message containing server information, entity metainformation, and possible body content.</p>
+    <ul>
+        <li>Servers: also known as origin servers or where the the resources reside.</li>
+        <li>Clients: also known as user agents</li>
+    </ul>
+    <p>HTTP uses a request-response protocol</p>
+    <p>HTTP is a stateless communications protocol</p>
+    
+<h1>HTTP Resource Addressing</h1>
+    <p>HTTP resources are identified using URLs:</p>
+    <h2>URLs</h2>
+    <p>Unique Identifier indicating the location of a specific resource.</p>
+    <h3>PARTS OF A URL</h3>
+    <h4>Scheme</h4>
+    <p>The scheme pertains to the protocol used by a website (i.e. HTTP, FTP, HTTPS).</p>
+    <h4>Path</h4>
+    <p>The path refers to resource path which is either static or dynamic</p>
+    <h4>Query</h4>
+    <p>Done using Key = Value pairs</p>
+    <h4>Fragment Identifier</h4>
+    <p>Identifies which fragment you are in the website. Starts with the pound (#) symbol.</p>
 
-          </div>
-          <div id="h-introduction">
-            <div id="h-sidebar">
-                
-            </div>
-            <div id="h-content">
-                <div>
-                    
-                </div>
-                <div id="intro-topics">
+<h1>HTTP Message</h1>
+    <h2>HTTP Request Message</h2>
+    <ol>
+        <li>Request Line</li>
+        <ul>
+            <li>Method</li>
+            <li>Request Target</li>
+            <li>Protocol Version</li>
+        </ul>
+        <li>Message Headers</li>
+        <ul>
+            <li>Requires at least the "Host" header.</li>
+        </ul>
+        <li>Empty Line</li>
+        <ul>
+            <li>An empty white line that is required.</li>
+        </ul>
+        <li>Message Body</li>
+    </ol>
+    <h2>HTTP Response Message</h2>
+    <ol>
+        <li>Status Line</li>
+        <ul>
+            <li>Protocol Version</li>
+            <li>Status Code</li>
+            <li>Reason Phrase</li>
+        </ul>
+        <li>Message Headers</li>
+        <ul>
+            <li>Requires at least the "Host" header.</li>
+        </ul>
+        <li>Empty Line</li>
+        <ul>
+            <li>An empty white line that is required.</li>
+        </ul>
+        <li>Message Body</li>
+    </ol>
+    <h2>Types of Message Headers</h2>
+    <ol>
+        <li>General Purpose</li>
+        <ul>
+            <li>Gives information that is general about the message.</li>
+        </ul>
+        <li>Request/Response</li>
+        <ul>
+            <li>Specific to a request or response message.</li>
+        </ul>
+        <li>Entity</li>
+        <ul>
+            <li>Pertains to the content.</li>
+        </ul>
+    </ol>
+<h1>HTTP Methods</h1>
+    <h3>GET</h3>
+    <ul>
+        <li>Transfers resource to a client.</li>
+    </ul>
+    
+    <h3>HEAD</h3>
+    <ul>
+        <li>Identical to the GET method except it retrieves metadata about the target resource.</li>
+    </ul>
+    
+    <h3>POST</h3>
+    <ul>
+        <li>Requests that the target resource perform resource-specific processing.</li>
+    </ul>
+    
+    <h3>PUT</h3>
+    <ul>
+        <li>Creates or replaces target resource.</li>
+    </ul>
+    
+    <h3>OPTIONS</h3>
+    <ul>
+        <li>Requests information about he communication options available for the target resource.</li>
+    </ul>
+    
+    <h3>DELETE</h3>
+    <ul>
+        <li>Removal of resource.</li>
+    </ul>
+    
+    <h3>TRACE</h3>
+    <ul>
+        <li>This method is used for testing or diagnostics. It also replicates the request in the response message body.</li>
+    </ul>
+    
+    <h3>CONNECT</h3>
+    <ul>
+        <li>Establishes a tunnel between the server and client.</li>
+    </ul>
+    
+    <h2>Categories of HTTP methods</h2>
+    <h3>SAFE METHODS</h3>
+    <ul>
+        <li>Read-only methods</li>
+        <li>GET, HEAD, OPTIONS, TRACE</li>
+    </ul>
+    
+    <h3>IDEMPOTENT METHODS</h3>
+    <ul>
+        <li>Has the same effect when requested once</li>
+        <li>GET, HEAD, OPTIONS, TRACE, PUT, DELETE</li>
+    </ul>
+    
+    <h3>CACHEABLE METHODS</h3>
+    <ul>
+        <li>The response to a method is allowed to be stored for future reuse</li>
+        <li>GET, HEAD, POST</li>
+    </ul>
+    
+<h1>HTTP Status Codes</h1>
+    <h2>Informational (1xx)</h2>
+    <h2>Success (2xx)</h2>
+    <h2>Redirection (3xx)</h2>
+    <h2>Client Error (4xx)</h2>
+    <h2>Server Error (5xx)</h2>
+    
+<h1>HTTP Extensions</h1>
+<!---ADD HERE--->
+    
+<h1>Content Negotiation</h1>
 
-                </div>
-                <div>
-
-                </div>
-            </div>
-          </div>
-          <div>
-
-          </div>
-      </section>
-
-
+<h1>Range Request</h1>
+    
+<h1>Authorization/Authentication</h1>
 </body>
 </html>
