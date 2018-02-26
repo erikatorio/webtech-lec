@@ -1,0 +1,366 @@
+commit f5007854f15967d5bf12cf6b4702e7cfeb128ca8
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 16:19:47 2018 +0800
+
+    finalized course website
+
+commit 50aa7cfd1583fdfe9873fa1e28571e4e61a7f02c
+Merge: 9e095ec 6a300a2
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 14:49:26 2018 +0800
+
+    edit http html and http css
+
+commit 9e095ecf171f0eab600d98afa11253638eb35976
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 14:47:59 2018 +0800
+
+    edit http htnl and http css
+
+commit 6a300a22550c487a7f37e7ebddbaf6eaa3920eae
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Mon Feb 26 14:39:35 2018 +0800
+
+    edited homepage footer
+
+commit a2c05bb6994d0b83b9fc6f51afc07f260e7bc3b6
+Author: sonnyby <soonyang01@gmail.com>
+Date:   Mon Feb 26 14:35:03 2018 +0800
+
+    inserted Server Side Web Scripting logo
+
+commit 9f993987f7384009efbd70af18be84c9beb11c92
+Author: sonnyby <soonyang01@gmail.com>
+Date:   Mon Feb 26 14:24:39 2018 +0800
+
+    added Server Side Web Scripting logo
+
+commit 86e83fb51c04d1ebd172f74fc23b074686a2cfb4
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Mon Feb 26 14:22:23 2018 +0800
+
+    revert
+
+commit 2fddb37a7ea14afbbb9e24030aeca57c67c903af
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Mon Feb 26 14:20:26 2018 +0800
+
+    revision
+
+commit 582a0b4929a0d5944483b1ffac5cffde4654aada
+Author: Cea <2164329@slu.edu.ph>
+Date:   Mon Feb 26 14:16:59 2018 +0800
+
+    Added page 2 for HTML content and css
+
+commit 492489b4c412724cd2b081243ba965e309bb78e4
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Mon Feb 26 14:12:34 2018 +0800
+
+    revision
+
+commit 9e8e6d8c9ab3d4d2b6d01427528b2daed072c6e6
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Mon Feb 26 14:07:22 2018 +0800
+
+    fixed error in side bar
+
+commit 4c4fbdb7d585ac659bf5cc421508046e02f087b0
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 13:47:58 2018 +0800
+
+    edited topic logo
+
+commit a219e9337c597c7d8884b21e874fd5481ef1b9d0
+Author: Cea <2164329@slu.edu.ph>
+Date:   Mon Feb 26 13:44:49 2018 +0800
+
+    added HTTP content .html and Css
+
+commit fa251a136be9b85e7c720d8be257128cda483869
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 13:35:47 2018 +0800
+
+    edited course topic logo
+
+commit 12bdeb449efadfe3b93871601e8939aa96d3f0ad
+Author: sonnyby <soonyang01@gmail.com>
+Date:   Mon Feb 26 13:31:10 2018 +0800
+
+    added CSS logo
+
+commit 608e177123763393f9ff3a96edc0e4750b7a0c83
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 13:22:50 2018 +0800
+
+    edited logo name
+
+commit 58dd0ea5a3ad5e4453932419261bbd1fed65a9a7
+Merge: 4a08696 a6b3892
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 13:21:32 2018 +0800
+
+    erge branch 'master' of https://github.com/erikatorio/webtech-lec
+    
+    merge file
+
+commit 4a0869617f71533480ef63aea7f9c7166258c6db
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 13:10:46 2018 +0800
+
+    added a target on resources
+
+commit a6b3892b00860dc69318492ff4806fd382a1579b
+Author: sonnyby <soonyang01@gmail.com>
+Date:   Mon Feb 26 12:47:03 2018 +0800
+
+    added JS logo
+
+commit 23765df546b049cb7bb93aff9f89c28383a34664
+Author: sonnyby <soonyang01@gmail.com>
+Date:   Mon Feb 26 12:18:39 2018 +0800
+
+    added HTML logo
+
+commit 849d188f3d54462f012daa0d05761e3dbd647385
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 12:16:52 2018 +0800
+
+    change page html to www.html
+
+commit 305ca8a6e4210034dea644807b32d32449e009e5
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 12:11:35 2018 +0800
+
+    putting a link to every topic
+
+commit 36c62f7f42bd6e796e56ee562fa90c4d1d628250
+Merge: d5ab255 6de25a5
+Author: sonnyby <soonyang01@gmail.com>
+Date:   Mon Feb 26 12:01:58 2018 +0800
+
+    Merge branch 'master' of https://github.com/erikatorio/webtech-lec
+
+commit d5ab2555f995ba6eda6866f8367ca9b17bf23c09
+Author: sonnyby <soonyang01@gmail.com>
+Date:   Mon Feb 26 12:01:12 2018 +0800
+
+    added HTTP logo
+
+commit 6de25a5485221bb9cf25149b76ce16fe895e4780
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 11:54:27 2018 +0800
+
+    finalize www webpage
+
+commit 0e09d6f76c6ff9c28cfb95f9d3f53407b5099309
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Mon Feb 26 11:50:37 2018 +0800
+
+    added home page search functionality
+
+commit 182277ed51612ca337310ce8ae2706c5edbe5081
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Mon Feb 26 11:50:08 2018 +0800
+
+    edited home page for search functionality
+
+commit 1ceebd3c58f52cefb225ca9c5d7b87aa06317200
+Author: sonnyby <soonyang01@gmail.com>
+Date:   Mon Feb 26 11:28:40 2018 +0800
+
+    added course outline logo folder and WWW logo
+
+commit b59f13f8b94eb5498358ebb22cf455abb6251ced
+Merge: c95e921 932d6c8
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 11:22:33 2018 +0800
+
+    Merge branch 'master' of https://github.com/erikatorio/webtech-lec
+
+commit c95e9216add91118a680d2c317e4eeb995ce81ae
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Mon Feb 26 10:54:31 2018 +0800
+
+    Create Pages for every topic
+
+commit 932d6c80473cee960b1141d65e3fc47a3c2f7c65
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Mon Feb 26 10:27:53 2018 +0800
+
+    added reference links to footer
+
+commit c8ea813174deec0aad1288106ccd5270451c28b1
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Mon Feb 26 10:14:59 2018 +0800
+
+    added topic description
+
+commit d9d9e5a870cd37322e618c93508881f4a485842d
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Mon Feb 26 10:10:31 2018 +0800
+
+    added html structure for html page
+
+commit 8d466a73f680d36a75e8dc7f238ff840bab3cf5a
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Sun Feb 25 23:22:57 2018 +0800
+
+    added www page html structure
+
+commit 8a6ad44abaf137bb036954e17e085aa7c3c59af7
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Sun Feb 25 22:46:59 2018 +0800
+
+    modified http.html structure
+
+commit 2b05b4ea87e2f5dd4d3f3d7ecfa87e9736eb5f1d
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Sun Feb 25 10:10:03 2018 +0800
+
+    html structure for http notes
+
+commit 5c4038fdaadc0b52752a5680bbaefacfe220d47c
+Author: Cea <2164329@slu.edu.ph>
+Date:   Fri Feb 23 23:20:28 2018 +0800
+
+    Added HTTP
+
+commit c2b7d0b0d74fdc0b7e1a46b1c2b691eee5f1b480
+Author: Cea <2164329@slu.edu.ph>
+Date:   Fri Feb 23 22:46:04 2018 +0800
+
+    Added WWW content outline
+
+commit f438f2b5f3013b3c4d3b80efdc4459e9bb662914
+Author: Cea <2164329@slu.edu.ph>
+Date:   Fri Feb 23 22:44:14 2018 +0800
+
+    remove www
+
+commit 31499edd27a667c27aa332cb54d92a016392745f
+Author: Kenan <Ace.Adaska21@gmail.com>
+Date:   Fri Feb 23 22:37:50 2018 +0800
+
+    Content outline on WWW
+
+commit 096bb9ec41243d2310a004bafd7efd3d46131f74
+Author: Cea <2164329@slu.edu.ph>
+Date:   Fri Feb 23 21:20:04 2018 +0800
+
+    Added HTML outline
+
+commit 30187293f7873c19bc5564ee0b7987702c0fc9d5
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Fri Feb 23 16:54:49 2018 +0800
+
+    finalized the design for home page
+
+commit 785312fcbbbb93ed3e1250c7a87f6dc160b97248
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Fri Feb 23 08:24:38 2018 +0800
+
+    added footer layout
+
+commit cde6f6ca20b6b1bd95302550c4a5200a7cc61e42
+Merge: 68c3482 7fdea0e
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Thu Feb 22 23:24:59 2018 +0800
+
+    merge changes
+
+commit 68c3482e125635d66c668f0dcca3f3277a3df511
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Thu Feb 22 23:19:45 2018 +0800
+
+    added a content to catolog/topic
+
+commit 7fdea0e49221fb66d57403af634485e558c768e3
+Author: sonnyby <soonyang01@gmail.com>
+Date:   Thu Feb 22 23:16:44 2018 +0800
+
+    added course outline image
+
+commit da2e64c74d74e8e9f1834837327659ce239b35e6
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Tue Feb 20 21:27:39 2018 +0800
+
+    Notes
+
+commit b656781d0932ed92519576781732f51bb712d13f
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Tue Feb 20 21:24:02 2018 +0800
+
+    added http webpage
+
+commit f769caa7e25f6cf4f7d0bf83f5b0f0688bc923b4
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Sat Feb 17 04:03:25 2018 +0800
+
+    added a course logo and a favicon
+
+commit 4e8d1465c533e890b81f75d019221945adf43b94
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Fri Feb 16 19:53:17 2018 +0800
+
+    change the background color of the header
+
+commit c88a697fb5c69c3932cb148fb427c614ba73ab95
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Fri Feb 16 18:10:31 2018 +0800
+
+    created a header > navbar > banner
+
+commit 6c77756a9a40cf67984b04059de47e33c4fdbade
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Wed Feb 14 06:59:45 2018 +0800
+
+    creted a header logo and a banner
+
+commit 0ae9ffdfee893222c6d454c5b80ce334c6e7bf6b
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Tue Feb 13 23:04:51 2018 +0800
+
+    get rid of unecessary commit
+
+commit 9180b03beee0ad0299b9014d8d986c250f295ee8
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Tue Feb 13 23:02:02 2018 +0800
+
+    added div tag
+
+commit e73fd928409eaf80b3a0fd080a25038fb5fb3763
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Tue Feb 13 22:53:44 2018 +0800
+
+    added main css
+
+commit 9e3e0022b12652c8ff2b0ac5ab9e3f61371f4eae
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Tue Feb 13 22:44:59 2018 +0800
+
+    added div tag with class
+
+commit a0c74400eb03ab2c8daa91b9acfc3e01d3f39eac
+Author: JessieTabilisma <2164631@slu.edu.ph>
+Date:   Tue Feb 13 22:32:41 2018 +0800
+
+    added a div tag
+
+commit 0fed60477fd6b9e3a080af56f67c54043a809d70
+Author: JessieMartinTabilisma <2164631@slu.edu.ph>
+Date:   Tue Feb 13 22:29:52 2018 +0800
+
+    addedn nav tag
+
+commit 9f7990d9639fc68bc2bc5d08898fff76660fa479
+Author: JessieMartinTabilisma <35614372+JessieMartinTabilisma@users.noreply.github.com>
+Date:   Tue Feb 13 22:17:40 2018 +0800
+
+    created a template
+
+commit b3c5140f7ffcfb6e17a12f48c67f7218919d0cba
+Author: 2160120 <2160120@slu.edu.ph>
+Date:   Tue Feb 13 21:15:18 2018 +0800
+
+    home page mockup
