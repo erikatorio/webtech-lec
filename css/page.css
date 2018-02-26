@@ -3,6 +3,9 @@
     margin: 0;
     text-decoration: none;
 }
+body{
+    background-color: rgb(248, 248, 248);
+}
   nav{
     display: grid;
     height: 60px;
@@ -55,7 +58,7 @@
   }
   /* main content */
   .wrapper{
-     height: 200vh;
+     height: 350vh;
      width: 95%;
      margin-left: auto;
      margin-right: auto;
@@ -73,7 +76,7 @@
   }
   .sidenav-item{
       padding: 10px;
-      border-left: 5px solid rgb(248, 248, 248);
+      border-left: 5px solid rgb(255,255,255);
       list-style-type: none;
   }
   .sidenav-item, a{
@@ -85,30 +88,89 @@
   #content{
       width: 83%;
       margin-left: 17%;
-      background-color: cadetblue;
   }
-  .first-section{
+  #first-section{
       height: 400px;
-      width: 600px;
+      width: 800px;
       margin: 60px auto;
-      background-color: burlywood;
+      background-color: rgb(255, 255, 255);
       display: grid;
-      grid-template-rows: 10% 20% 10% 10%;
+      grid-template-rows: 10% 20% 10% 10% 10%;
   }
   .title-bar{
-      background-color: #333;
+      background-color: #fdcb6e;
+      color: #2d3436;
       padding-top: 5px;
       padding-left: 10px;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 30px;
   }
   .title-bar2{
       padding-left: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-size:20px;
   }
+  .title-bar3{
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size:18px;
+    }   
   .article{
       padding-left: 10px;
+      padding-right: 10px;
       line-height: 150%;
       font-size: 18px;
+      font-family: 'Slabo 27px', serif;
+      text-align: justify;
+      line-height: 150%;
   }
   .list-item{
       padding-left: 50px;
   }
-
+  /* second-section */
+  #second-section{
+    height: 820px;
+    width: 800px;
+    margin: 60px auto;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 6% 5% 12% 5% 5% 8%;
+  }
+  #third-section{
+    height: 200px;
+    width: 800px;
+    margin: 60px auto;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 20% 80%;
+  }
+  #fourth-section{
+    height: 200px;
+    width: 800px;
+    margin: 60px auto;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 20% 16%;
+  }
+  #fifth-section{
+    height: 250px;
+    width: 800px;
+    margin: 60px auto;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 15% 10% 20% 10%;
+  }
+  /* footer */
+  footer{
+      height: 60px;
+      background-color: rgb(255, 255, 255);
+  }
+  .copyright{
+    text-align: center;
+    padding-top: 20px;
+    margin: 0px auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
