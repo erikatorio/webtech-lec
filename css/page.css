@@ -129,6 +129,7 @@ body{
   }
   .list-item{
       padding-left: 50px;
+      font-family: 'Slabo 27px', serif;
   }
   /* second-section */
   #second-section{
