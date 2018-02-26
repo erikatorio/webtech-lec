@@ -133,11 +133,6 @@ Topic section
   background-color: rgb(233, 233, 233);
   padding-top: 200px;
   padding-bottom: 400px;
-  -webkit-transition: all .2s ease-in-out;
-       -moz-transition: all .2s ease-in-out;
-        -ms-transition: all .2s ease-in-out;
-         -o-transition: all .2s ease-in-out;
-            transition: all .2s ease-in-out;
 }
 #course-topics{
   text-align: center;
@@ -168,9 +163,9 @@ Topic section
 #subtopic1:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.topic-name{
-  height: 100%;
-  background-color: #1A1A1D;
+.wwwlogo{
+  height: 100px;
+  width: 100px;
 }
 .description-course{
   padding-top: 20px;
