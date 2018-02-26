@@ -83,8 +83,11 @@ body{
       font-size: 18px;
       font-family: 'Montserrat', sans-serif;
       color: #333;
+    }
+    .sidenav-item, a:hover{
+        color: #fdcb6e;
+    }
 
-  }
   #content{
       width: 83%;
       margin-left: 17%;
