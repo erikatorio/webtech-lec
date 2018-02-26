@@ -65,6 +65,7 @@ nav{
   font-family: 'Lato', sans-serif;
   letter-spacing: 4px;
 }
+
 /*banner*/
 .banner{
   display: grid;
@@ -132,6 +133,11 @@ Topic section
   background-color: rgb(233, 233, 233);
   padding-top: 200px;
   padding-bottom: 400px;
+  -webkit-transition: all .2s ease-in-out;
+       -moz-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+         -o-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
 }
 #course-topics{
   text-align: center;
