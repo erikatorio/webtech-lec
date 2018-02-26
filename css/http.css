@@ -58,7 +58,7 @@ body{
   }
   /* main content */
   .wrapper{
-     height: 750vh;
+     height: 800vh;
      width: 95%;
      margin-left: auto;
      margin-right: auto;
@@ -106,17 +106,17 @@ body{
       font-size: 30px;
   }
   .title-bar2{
-      padding-left: 10px;
+      padding-left: 20px;
       font-family: 'Montserrat', sans-serif;
       font-size:20px;
   }
   .title-bar3{
-    padding-left: 10px;
+    padding-left: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size:18px;
     }   
   .article{
-      padding-left: 10px;
+      padding-left: 40px;
       padding-right: 10px;
       line-height: 150%;
       font-size: 18px;
@@ -126,6 +126,9 @@ body{
   }
   .list-item{
       padding-left: 50px;
+  }
+  li{
+    font-family: 'Slabo 27px', serif;
   }
   /* second-section */
   #second-section{
@@ -142,7 +145,7 @@ body{
     margin: 60px auto;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 12% 40% 20% 10% 5%;
+    grid-template-rows: 12% 50% 15% 10% 5%;
   }
   #fourth-section{
     height: 400px;
@@ -153,12 +156,12 @@ body{
     grid-template-rows: 10% 7% 7% 7% 7% 7% 7% 7% 7%;
   }
   #fifth-section{
-    height: 500px;
+    height: 800px;
     width: 800px;
     margin: 60px auto;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 15% 8% 40% 10%;
+    grid-template-rows: 8% 5% 3% 3%;
   }
   #sixth-section{
     height: 800px;
@@ -176,13 +179,13 @@ body{
     display: grid;
     grid-template-rows: 4% 3% 3% 3%;
   }
-  #eight-section{
-    height: 450px;
+  #eigth-section{
+    height: 400px;
     width: 800px;
     margin: 60px auto;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 15% 10% 20% 10%;
+    grid-template-rows: 10% 8% 10% 10%;
   }
   #nineth-section{
     height: 200px;

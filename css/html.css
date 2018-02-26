@@ -58,7 +58,7 @@ body{
   }
   /* main content */
   .wrapper{
-     height: 350vh;
+     height: 280vh;
      width: 95%;
      margin-left: auto;
      margin-right: auto;
@@ -83,22 +83,19 @@ body{
       font-size: 18px;
       font-family: 'Montserrat', sans-serif;
       color: #333;
-    }
-    .sidenav-item, a:hover{
-        color: #fdcb6e;
-    }
 
+  }
   #content{
       width: 83%;
       margin-left: 17%;
   }
   #first-section{
-      height: 400px;
-      width: 800px;
-      margin: 60px auto;
-      background-color: rgb(255, 255, 255);
-      display: grid;
-      grid-template-rows: 10% 20% 10% 10% 10%;
+    height: 150px;
+    width: 800px;
+    margin: 60px auto;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 30% 70%;
   }
   .title-bar{
       background-color: #fdcb6e;
@@ -129,40 +126,30 @@ body{
   }
   .list-item{
       padding-left: 50px;
-      font-family: 'Slabo 27px', serif;
+  }
+  .links{
+      color: #27ae60;
+  }
+  li{
+    font-family: 'Slabo 27px', serif;
   }
   /* second-section */
   #second-section{
-    height: 820px;
+    height: 900px;
     width: 800px;
     margin: 60px auto;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 6% 5% 12% 5% 5% 8%;
+    grid-template-rows: 5% 3% 7%;
   }
-  #third-section{
-    height: 200px;
+   /* second-section */
+   #third-section{
+    height: 620px;
     width: 800px;
     margin: 60px auto;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 20% 80%;
-  }
-  #fourth-section{
-    height: 200px;
-    width: 800px;
-    margin: 60px auto;
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    grid-template-rows: 20% 16%;
-  }
-  #fifth-section{
-    height: 250px;
-    width: 800px;
-    margin: 60px auto;
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    grid-template-rows: 15% 10% 20% 10%;
+    grid-template-rows: 8% 7%;
   }
   /* footer */
   footer{
