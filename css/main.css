@@ -169,7 +169,31 @@ Topic section
   display: grid;
   grid-auto-rows: auto;
 }
-img.courselogo{
+img.courselogo1{
+  height: 100px;
+  width: 100px;
+  margin: 0px auto;
+  padding-top: 17px;
+}
+img.courselogo2{
+  height: 80px;
+  width: 200px;
+  margin: 0px auto;
+  padding-top: 28px;
+}
+img.courselogo3{
+  height: 80px;
+  width: 200px;
+  margin: 0px auto;
+  padding-top: 28px;
+}
+img.courselogo4{
+  height: 80px;
+  width: 200px;
+  margin: 0px auto;
+  padding-top: 28px;
+}
+img.courselogo5{
   height: 100px;
   width: 100px;
   margin: 0px auto;
