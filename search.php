@@ -1,7 +1,19 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: erika
- * Date: 26/02/2018
- * Time: 11:41 AM
- */
+if (isset($_POST['query'])) {
+    $query = $_POST['query'];
+
+    switch(strtolower($query)) {
+        case "www":
+            Header("Location: www.html");
+            break;
+        case "html":
+            Header("Location: html.html");
+            break;
+        case "http":
+            Header("Location: http.html");
+            break;
+        default:
+            Header("Location: index.html");
+    }
+}
+unset($_POST['query']);
