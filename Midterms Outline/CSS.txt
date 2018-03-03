@@ -1,0 +1,38 @@
+Saturday 03 March  2018
+Cascading Style Sheet (CSS)
+	*Language used to specify the presentation(e.g. layout,formatting fonts, colors, etc) of structurally marked up documents (e.g. HTML, XML, SYG, MathML, etc.)
+
+	*Developed by Hakom Wium Lee (CHSS) and Bert Bos (BSP)
+	@CHSS - Cascaded HTML Style Sheet
+	@BSP - Stream based stylesheet proposal 
+
+Version history 
+	*CSS level 1 (CSS 1, W3C Recommendation, Dec 1996)
+	*CSS level 2 (CSS 2, W3C Recommendation, May 1998)
+	*CSS level 2 Revision 1 (CSS 2.1, W3C Recommendation Jun 2011)
+	*CSS level 3 
+
+	*Modular approach to CSS developoment (as opposed to the monolithic specification of CSS 2.1)   
+
+HTML STYLESHEETS
+	*Source of styles for HTML documents
+		**author styles 
+			*external (a.k.a. linked) stylesheet(recommended)
+			*embeded (a.k.a. internal) stylesheet
+			*inline styles
+		**user styles 
+			*Some browsers provide (non-standard) alternatives through plugins/extensions (e.g. stylish)
+		**user agent styles 
+			*sample default user agent stylesheet from css 2.1 
+			*the source of style denotes its origin which is used in determining into precedence in the cascade
+
+CSS STATEMENTS
+	*At rules
+	 @charset
+	@import 
+	@namespace
+	@media
+	@font space
+	@key frames
+CSS RULE SET 
+	*consist of selector
