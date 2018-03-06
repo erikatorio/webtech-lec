@@ -1,0 +1,31 @@
+CSS (Cascading Style Sheets)
+	- language used to specify the presentation (eg. layout, formatting, fonts, colors, etc.)
+	of structurally marked up documents (eg. HTML, XML, SVG, MathML, etc.)
+	
+	- developed by Håkon Wium Lie (formerly CHSS - Cascading HTML Style Sheets)
+	and Bert Bos (SSP - Stream-Based Style Sheet Proposal)
+	
+Version History:
+	CSS 1
+		- W3C Recommendation, published on December 17, 1996
+	CSS 2
+		- W3C Recommendation, published on May 1998
+	CSS 2.1
+		- W3C Recommendation, published on June 7, 2011
+	CSS 3
+		- modular approach to CSS development (as opposed to the monolithic specification of CSS 2.1)
+
+HTML Stylesheets
+	- sources of styles for HTML documents
+		> author styles
+			- external (a.k.a. linked) stylesheets (recommended)
+			- embedded (a.k.a. internal) stylesheets
+			- inline styles
+		
+		> user styles
+			- some browsers provide (non-standard) alternatives through plugins/extensions (eg. stylish)
+			
+		> user agent styles
+			- sample default user agent stylesheet from CSS 2.1
+	
+	- the source of a style denotes its origin, which is used in determining its precedence in the cascade
