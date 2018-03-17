@@ -76,3 +76,39 @@ Simple selector:
 		*negation pseudo class
 			:not()
 			
+CSS Rule Precedence 
+	An HTML element may be the subject of the selectors of multiple style rules
+	When such rules target diffferent properties their effects cacscade (i.e. one combines)
+	When the styles involve the same properties they conflict and must be resolved with that only one style.
+
+CSS Declarations 
+	*properties 
+		*Shorthand properties 
+			allows author to specify the values of several properties with a single property 
+			e.g. background, font, margin, padding, border, border-left, border-width, etc
+		*vendor specific extensions (a.k.a vendor prefixes)
+			used by browser vendors as prefixes for the names of experimental or non-standard CSS properties. lately, vendors are moving away from vendor prefixes in favor of user-controlled flags or preferences.
+			e.g. -webkit-, -moz-, -o-, -ms, etc
+		*custom properties (a.k.a. CSS variables (experimental))
+			property names prefixed with --, representing a value that can be reused throughout the document using the var() function
+
+	*Values
+		*value processing 
+			declared, cascaded, specified, computed, used, actual values
+		*value types 
+			keywords
+				CSS-wide keywords 
+					initial, inherit, unset
+				property-specific keywords 
+		numbers 
+			integers or reals in(scientific) decimal notation
+		dimensions 
+			length, angle, duration(or time), frequency, resolution 
+			length units:
+				font-relative: em, ex, ch, rem
+				viewport-percentage: vw, vh, vmin, vmax
+				absolute: cm, mm ,in, pt, pc, px
+			angle units:
+				deg, grad, rad, turn 
+				used in some gradient and transforms functions
+			duration(or time) units 
