@@ -35,4 +35,44 @@ CSS STATEMENTS
 	@font space
 	@key frames
 CSS RULE SET 
-	*consist of selector
+	*consist of selector; followed by a brace-enclosed declaration block
+
+CSS Selector
+Selector Syntax:
+	chain of one or more sequences of simpple selectors-separated by combinators with one pseudo-element possibly appended.
+Selector Group: 
+	Comma-separated list of selectors representing the union of all elements 
+
+	Combinators:
+		descendant combinator (whitespace)
+		i.e space, tab, line feed, carriage rerturn, form, feed.
+		Child Combinator(>)
+		sibling Combinator
+			Adjacent sibling Combinator(+)
+			general sibling Combinator (-)
+
+Simple selector:
+	Universal Selector(*) 
+	type Selector (p{background-color: #fff})
+					(h1{color: rgba(255,0,0,0,5);})
+	id Selector (#) e.g. #info
+	class Selector
+	attribute Selector - Type selector with brackets 
+	pseudo classes(:)
+		*dynamic pseudo-classes
+			*link pseudo clsas (:link, :visited)
+			*user action pseudo class  (:hover)
+		*target pseudo class
+			*:target
+		*Language pseudo class 
+			:lang()
+		*UI element state pseudo class 
+			:enable, :disable,:checked 
+		*Structural pseudo class 
+			:root
+			:first-child
+			:last-child
+			:only-child
+		*negation pseudo class
+			:not()
+			
