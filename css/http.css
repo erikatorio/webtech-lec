@@ -59,12 +59,14 @@ body{
   /* main content */
   .wrapper{
      height: 800vh;
+     height: calc(100% - 60px);
      width: 95%;
      margin-left: auto;
      margin-right: auto;
      display: flex;
      overflow-x: hidden;
      padding-top: 60px;
+     box-sizing: border-box;
   }
   #sidenav{
       width: 17%;
@@ -90,12 +92,13 @@ body{
       margin-left: 17%;
   }
   #first-section{
-    height: 150px;
+    height: auto;
     width: 800px;
     margin: 60px auto;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: auto;
   }
   .title-bar{
       background-color: #fdcb6e;
@@ -132,84 +135,103 @@ body{
   }
   /* second-section */
   #second-section{
-    height: 420px;
+    height: auto;
     width: 800px;
     margin: 60px auto;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 10% 10%;
+    grid-template-rows: auto;
+    box-sizing: border-box;
   }
   #third-section{
-    height: 350px;
+    height: auto;
     width: 800px;
     margin: 60px auto;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 12% 50% 15% 10% 5%;
+    grid-template-rows: auto;
+    box-sizing: border-box;
   }
   #fourth-section{
-    height: 400px;
+    height: auto;
     width: 800px;
     margin: 60px auto;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 10% 7% 7% 7% 7% 7% 7% 7% 7%;
+    grid-template-rows: auto;
+    box-sizing: border-box;
   }
   #fifth-section{
-    height: 800px;
+    height: auto;
     width: 800px;
     margin: 60px auto;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 8% 5% 3% 3%;
+    grid-template-rows: auto;
+    box-sizing: border-box;
   }
   #sixth-section{
-    height: 800px;
+    height: auto;
     width: 800px;
     margin: 60px auto;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 5% 3% 5% 3% 5% 3% 5% 3% 5% 3% 5% 3%;
+    grid-template-rows: auto;
+    box-sizing: border-box;
   }
   #seventh-section{
-    height: 1070px;
+    height: auto;
     width: 800px;
     margin: 60px auto;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 4% 3% 3% 3%;
+    grid-template-rows: auto;
+    box-sizing: border-box;
   }
   #eigth-section{
-    height: 400px;
+    height: auto;
     width: 800px;
     margin: 60px auto;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-rows: 10% 8% 10% 10%;
   }
   #nineth-section{
-    height: 200px;
+    height: auto;
     width: 800px;
     margin: 60px auto;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 20% 15%;
+    grid-template-rows: auto;
+    box-sizing: border-box;
   }
   #tenth-section{
-    height: 150px;
+    height: auto;
     width: 800px;
     margin: 60px auto;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 30% 4%;
+    grid-template-rows: auto;
+    box-sizing: border-box;
   }
   #eleventh-section{
-    height: 150px;
+    height: auto;
     width: 800px;
     margin: 60px auto;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-rows: 30%;
+    grid-template-rows: auto;
+    box-sizing: border-box;
   }
 
   /* footer */
