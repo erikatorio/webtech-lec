@@ -112,3 +112,14 @@ CSS Declarations
 				deg, grad, rad, turn 
 				used in some gradient and transforms functions
 			duration(or time) units 
+CSS Preprocessors, Frameworks, and Polyfills
+	*CSS preprocessors
+		generates css using a custom language syntax that typically includes features that don't exist in pure css (e.g variables, control flow, nesting, mixins, functions, etc)
+
+		e.g SASS, less, styles, etc.
+	*CSS Framewroks
+		provides predefined css design functionality that can be reused, extended, or customized. 
+		e.g Bootstrap, Foundation, Materialize, etc
+	*Polyfills
+		Provide features that developers expect browsers to provide natively
+		e.g. Modernizr, seletivizr, etc
