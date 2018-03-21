@@ -38,9 +38,9 @@
                 <li class="sidenav-item"><a href="#fifth-section">CSS RULE SET </a></li>
                 <li class="sidenav-item"><a href="#sixth-section">CSS Selector</a></li>
                 <li class="sidenav-item"><a href="#seventh-section">Simple selector:</a></li>
-                <li class="sidenav-item"><a href="#eight-section"></a></li>
-                <li class="sidenav-item"><a href="#nineth-section"></a></li>
-                <li class="sidenav-item"><a href="#tenth-section"></a></li>
+                <li class="sidenav-item"><a href="#eight-section">CSS Rule Precedence </a></li>
+                <li class="sidenav-item"><a href="#nineth-section"></a>CSS Declarations</li>
+                <li class="sidenav-item"><a href="#tenth-section">Values</a></li>
                 <li class="sidenav-item"><a href="#eleventh-section"></a></li>
 
             </ul>
@@ -161,13 +161,62 @@
                 
             </section>
             <section id="nineth-section">
-                
+                 <h1 class="title-bar">CSS Rule Precedence</h1>
+                 <p class="article">    An HTML element may be the subject of the selectors of multiple style rules.
+                When such rules target diffferent properties their effects cacscade (i.e. one combines).
+                  When the styles involve the same properties they conflict and must be resolved with that only one style.</p>
             </section>
             <section id="tenth-section">
+               <h1 class="title-bar">CSS Declarations</h1>
+               <h2 class="title-bar2">Properties </h2>
+               <ul class="list-item">
+                    <li>Shorthand properties()</li>
+                     <p class="article"> Allows author to specify the values of several properties with a single property 
+            e.g. background, font, margin, padding, border, border-left, border-width, etc.</p>
+                    <li>vendor specific extensions (a.k.a vendor prefixes)</li>
+                    <p class="article">used by browser vendors as prefixes for the names of experimental or non-standard CSS properties. lately, vendors are moving away from vendor prefixes in favor of user-controlled flags or preferences.<br>
+            e.g. -webkit-, -moz-, -o-, -ms, etc</p>
+                    <li>custom properties (a.k.a. CSS variables (experimental))</li>
+                    <p class="article"> property names prefixed with --, representing a value that can be reused throughout the document using the var() function</p>
+                </ul>
+
                
             </section>
             <section id="eleventh-section">
-               
+               <h1 class="title-bar">Values</h1>
+               <h2 class="title-bar2">value processing </h2>
+               <ul class="list-item">
+                <li>declared, cascaded, specified, computed, used, actual values</li>
+            </ul>
+                <h2 class="title-bar2">value types </h2>
+                <ul class="list-item">
+                    <li>keywords</li>
+                    <ul class="list-item">
+                        <li> CSS-wide keywords</li>
+                        <p class="article"> initial, inherit, unset</p>
+                        <li>property-specific keywords </li>
+                    </ul>
+                    <li>numbers</li>
+                    <p class="article">integers or reals in(scientific) decimal notation</p>
+                    <li>dimensions</li>
+                    <ul class="list-item">
+                        <li>length, angle, duration(or time), frequency, resolution </li>
+                        <li>length units:</li>
+                        <ul class="list-item">
+                            <li>font-relative: em, ex, ch, rem</li>
+                            <li>viewport-percentage: vw, vh, vmin, vmax</li>
+                            <li>absolute: cm, mm ,in, pt, pc, px</li>
+                        </ul>
+                        <li>angle units:</li>
+                        <ul class="list-item">
+                            <li>deg, grad, rad, turn<br> -used in some gradient and transforms functions</li>
+                        </ul>
+                        <li>duration(or time) units </li>
+
+        
+                </ul>
+
+
             </section>
         </div>
     </div>
