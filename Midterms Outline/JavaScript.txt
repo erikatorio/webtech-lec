@@ -13,3 +13,4 @@ Java Script Execution Environment
 	-Alternative of the browser 
 		e.g. if scripting is not supported 
 		*linked scripts may also be placed at the end of the HTML element so as not to block HTML Parsing, and ensure compatibility.
+
