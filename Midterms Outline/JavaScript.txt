@@ -1,0 +1,15 @@
+Java Script Execution Environment
+*Core JavaScript (EcmaScript) Language and API
+*(Traditional) Browser Object Model (BOM) API (non-standard) 
+	-window, navigator, screen, location, history 
+*Document Object Model (DOM) API 
+	-Node, Document, Element, Text, Attr, Document Type, Comment, etc
+	-Event, EventTarget, EventLister, etc
+	-CSSStylesheet, CSS Rule, etc
+*Miscellaneous JavaScript Web APIs 
+	-Geolocation, IndexedDB, Local Storage, Push Notifications, Web Sockets, Web Workers ...
+
+<noscript>
+	-Alternative of the browser 
+		e.g. if scripting is not supported 
+		*linked scripts may also be placed at the end of the HTML element so as not to block HTML Parsing, and ensure compatibility.
