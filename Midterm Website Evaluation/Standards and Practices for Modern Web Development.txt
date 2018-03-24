@@ -1,0 +1,289 @@
+﻿NON-GOVERNMENT ORGANIZATIONS (NGOs)
+
+> https://www.smashingmagazine.com/2010/03/best-practices-in-modern-web-design-the-ultimate-round-up/
+GENERAL GUIDELINES
+
+1. USE HOVER EFFECTS
+2. USE LOREM IPSUM OR OTHER DUMMY TEXT
+3. SWITCH TO USING THE REAL TEXT AS SOON AS POSSIBLE
+4. USE REPETITIVE ELEMENTS TO GIVE PAGES A COHESIVE STRUCTURE
+5. MAKE SURE THE PURPOSE OF YOUR SITE IS IMMEDIATELY APPARENT
+6. OPTIMIZE YOUR PAGE LOAD TIMES AND MAKE THEM AS FAST AS POSSIBLE
+7. ONLY BE INNOVATIVE WHEN APPROPRIATE
+
+BACKGROUNDS
+
+1. DON’T BE AFRAID OF BIG BACKGROUNDS
+2. DON’T RESORT TO TABLES FOR A LARGE, COMPLICATED BACKGROUND IMAGE
+3. MAKE SURE YOUR LARGE BACKGROUND IMAGE IS LARGE ENOUGH
+4. MAKE SURE YOUR BACKGROUND IMAGE TILES PROPERLY
+5. OPTIMIZE YOUR BACKGROUND IMAGES!
+6. BACKGROUNDS DON’T HAVE TO BE COMPLEX
+
+BLOG DESIGN
+
+1. FOCUS ON READABILITY
+2. USE THE H1 TAG FOR YOUR POST TITLES
+3. DON’T CLUTTER YOUR SIDEBARS
+4. SHOW OFF YOUR PERSONALITY
+5. CONSIDER THE DESIGN OF EVERY ELEMENT
+6. PROPERLY INTEGRATE ADVERTISING
+7. USE STYLES FOR POST IMAGES
+8. MAKE IT EASY TO SUBSCRIBE
+9. INTEGRATE IT WITH OTHER SOCIAL MEDIA
+10. KEEP LOAD TIMES SHORT
+
+BUTTONS AND ICONS
+
+1. USE APPROPRIATE AND CONSISTENT ICONS
+2. BUTTONS AREN’T THE BEST OPTION FOR GENERAL NAVIGATION
+3. USE BUTTONS TO MAKE CERTAIN NAVIGATION ELEMENTS STAND OUT
+4. SIZE YOUR BUTTONS AND ICONS APPROPRIATELY
+5. DON’T BE AFRAID OF METAPHORIC ICONS
+6. THE BEST PLACES TO USE ICONS ARE WITH HEADERS, AS BUTTONS OR ON BUTTONS
+
+CODE
+
+1. META INFORMATION (TITLE, DESCRIPTION) SHOULD BE ACCURATE AND EXPLANATORY
+2. ALWAYS CLOSE YOUR TAGS
+3. MAKE SURE YOUR DOCTYPE DECLARATION IS CORRECT
+4. VALIDATE YOUR CODE!!!
+5. ALWAYS USE UTF-8 ENCODING
+6. USE SEMANTIC MARKUP TO PROVIDE MEANING TO YOUR CODE
+7. COMMENT LIKE THERE’S NO TOMORROW
+8. KEEP YOUR CODE CLEAN
+9. USE THE CORRECT MARKUP FOR QUOTES
+
+COLOR
+
+1. MAKE SURE COLORS STAY CONSISTENT THROUGHOUT THE SITE
+2. MAKE SURE THERE’S APPROPRIATE CONTRAST BETWEEN COLORS USED IN DIFFERENT ELEMENTS
+3. MAKE USE OF GRADIENTS
+4. LIMIT THE NUMBER OF COLORS USED OUTSIDE OF IMAGES
+
+CSS
+
+1. DON’T USE INLINE STYLES
+2. COMPRESS YOUR CSS FILES
+3. INCLUDE DEPENDENT CSS FILES WITHIN YOUR CSS FILES
+4. USE COMMENTS CORRECTLY
+
+eCOMMERCE
+1. USE AN EFFECTIVE CALL TO ACTION
+2. MAKE CHECKOUT AS STREAMLINED AS POSSIBLE
+3. USE A MINI CART
+4. ALWAYS USE A “VERIFY YOUR ORDER” PAGE
+5. INCLUDE CONTACT INFORMATION PROMINENTLY TO INCREASE SALES
+6. DIFFERENTIATE BETWEEN GENERAL SITE SEARCH AND PRODUCT SEARCH
+7. ADD SEARCH REFINEMENTS TO PRODUCT SEARCH
+8. SHOW RELATED PRODUCTS
+9. DON’T MAKE SHOPPERS REGISTER FOR AN ACCOUNT UP FRONT
+10. ADD A WISHLIST FUNCTION
+11. PROMINENTLY DISPLAY SECURITY BADGES
+
+FOOTER DESIGN
+
+1. DON’T OVERLOOK THE DESIGN OF YOUR FOOTER
+2. USE YOUR FOOTER FOR A SITEMAP
+3. A FOOTER IS A GREAT PLACE TO INCLUDE IMPORTANT INFORMATION
+4. CLEARLY DELINEATE YOUR FOOTER FROM THE REST OF YOUR SITE
+5. DON’T BE AFRAID TO PUT ADVANCED FUNCTIONALITY IN YOUR FOOTER
+6. IT’S STILL OKAY TO HAVE A SIMPLE FOOTER, TOO
+
+FORMS AND LOGINS
+
+1. MAKE REGISTRATION FORMS AS SHORT AS POSSIBLE
+2. REQUIRE AS LITTLE INFORMATION AS POSSIBLE
+3. CLEARLY MARK REQUIRED FIELDS ON ALL OF YOUR FORMS
+4. MAKE FORM VALIDATION HELPFUL TO THE USER
+5. MAKE SURE YOU CONFIRM SUCCESSFUL SUBMISSION TO THE USER
+6. GIVE DETAILED INFORMATION ABOUT LOGIN FAILURES
+
+FUNCTIONALITY
+
+1. CREATE A CUSTOM 404 PAGE
+2. BE SURE TO INCLUDE A SEARCH FUNCTION ON YOUR SITE
+3. MAKE SURE ALL YOUR LINKS WORK
+4. TEST YOUR FORMS
+5. MAKE SURE ELEMENTS FUNCTION AS EXPECTED IN DIFFERENT BROWSERS
+
+GRAPHICS AND IMAGES
+
+1. OPTIMIZE YOUR ALT TAGS
+2. USE IMAGE TITLE TAGS
+3. LOOK AT THE OVERALL IMPACT EACH GRAPHIC OR IMAGE MAKES ON YOUR ENTIRE SITE
+4. BE AWARE OF FILE SIZES AND LOAD TIMES
+5. ALWAYS SPECIFY IMAGE HEIGHT
+
+HEADER DESIGN
+1. LINK YOUR LOGO TO YOUR HOME PAGE
+2. DON’T BE AFRAID OF BIG HEADERS
+3. INCLUDE CONTENT OTHER THAN YOUR LOGO IN YOUR HEADER
+4. MAKE SURE IT CONVEYS WHAT YOU WANT
+
+INTROS AND SPLASH PAGES
+
+1. NOT ALL INTROS ARE FLASH
+2. MAKE THE “SKIP INTRO” BUTTON EASY TO FIND IF YOU’RE USING A FLASH INTRO
+3. USE A PROGRESS BAR
+4. KEEP INTROS SHORT
+5. ONLY USE AN INTRO IF YOU REALLY, REALLY LOVE IT
+
+JAVASCRIPT, AJAX AND FLASH
+1. USE JAVASCRIPT TO ADD FUNCTIONALITY, NOT CONTENT
+2. FOR FASTER PAGE LOADS, PLACE JAVASCRIPT FILES AT THE BOTTOM OF YOUR PAGES
+3. DON’T USE INLINE JAVASCRIPT!
+4. OPTIMIZE YOUR LOOPS
+5. KEEP YOUR CODE SIMPLE
+6. MAKE SURE YOUR SCRIPTS DEGRADE GRACEFULLY
+
+MULTIMEDIA CONTENT
+
+1. MAKE SURE VIDEO AND AUDIO CONTENT DON’T AUTOPLAY
+2. IF YOU USE BACKGROUND AUDIO, MAKE SURE IT’S EASY TO TURN OFF
+3. MAKE SURE VIDEO AND AUDIO CONTENT HAS A CLEAR PURPOSE ON THE PAGE
+4. DON’T TREAT VIDEO CONTENT AS AN AFTERTHOUGH
+
+NAVIGATION, MENUS AND PAGINATION
+
+1. MAKE SURE NAVIGATION IS IMMEDIATELY RECOGNIZABLE
+2. LINKS SHOULD BE EASY TO IDENTIFY
+3. IF YOUR NAVIGATION IS BASED ON FLASH, IMAGES OR AJAX, PUT TEXT LINKS TO PAGES IN THE FOOTER
+4. USE BREADCRUMBS
+5. CONSIDER USING TABBED NAVIGATION
+6. HAVE A SITEMAP SOMEWHERE ON YOUR SITE (EVEN IF IT’S JUST AN XML ONE)
+7. KEEP PAGINATION SIMPLE AND STRAIGHTFORWARD
+
+PAGE LAYOUT
+
+1. DON’T BE AFRAID OF NEGATIVE SPACE
+2. USE A GRID LAYOUT AS THE BASIS OF YOUR DESIGN
+3. BE AWARE OF WHAT CONTENT WILL APPEAR ABOVE THE FOLD
+4. PRIORITIZE INFORMATION ON YOUR PAGES
+5. STRIVE FOR BALANCE IN YOUR DESIGNS
+6. USE CSS FOR YOUR LAYOUT
+
+PORTFOLIO SITES
+
+1. KEEP THE PURPOSE OF YOUR SITE IN MIND
+2. THIS IS THE PLACE TO SHOW OFF YOUR DESIGN SKILLS
+3. SHOWCASE ONLY YOUR BEST WORK
+4. MAKE IT EASY FOR PROSPECTS TO CONTACT YOU
+5. INCLUDE CLIENT TESTIMONIALS RIGHT ON PROJECT PAGES
+6. IF YOU HAVE A DIVERSE OR VERY LARGE BODY OF WORK, USE CATEGORIES
+7. DON’T OVERLOOK SEARCH ENGINE OPTIMIZATION
+8. KEEP THE LOOK AND FEEL OF YOUR SITE CONSISTENT
+9. INCLUDE AN ABOUT ME SECTION
+10. DON’T GET TOO CREATIVE
+11. PROVIDE EXPLANATIONS OF YOUR WORK
+
+SOCIAL MEDIA INTEGRATION
+
+1. IF YOU USE ICONS, MAKE SURE THEY’RE CONSISTENT
+2. INTEGRATE YOUR TWITTER FEED ONLY IF IT’S RELEVANT
+3. DON’T INCLUDE LINKS TO YOUR FACEBOOK OR OTHER PROFILES IF YOU’RE NOT WILLING TO ADD PEOPLE TO YOUR FRIENDS
+4. STYLE YOUR FEED INTEGRATIONS TO MESH WITH YOUR SITE DESIGN
+
+TYPOGRAPHY
+
+1. MAKE SURE YOUR FONT SIZE IS APPROPRIATE
+2. SPECIAL TYPE STYLES (BOLD, ITALIC) SHOULD BE USED SPARINGLY
+3. PAY ATTENTION TO THE OVERALL STRUCTURE OF YOUR TYPOGRAPHY
+4. DON’T OVERLOOK TYPOGRAPHY DETAILS
+5. USE AN APPROPRIATE TEXT COLOR
+6. DON’T USE CENTERED BLOCKS OF TEXT
+7. EMBRACE SANS SERIF FONTS FOR BODY COPY
+8. USE EM UNITS TO SIZE YOUR TEXT
+9. DON’T USE TOO MANY TYPEFACE OR WEIGHTS
+10. USE A SCALE IN YOUR TYPOGRAPHY DESIGN
+11. STYLE YOUR HEADINGS LOGICALLY
+12. MAKE SURE YOU’RE USING WEB SAFE OR VERY COMMON FONTS
+13. DON’T UNDERLINE ANYTHING BUT LINKS
+
+WORDPRESS
+
+1. USE A THEME FRAMEWORK
+2. TAKE ADVANTAGE OF ALL THE DIFFERENT TEMPLATE FILES AVAILABLE
+3. WIDGETIZE YOUR THEME
+4. MAKE SURE YOUR THEME HANDLES PAGES WELL
+5. VERIFY YOUR HOOKS ARE WORKING PROPERLY
+6. USE A MOBILE THEME FOR YOUR BLOG, ESPECIALLY IF YOUR PRIMARY THEME IS GRAPHICS-INTENSIVE OR COMPLICATED
+7. SET UP A LOCAL INSTALLATION OF WP FOR TESTING
+8. CONSIDER CUSTOMIZING A THEME
+
+
+> https://blog.hubspot.com/marketing/elements-of-modern-web-design-list
+Element #1: Unique and Large Typography
+Element #2: Large & Responsive Hero Images
+Element #3: Background Videos
+Element #4: Semi-Flat Design
+Element #5: Hamburger Menus
+Element #6: Giant Product Images
+Element #7: Card Design
+Element #8: Short Product or Feature Videos
+
+> https://www.forbes.com/sites/denispinsky/2016/07/18/website-standards/#675167ad3641
+1. Fast Loading -- No one wants to wait (and wait and wait) for your site to load. 
+Design sites with prompt loading times for all users on all devices (even the ones with slower Internet connections).
+You can use Pingdom or Pagespeed Insights by Google to check your website speed and see how you can improve.
+
+2. Mobile Ready -- Virtually everyone uses smart devices on a daily basis. Create an engaging, 
+mobile-friendly design that your audience can access whenever they want, wherever they roam.
+
+3. Tracking Enabled -- Analytics matter - it’s the best way to determine that your website is
+actually doing its job. The final design should include functionality to gauge key indicators
+such as traffic, goals, and conversions.
+
+4. SEO Savvy -- Don’t underestimate the power of optimizing your site for both browsers and humans.
+Develop compelling, readable content for your followers. For the search engines, always include all
+important on-page SEO tags and elements, including schema and XML sitemaps.
+
+5. Enabled CMS -- We aren’t quite done with the power of the written word just yet. Consistently
+publishing fresh, original content not only captivates your audience, it can deliver invaluable, 
+long-term digital marketing momentum. Include a back-end Content Management System in the design
+so clients can post and edit content as needed.
+
+6. Conversion Optimized -- Have a conversion-centric client? Implement tools for creating campaign 
+landing pages into your design. These designated pages can keep your readers moving through your site 
+and direct them to schedule an appointment, request a product demonstration, and even make a purchase.
+
+7. Email Marketing -- Yes, email marketing is still a thing - and a highly effective thing at that. 
+A site’s email capture forms should sync with the client’s email marketing system for seamless access and connection.
+
+8. Social Media -- Never miss an opportunity to leverage the power of social media. Integrate 
+all relevant social media platforms within your design. Allowing users to quickly access social 
+media pages from the website instantly broadens a brand’s reach and helps increase visibility and traffic.
+
+9. Strong Security -- Never compromise on-site security. Every design should include fundamental 
+security and privacy protocols, such as basic security checks, to protect client and user data.
+This concludes the non-negotiable portion of our 2018 website design guidelines. However, there are 
+two bonus tips to consider when creating a site:
+
+10. Progressive Web Apps -- Savvy web designers, intrigued by the impact apps have on mobile media 
+platforms, have successfully blended the very best web and app features into a hybrid known as Progressive Web Apps. 
+Expect to see Progressive Web Apps out in full force throughout 2018. As a developer, consider including various features 
+into your design such as splash screens, push notifications, and animated page transitions to elevate overall UX.
+
+11. Machine Learning And Artificial Intelligence -- Yes, really. Artificial intelligence is no longer a futuristic, 
+high-tech term and has successfully worked its way into our everyday vernacular and online experience. Don’t believe me?
+Have you ever posed a question to Siri or Alexa? I rest my case. Adobe’s Sensei is delivering AI tools to various web design 
+platforms worldwide, making it a more accessible, available resource.
+
+
+> https://www.orbitmedia.com/blog/web-design-standards/
+1. Logo in the top left - 100%
+2. Contact in top right - 44%
+3. Main navigation across the top - 88%
+4. Home page slideshow - 32%
+**5. Value proposition high up on the home page
+**6. Call to Action high up on the home page
+7. Search feature in the header - 54%
+**8. Signup box in the footer
+9. Social media icons in the footer - 72%
+10. Responsive design
+
+
+> https://mentormate.com/blog/8-accessibility-driven-modern-website-design-best-practices/
+WALA PA HAHAHA
+
+	
