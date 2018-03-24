@@ -13,4 +13,28 @@ Java Script Execution Environment
 	-Alternative of the browser 
 		e.g. if scripting is not supported 
 		*linked scripts may also be placed at the end of the HTML element so as not to block HTML Parsing, and ensure compatibility.
+*API that allows access to the HTML document from within scripts associated with the web page. 
+	-a parsed HTML document is represented by a DOM tree, which contains nodes representing elements, element attributes, textual content, and other HTML document components (e.g. DOCTYPE, comments, etc)
+
+*accessed via the Document object properly of the global Window object
+
+*Functionalities: 
+	retrieve references to nodes(or node collections) in the DOM 
+		*getElementByID()
+		*getElementByTagName(), getElementByClassName(), getElementByName()
+		*querySelector(), querySelectorAll()
+	traverse the DOM tree (from a given node) 
+		*parentNode, parentElement
+		*childNodes, children 
+		*firstChild, lastChild, nextSibling, previousSibling
+		*firstElementChild, lastElementChild, nextElementSibling, previousElementSibling 
+	construct/copy nodes
+		*createElement(), createTextNode(), createAttribute(), etc.
+		*cloneNode(), importNode()
+	manipulate the DOM tree
+		*appendChild(), insertbefore(), replaceChild(), removeChild()
+		*adoptNode()
+	miscellaneous attributes and methods
+		*nodeType, nodeName, nodeValue
+		*attributes,id, tagName, className, classList
 
