@@ -40,3 +40,8 @@ Java Script Quiz Questions
 *nodeType
 20. This method adopts a node from another document.
 *adoptNode() 
+
+
+
+Reference: 
+https://www.w3schools.com/js/default.asp
