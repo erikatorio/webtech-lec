@@ -159,15 +159,6 @@ body{
     display: grid;
     grid-template-rows: auto;
   }
-  #fourth-section {
-    height: auto;
-    width: 800px;
-    margin: 60px auto;
-    padding-bottom: 50px;
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    grid-template-rows: auto;
-  }
   /** quiz style */
   #quiz-section {
     height: auto;
@@ -236,6 +227,19 @@ body{
     height: 200px;
     margin-top: 10px;
     margin-left: 50px;
+  }
+  #results {
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    background-color: #fdcb6e;
+    border: 2px solid #333;
+  }
+  .results {
+    height: 25px;
+    text-align: center;
+    display: block;
+
   }
 
   /* end */

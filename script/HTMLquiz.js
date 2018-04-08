@@ -1,5 +1,5 @@
 (function() {
-  const myQuestions = [
+  const HTMLQuestions = [
     {
       question: "What does HTML mean?",
       answers: {
@@ -31,17 +31,12 @@
   ];
 
   function buildQuiz() {
-    // we'll need a place to store the HTML output
     const output = [];
 
-    // for each question...
-    myQuestions.forEach((currentQuestion, questionNumber) => {
-      // we'll want to store the list of answer choices
+    HTMLQuestions.forEach((currentQuestion, questionNumber) => {
       const answers = [];
 
-      // and for each available answer...
       for (letter in currentQuestion.answers) {
-        // ...add an HTML radio button
         answers.push(
           `<label>
              <input type="radio" name="question${questionNumber}" value="${letter}">
@@ -51,49 +46,43 @@
         );
       }
 
-      // add this question and its answers to the output
       output.push(
         `<div class="slide">
            <div class="question"> ${currentQuestion.question} </div>
            <div class="answers"> ${answers.join("")} </div>
          </div>`
       );
-    });
+    })
 
-    // finally combine our output list into one string of HTML and put it on the page
     quizContainer.innerHTML = output.join('');
   }
 
   function showResults() {
-    // gather answer containers from our quiz
     const answerContainers = quizContainer.querySelectorAll(".answers");
 
-    // keep track of user's answers
-    let numCorrect = 0;
+    let correct = 0;
 
-    // for each question...
-    myQuestions.forEach((currentQuestion, questionNumber) => {
-      // find selected answer
+    HTMLQuestions.forEach((currentQuestion, questionNumber) => { 
       const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
-      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+      const selected = `input[name=question${questionNumber}]:checked`;
+      const userAns = (answerContainer.querySelector(selected) || {}).value;
 
-      // if answer is correct
-      if (userAnswer === currentQuestion.correctAnswer) {
-        // add to the number of correct answers
-        numCorrect++;
+      if (userAns === currentQuestion.correctAnswer) {
+        correct++;
 
-        // color the answers green
-        answerContainers[questionNumber].style.color = "lightgreen";
+        answerContainers[questionNumber].style.color = " #27ae60";
       } else {
-        // if answer is wrong or blank
-        // color the answers red
         answerContainers[questionNumber].style.color = "red";
       }
     });
-
-    // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    if (correct == 1) {
+      resultsContainer.innerHTML = `You correctly answered ${correct} question out of ${HTMLQuestions.length} questions!`;
+    } else if (correct == 0) {
+      resultsContainer.innerHTML = `You have no correct answers!`;
+    } else {
+      resultsContainer.innerHTML = `You correctly answered ${correct} questions out of ${HTMLQuestions.length} questions!`;
+    }
+    
   }
 
   function showSlide(n) {
@@ -110,9 +99,11 @@
     if (currentSlide === slides.length - 1) {
       nextButton.style.display = "none";
       submitButton.style.display = "inline-block";
+      resetButton.style.display = "inline-block";
     } else {
       nextButton.style.display = "inline-block";
       submitButton.style.display = "none";
+      resetButton.style.display = "none";
     }
   }
 
@@ -124,11 +115,15 @@
     showSlide(currentSlide - 1);
   }
 
+  function restartQuiz() {
+    location.reload();
+  }
+
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
+  const resetButton = document.getElementById('reset');
 
-  // display quiz right away
   buildQuiz();
 
   const previousButton = document.getElementById('previous');
@@ -138,7 +133,7 @@
 
   showSlide(0);
 
-  // on submit, show results
+  resetButton.addEventListener("click", restartQuiz);
   submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
