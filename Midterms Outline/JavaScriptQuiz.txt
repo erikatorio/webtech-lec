@@ -1,0 +1,42 @@
+Java Script Quiz Questions
+
+1. In what HTML element do we put the javascript
+*< script >
+2. This is a W3C standard that defines a standard for accessing documents
+*DOM
+3. This tag is the alternative for the browsers that does not support scripting.
+*<no tag>
+4. This method retrieve references to node in the DOM that returns an element that has an id attribute.
+*getElementID()
+5. This method returns a collection of all elements in the document that thas a specified tag name.
+*getElementByTagName()
+6. This property returns the first child node.
+*firstchild
+7. This property returns the last child node.
+*lastchild
+8. The programming language of a HTML and Web
+*JavaScript
+9. Core language of Java Script
+*ECMAScript
+10. This method removes a specified child
+*removechild()
+11.  This method appends the node as the last chil
+*appendchild()
+12. Inserts a node right before an existing node
+*insrtbefore()
+13. Provide the correct syntax fore reffering to a external javascript called "example.js"
+*<script src="example.js">
+14. True/False: The external javascript must contain the <script> tag 
+*false
+15. This method creates an element node with the specified name.
+*createElement()
+16. The method returns the first element that matches a specified CSS selector(s) in the document.4
+*querySelector() 
+17. This method creates a copy of a node, and returns the copied node.
+*cloneNode()
+18. This method returns a collection of all elements in the document with the specified class name, as a NodeList object.
+*getElementsByClassName() 
+19. This property returns the node type, as a number, of the specified node.
+*nodeType
+20. This method adopts a node from another document.
+*adoptNode() 
