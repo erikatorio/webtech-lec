@@ -1,14 +1,69 @@
 (function() {
     const WWWQuestions = [
       {
-        question: "",
+        question: "Father of the modern World Wide Web",
         answers: {
-          a: "",
-          b: "",
-          c: ""
+          a: "Steve Jobs",
+          b: "Bill Gates",
+          c: "Tim Berners-Lee"
         },
-        correctAnswer: ""
-      }
+        correctAnswer: "c"
+      },
+      {
+        question: "What year was the WWW proposal made?",
+        answers: {
+          a: "1989",
+          b: "1999",
+          c: "1995"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "Which does not belong",
+        answers: {
+          a: "HTML",
+          b: "CSS",
+          c: "URL",
+          d: "HTTP"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "Who hosted the first website created by the Father of the modern WWW?",
+        answers: {
+          a: "IETF",
+          b: "W3C",
+          c: "CERN"
+        },
+        correctAnswer: "c"
+    },
+    {
+      question: "These are the end devices utilized by clients and servers",
+      answers: {
+        a: "Hosts",
+        b: "Computers",
+        c: "Electronic Devices"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Provides the IP addresses to hosts",
+      answers: {
+        a: "DMS",
+        b: "DNS",
+        c: "DWS"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Pertains to the standards for communication, connections, and data transfer in a network.",
+      answers: {
+        a: "Protocols",
+        b: "Rules",
+        c: "Standards"
+      },
+      correctAnswer: "a"
+    }
     ];
   
     function buildQuiz() {
@@ -21,7 +76,7 @@
           answers.push(
             `<label>
                <input type="radio" name="question${questionNumber}" value="${letter}">
-                ${letter} :
+                ${letter}.
                 ${currentQuestion.answers[letter]}
              </label>`
           );

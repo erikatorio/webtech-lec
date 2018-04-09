@@ -21,12 +21,38 @@
     {
       question: "HTML tag that is used for links",
       answers: {
-        a: "img",
-        b: "div",
-        c: "ul",
-        d: "a"
+        a: "&ltimg&gt",
+        b: "&ltdiv&gt",
+        c: "&ltul&gt",
+        d: "&lta&gt"
       },
       correctAnswer: "d"
+    },{
+      question: "HTML attribute that specifies an alternative text in case the content cannot be displayed.",
+      answers: {
+        a: "&ltalt&gt",
+        b: "&ltalte&gt",
+        c: "&ltatr&gt"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Which does not belong",
+      answers: {
+        a: "&ltclass&gt",
+        b: "&ltinput&gt",
+        c: "&ltform&gt"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "It is a technology that can help with such problems by adding in further semantics that browsers and assistive technologies can recognize and use to let users know what is going on.",
+      answers: {
+        a: "WAI-ARIA",
+        b: "CSS",
+        c: "JavaScript"
+      },
+      correctAnswer: "a"
     }
   ];
 
@@ -40,7 +66,7 @@
         answers.push(
           `<label>
              <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
+              ${letter}.
               ${currentQuestion.answers[letter]}
            </label>`
         );

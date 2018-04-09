@@ -1,14 +1,95 @@
 (function() {
     const CSSQuestions = [
         {
-            question: "",
+            question: "Who developed CSS?",
             answers: {
-              a: "",
-              b: "",
-              c: ""
+              a: "Steve Jobs",
+              b: "Hakon Wium Lee",
+              c: "Hailee Steinfeld"
             },
-            correctAnswer: ""
-        }
+            correctAnswer: "b"
+        },
+        {
+          question: "What is the recommended way of creating your stylesheet?",
+          answers: {
+            a: "embedded",
+            b: "inline",
+            c: "external"
+          },
+          correctAnswer: "c"
+      },
+      {
+        question: "At rule that describes the aspect of intermediate steps in a CSS animation sequence.",
+        answers: {
+          a: "@import",
+          b: "@page",
+          c: "@keyframes"
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "Combinator denoted by &gt",
+        answers: {
+          a: "Child combinator",
+          b: "Descendant combinator",
+          c: "Sibling combinator"
+        },
+        correctAnswer: "a"
+      },
+      {
+        question: "Combinator denoted by whitespace",
+        answers: {
+          a: "Child combinator",
+          b: "Descendant combinator",
+          c: "Sibling combinator"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "Which statement properly declares an ID selector",
+        answers: {
+          a: "#id",
+          b: ".id",
+          c: ":id"
+        },
+        correctAnswer: "a"
+      },
+      {
+        question: "Which statement properly declares a class selector",
+        answers: {
+          a: "#class",
+          b: ".class",
+          c: ":class"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "Which statement properly declares a pseudo class",
+        answers: {
+          a: "#pseudo",
+          b: ".pseudo",
+          c: ":pseudo"
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "How specific is this block of code '#options .selected > option:hover'",
+        answers: {
+          a: "21",
+          b: "121",
+          c: "22"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "",
+        answers: {
+          a: "",
+          b: "",
+          c: ""
+        },
+        correctAnswer: ""
+      }
     ];
   
     function buildQuiz() {
@@ -21,7 +102,7 @@
           answers.push(
             `<label>
                <input type="radio" name="question${questionNumber}" value="${letter}">
-                ${letter} :
+                ${letter}.
                 ${currentQuestion.answers[letter]}
              </label>`
           );
