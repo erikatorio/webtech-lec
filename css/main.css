@@ -93,7 +93,41 @@ nav{
   margin: 15px auto;
   color: #ecf0f1;
   font-size: 19px;
+  /* width: 54%; */
   font-family: 'Montserrat', sans-serif;
+}
+.header_animation {
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+  font-size: 30px;
+  color: #fff;
+  font-family: monospace;
+  height: 40%;
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation:
+  typing 4s steps(35, end),
+  blink-caret .5s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { 
+      width: 0 
+  } to { 
+      width: 50% 
+  }
+}
+
+
+@keyframes blink-caret {
+  from, to { 
+      border-color: transparent 
+  } 30% { 
+      border-color: white 
+  }
 }
 #search-bar{
   text-align: center;
