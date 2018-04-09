@@ -3,9 +3,9 @@
         {
           question: "In what HTML element do we put the javascript?",
           answers: {
-            a: "<javascript>",
-            b: "<java>",
-            c: "<script>"
+            a: "&ltjavascript&gt",
+            b: "&ltjava&gt",
+            c: "&ltscript&gt"
           },
           correctAnswer: "c"
         },
@@ -21,9 +21,9 @@
         {
           question: "This tag is the alternative for the browsers that does not support scripting.",
           answers: {
-            a: "<noscript>",
-            b: "<nscript>",
-            c: "<nscript>",
+            a: "&ltnoscript&gt",
+            b: "&ltnullscript&gt",
+            c: "&ltnahscript&gt",
           },
           correctAnswer: "a"
         },
@@ -93,7 +93,7 @@
       {
           question: "This method appends the node as the last child.",
           answers: {
-            a: "aChild(0",
+            a: "aChild(0)",
             b: "appendChildNode()",
             c: "appendChild()"
           },
@@ -111,19 +111,11 @@
       {
           question: "Provide the correct syntax fore reffering to a external javascript called example.js",
           answers: {
-            a: "<javascript src='example.js'",
-            b: "<script src='example.js'>",
-            c: "<java src='example.js'>"
+            a: "&ltjavascript src='example.js'&gt",
+            b: "&ltscript src='example.js'&gt",
+            c: "&ltjava src='example.js'&gt"
           },
           correctAnswer: "b"
-        },
-      {
-          question: "True/False: The external javascript must contain the <script> tag",
-          answers: {
-            a: "True",
-            b: "False",
-          },
-          correctAnswer: "a"
         },
       {
           question: "This method creates an element node with the specified name.",
