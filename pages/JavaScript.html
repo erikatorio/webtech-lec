@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">  
 </head>
 <body>
     <header>
@@ -32,9 +33,9 @@
         <div id="sidenav">
             <ul id="sidenav-list">
                 <li class="sidenav-item"><a href="#first-section">JavaScript Execution Environment</a></li>
-                <li class="sidenav-item"><a href="#second-section">Functionalities</a></li>
-                <li class="sidenav-item"><a href="#third-section"></a></li>
-                <li class="sidenav-item"><a href="#fourth-section"></a></li>
+                <li class="sidenav-item"><a href="#second-section">Types of JavaScript</a></li>
+                <li class="sidenav-item"><a href="#third-section">Functionalities</a></li>
+                <li class="sidenav-item"><a href="#fourth-section">JavaScript Language Fundamentals</a></li>
                 <li class="sidenav-item"><a href="#quiz-section">Quiz</a></li>
             </ul>
         </div>
@@ -65,8 +66,25 @@
                     </ul>
                     <h3 class="title-bar3">Accessed via the Document object properly of the global Window object</h3>
                 </div>
-                </section>
+            </section>
+
             <section id="second-section">
+                <h1 class="title-bar">Types of JavaScript</h1>
+                <h2 class="title-bar2">Linked (external) script</h2>
+                    <p class="code">&ltscript type="text/javascript" src="javascript.js"&gt</p>
+                    <p class="article">the <code>defer</code> and <code>async</code> keyword is used when you don't want interference with loading resources.</p>
+                    <p class="code">&ltscript type="text/javascript" src="javascript.js" defer&gt
+                    <br>
+                    &ltscript type="text/javascript" src="javascript.js" async&gt
+                    </p>
+                <h2 class="title-bar2">Embedded (internal) scripts</h2>
+                    <p class="article">Javascript inside an html document defined by the &ltscript&gt tag</p>
+                <h2 class="title-bar2">Inline Script</h2>
+                    <p class="article">Incorporating script on a line of html code</p>
+                    <p class="code">&lta href="#" onclick="alert('Welcome!')"&gt</p>
+            </section>
+
+            <section id="third-section">
                 <h1 class="title-bar">Functionalities</h1>
                 <div class="wrap-content">
                     <h3 class="title-bar3">Retrieve references to nodes(or node collections) in the DOM</h3>
@@ -100,6 +118,66 @@
                 </div>
         </section>
 
+        <section id="fourth-section">
+            <h1 class="title-bar">JavaScript Language Fundamentals</h1>
+            <h2 class="title-bar2">Variables and Constants</h2>
+            <h3 class="title-bar3">var</h3>
+                <p class="article">Becomes a property of the <code>window</code> object.</p>
+                <p class="code"><code>var</code> x = 1;</p>
+            <h3 class="title-bar3">let</h3>
+                <p class="article">Does not become a propert of the <code>window</code> object.</p>
+                <p class="code"><code>let</code> y = 2;</p>
+            <h2 class="title-bar2">Primitive Data Types</h2>
+            <ul class="list-item">
+                <li>Numbers</li>
+                <li>Strings</li>
+                <li>Boolean</li>
+                <li>null</li>
+                <li>undefined</li>
+            </ul>
+            <p class="article">Data types in JavaScript is dynamic. Meaning you don't have to specify the data type on your code.</p>
+            <p class="article">More on<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank" class="links"> Objects</a></p>
+            <h2 class="title-bar2">Equality and Identity</h2>
+            <ul class="list-item">
+                <li>== : implicit conversion</li>
+                <li>=== : explicit conversion</li>
+                <li>!=</li>
+                <li>!==</li>
+            </ul>
+            <h2 class="title-bar2">Functions</h2>
+            <h3 class="title-bar3">Function syntax</h3>
+            <p class="code"><code>function</code> func1(parameters){
+                <br>
+                     //code..
+                <br>
+            }</p>
+            <h3 class="title-bar3">arguments object</h3>
+            <p class="article">Used when a function declaration has no parameters but you can dynamically add parameters when invoked.</p>
+            <p class="code"><code>function</code> func2(a){
+                <br>
+                     console.log(arguments[0]);
+                <br>
+            }</p>
+            <p class="article">More on <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" class="links">Functions</a></p>
+            <h2 class="title-bar2">Arrays</h2>
+            <p class="article">Can be declared using the <code>Array</code> object, empty (<code>array[]</code>) or instantiation.</p>   
+            <p class="article">Dynamic size and allows "sparse" arrays.</p>
+            <p class="article">0-based index</p>
+            <p class="article">Allows array nesting</p>
+                <p class="code"><code>var</code> heroes = [["Supergirl", "The Flash"], ["Iron Man", "Captain America"]]</p> 
+                <p class="article">More on<a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Arrays" target="_blank" class="links"> Arrays</a></p>
+            <h2 class="title-bar2"></h2>   
+        </section>
+
+        <section id="fifth-section">
+            <h1 class="title-bar">JavaScript Event Handling</h1>
+            <h2 class="title-bar2">Event Propagation Order</h2>
+            <ul class="list-item">
+                <li>capturing phase</li>
+                <li>at target</li>
+                <li>bubbling phase</li>
+            </ul>
+        </section>
         <section id="quiz-section">
             <h1 class="title-bar">Quiz on JavaScript</h1>
             <div class = "wrap-content">

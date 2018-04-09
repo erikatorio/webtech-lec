@@ -129,9 +129,23 @@ body{
   }
   .list-item{
       padding-left: 50px;
+      padding-bottom: 5px;
   }
   li{
     font-family: 'Slabo 27px', serif;
+  }
+  .links{
+    color: #27ae60;
+  }
+
+  /* code style */
+  .code {
+    padding-left: 40px;
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px solid #fdcb6e;
+    color: #0c2461;
   }
   /* second-section */
   #second-section{

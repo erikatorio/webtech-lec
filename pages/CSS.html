@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">  
 </head>
 <body>
     <header>
@@ -33,11 +34,11 @@
             <ul id="sidenav-list">
                 <li class="sidenav-item"><a href="#first-section">CSS</a></li>
                 <li class="sidenav-item"><a href="#second-setion">Version History</a></li>
-                <li class="sidenav-item"><a href="#third-section">HTML STYLESHEETS</a></li>
-                <li class="sidenav-item"><a href="#fourth-section">CSS STATEMENTS</a></li>
-                <li class="sidenav-item"><a href="#fifth-section">CSS RULE SET </a></li>
-                <li class="sidenav-item"><a href="#sixth-section">CSS Selector</a></li>
-                <li class="sidenav-item"><a href="#seventh-section">Simple selector:</a></li>
+                <li class="sidenav-item"><a href="#third-section">HTML Stylesheets</a></li>
+                <li class="sidenav-item"><a href="#fourth-section">CSS Statements</a></li>
+                <li class="sidenav-item"><a href="#fifth-section">CSS Rule Set</a></li>
+                <li class="sidenav-item"><a href="#sixth-section">CSS Selector Syntax</a></li>
+                <li class="sidenav-item"><a href="#seventh-section">Selectors</a></li>
                 <li class="sidenav-item"><a href="#eight-section">CSS Rule Precedence </a></li>
                 <li class="sidenav-item"><a href="#nineth-section">CSS Declarations</a></li>
                 <li class="sidenav-item"><a href="#tenth-section">Values</a></li>
@@ -58,7 +59,6 @@
             <section id="second-section">
                 <h1 class="title-bar">Version History</h1>
                 <ul class="list-item">
-                    <br>
                     <li>CSS level 1 (CSS 1, W3C Recommendation, Dec 1996)</li>
                     <li>CSS level 2 (CSS 2, W3C Recommendation, May 1998)</li>
                     <li>CSS level 2 Revision 1 (CSS 2.1, W3C Recommendation Jun 2011)</li>
@@ -68,7 +68,7 @@
                
             </section>
             <section id="third-section">
-                <h1 class="title-bar">HTML STYLESHEETS</h1>
+                <h1 class="title-bar">HTML Stylesheets</h1>
                 <p class="article">Source of styles for HTML documents.</p>
                 <h2 class="title-bar2">Author styles:</h2>
                 <ul class="list-item">
@@ -84,9 +84,10 @@
                 <ul class="list-item">
                     <li>sample default user agent stylesheet from css 2.1</li>
                     <li>the source of style denotes its origin which is used in determining into precedence in the cascade</li>
+                </ul>
             </section>
             <section id="fourth-section">
-                <h1 class="title-bar">CSS STATEMENTS</h1>
+                <h1 class="title-bar">CSS Statements</h1>
                 <h2 class="title-bar2">At rules</h2>
                 <ul class="list-item">
                     <li>@charset</li>
@@ -95,94 +96,98 @@
                     <li> @media</li>
                     <li>@font space</li>
                     <li> @key frames</li>
+                </ul>
             </section>
             <section id="fifth-section">
-                <h1 class="title-bar">CSS RULE SET </h1>
-                <p class="article">consist of selector; followed by a brace-enclosed declaration block</p>
+                <h1 class="title-bar">CSS Rule Set</h1>
+                <p class="article">consist of selector, followed by a brace-enclosed declaration block</p>
+                <p class="code">body { margin: auto; }</p>
+                <p class="article">Reference: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank" class="links">CSS MDN</a></p>
                        
             </section>
             <section id="sixth-section">
-                <h1 class="title-bar"> CSS Selector</h1>
-                <h2 class="title-bar2">Selector Syntax:</h2>
-                    <p class="article">chain of one or more sequences of simpple selectors-separated by combinators with one pseudo-element possibly appended.</p>
-                <h2 class="title-bar2">Selector Group: </h2>
+                <h1 class="title-bar"> CSS Selector Syntax</h1>
+                    <p class="article">chain of one or more sequences of simple selectors-separated by combinators with one pseudo-element possibly appended.</p>
+                <h2 class="title-bar2">Selector Group </h2>
                 <p class="article">Comma-separated list of selectors representing the union of all elements </p>
               <h2 class="title-bar2"> Combinators:</h2>
-              <ul class="list-item">
-                <li>descendant combinator (whitespace) i.e space, tab, line feed, carriage rerturn, form, feed.</li>
-                <li>Child Combinator(>)</li>
-                <li>sibling Combinator</li>
-                <ul class="list-item">
-                    <li>Adjacent sibling Combinator(+)</li>
-                    <li>General sibling Combinator (-)</li>
-                </ul>
-            </ul>
+                <h3 class="title-bar3">Descendant Combinator (whitespace)</h3>
+                    <p class="article">i.e space, tab, line feed, carriage rerturn, form, feed.</p>
+                <h3 class="title-bar3">Child Combinator(>)</h3>
+                <h3 class="title-bar3">Sibling Combinator</h3>       
+                    <p class="article">Adjacent sibling Combinator(+)</p>
+                    <p class="article">General sibling Combinator (-)</p>
             </section>
             <section id="seventh-section">
-                <h1 class="title-bar">Simple selector:</h1>
-                <h2 class="title-bar2">Universal Selector(*)</h2>
-                    <ul class="list-item">
-                        <li>type Selector<br> e.g <br>(p{background-color: #fff}) <br> (h1{color: rgba(255,0,0,0,5);})</li>
-                        <li>id Selector (#) <br>e.g<br>#info</li>
-                        <li>class Selector</li>
-                        <li>attribute Selector<br> -Type selector with brackets</li>
-                        <li>pseudo classes(:)</li>
-                        <ul class="list-item">
-                            <li>dynamic pseudo-classes</li>
-                            <ul class="list-item">
-                                <li>link pseudo clsas (:link, :visited)</li>
-                                <li>user action pseudo class  (:hover)</li>
-                            </ul>
-                            <li>target pseudo class</li>
-                            <ul class="list-item">
-                                <li>:target</li>
-                            </ul>
-                            <li>Language pseudo class</li>
-                            <ul class="list-item">
-                                <li>:lang()</li>
-                                </ul>
-                            <li>UI element state pseudo class</li>
-                            <ul class="list-item">
-                                <li>:enable, :disable,:checked</li>
-                                </ul>
-                            <li>Structural pseudo class</li>
-                            <ul class="list-item">
-                                <li>:root</li>
-                                    <li>:first-child</li>
-                                    <li>:last-child</li>
-                                    <li>:only-child</li>
-                                </ul>
-                            <li>negation pseudo class</li>
-                            <ul class="list-item">
-                                <li>:not()</li>
-                                </ul>
-
-                    </ul>
-                     
-                
+                <h1 class="title-bar">Selectors</h1>
+                <h2 class="title-bar2">Universal Selector</h2>
+                    <p class="code">* { margin: auto; }</p>
+                <h2 class="title-bar2">Type Selector</h2>
+                    <p class="code">p{ background-color: #fff; } <br> h1{ color: rgba(255,0,0,0,5); }</p>
+                <h2 class="title-bar2">ID Selector (#)</h2>
+                    <p class="code">#info</p>
+                <h2 class="title-bar2">Class Selector</h2>
+                    <p class="code">.tabs{ display: none; }</p>
+                <h2 class="title-bar2">Attribute Selector</h2>
+                    <p class="code">a[target="_blank"]{ background-color: yellow; }</p>
+                <h2 class="title-bar2">Pseudo Classes</h2>
+                    <h3 class="title-bar3">Dynamic Pseudo Classes</h3>
+                        <p class="article">Link pseudo class</p>
+                        <p class="code">:link, :visited</p>
+                        <p class="article"> user action pseudo class</p>
+                        <p class="code">:hover</p>
+                    <h3 class="title-bar3">Target Pseudo Class</h3>
+                        <p class="code">:target</p>
+                    <h3 class="title-bar3">Language Pseudo Class</h3>
+                        <p class="code">:lang()</p>
+                    <h3 class="title-bar3">UI element state pseudo class</h3>
+                        <p class="code">:enable, :disable,:checked</p>
+                    <h3 class="title-bar3">Structural pseudo class</h3>
+                        <p class="code">:first-child, :last-child, :only-child</p>
+                    <h3 class="title-bar3">Negation pseudo class</h3>
+                        <p class="code">:not()</p>  
             </section>
             <section id="eigth-section">
                  <h1 class="title-bar">CSS Rule Precedence</h1>
-                 <p class="article">    An HTML element may be the subject of the selectors of multiple style rules.
-                When such rules target diffferent properties their effects cacscade (i.e. one combines).
-                  When the styles involve the same properties they conflict and must be resolved with that only one style.</p>
+                 <p class="article">    An HTML element may be the subject of the selectors of multiple style rules.</p>
+                <ul class="list-item"> 
+                    <li>When such rules target diffferent properties their effects cacscade (i.e. one combines).</li> 
+                    <li>When the styles involve the same properties they conflict and must be resolved with that only one style.</li> 
+                </ul>
+                <h2 class="title-bar2">by origin or importance</h2>
+                <h2 class="title-bar2">by specificity</h2>
+                <ul class="list-item">
+                    <li>how specific are you in defining in your selector.</li>
+                </ul>
+                <h3 class="title-bar3">A</h3>
+                <ul class="list-item">
+                    <li>The number of ID selectors</li>
+                </ul>
+                <h3 class="title-bar3">B</h3>
+                <ul class="list-item">
+                    <li>The number of class, attribute selectors and pseudo classes.</li>
+                </ul>
+                <h3 class="title-bar3">C</h3>
+                <ul class="list-item">
+                    <li>The number of type selectors and pseudo elements</li>
+                </ul>
+                <p class="article">Tool for checking order: <a href="https://specificity.keegan.st/" target="_blank" class="links">Specificity Calculator</a></p>
+                <h2 class="title-bar2">by order</h2>
             </section>
+
             <section id="nineth-section">
                <h1 class="title-bar">CSS Declarations</h1>
                <h2 class="title-bar2">Properties </h2>
-               <ul class="list-item">
-                    <li>Shorthand properties()</li>
+                <h3 class="title-bar3">Shorthand properties()</h3>
                      <p class="article"> Allows author to specify the values of several properties with a single property 
             e.g. background, font, margin, padding, border, border-left, border-width, etc.</p>
-                    <li>vendor specific extensions (a.k.a vendor prefixes)</li>
+            <h3 class="title-bar3"> vendor specific extensions (a.k.a vendor prefixes)</h3>
                     <p class="article">used by browser vendors as prefixes for the names of experimental or non-standard CSS properties. lately, vendors are moving away from vendor prefixes in favor of user-controlled flags or preferences.<br>
             e.g. -webkit-, -moz-, -o-, -ms, etc</p>
-                    <li>custom properties (a.k.a. CSS variables (experimental))</li>
+            <h3 class="title-bar3">custom properties (a.k.a. CSS variables (experimental))</h3>
                     <p class="article"> property names prefixed with --, representing a value that can be reused throughout the document using the var() function</p>
-                </ul>
-
-               
             </section>
+
             <section id="tenth-section">
                <h1 class="title-bar">Values</h1>
                <h2 class="title-bar2">value processing </h2>
@@ -190,30 +195,26 @@
                 <li>declared, cascaded, specified, computed, used, actual values</li>
             </ul>
                 <h2 class="title-bar2">value types </h2>
-                <ul class="list-item">
-                    <li>keywords</li>
-                    <ul class="list-item">
-                        <li> CSS-wide keywords</li>
-                        <p class="article"> initial, inherit, unset</p>
-                        <li>property-specific keywords </li>
-                    </ul>
-                    <li>numbers</li>
+                <h3 class="title-bar3">Keyword</h3>
+                <p class="article">> CSS-wide keywords</p>
+                        <p class="code"> initial, inherit, unset</p>
+                <p class="article">> Property-specific keywords</p> 
+                <h3 class="title-bar3">Numbers</h3>
                     <p class="article">integers or reals in(scientific) decimal notation</p>
-                    <li>dimensions</li>
+                <h3 class="title-bar3">Dimensions</h3>
+                <p class="article">> Length, angle, duration(or time), frequency, resolution </li></p>
+                <p class="article">> Length units</p>
                     <ul class="list-item">
-                        <li>length, angle, duration(or time), frequency, resolution </li>
-                        <li>length units:</li>
+                        <li>font-relative: em, ex, ch, rem</li>
+                        <li>viewport-percentage: vw, vh, vmin, vmax</li>
+                        <li>absolute: cm, mm ,in, pt, pc, px</li>
+                    </ul>
+                <p class="article">> Angle units:</p>       
                         <ul class="list-item">
-                            <li>font-relative: em, ex, ch, rem</li>
-                            <li>viewport-percentage: vw, vh, vmin, vmax</li>
-                            <li>absolute: cm, mm ,in, pt, pc, px</li>
+                            <li>deg, grad, rad, turn</li>
+                            <li>used in some gradient and transforms functions</li>
                         </ul>
-                        <li>angle units:</li>
-                        <ul class="list-item">
-                            <li>deg, grad, rad, turn<br> -used in some gradient and transforms functions</li>
-                        </ul>
-                        <li>duration(or time) units </li>
-                </ul>
+                <p class="article">> Duration(or time) units</p>
             </section>
              <section id="eleventh-section">
                 <h1 class="title-bar">CSS Preprocessors, Frameworks, and Polyfills</h1>
@@ -228,7 +229,7 @@
                 <p class="article">e.g. Modernizr, seletivizr, etc</p>
             </section>
             <section id="quiz-section">
-                <h1 class="title-bar">Quiz on HTML</h1>
+                <h1 class="title-bar">Quiz on CSS</h1>
                 <div class = "wrap-content">
                     <div class="quiz-container">
                         <div id="quiz"></div>

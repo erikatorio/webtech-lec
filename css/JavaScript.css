@@ -113,7 +113,7 @@ body{
       font-size:20px;
   }
   .title-bar3{
-    padding-left: 10px;
+    padding-left: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size:18px;
     }
@@ -138,6 +138,25 @@ body{
   }
   li{
     font-family: 'Slabo 27px', serif;
+  }
+
+  .links{
+    color: #27ae60;
+  }
+  /* code style */
+  .code {
+    padding-left: 40px;
+    font-family: 'Source Code Pro', monospace;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px solid #fdcb6e;
+    color: #0c2461;
+  }
+  code {
+    color:#27ae60;
+  }
+  p.code > code {
+    font-size: 17px;
   }
   /* second-section */
   #second-section{
@@ -164,6 +183,16 @@ body{
     width: 800px;
     margin: 60px auto;
     padding-bottom: 50px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: auto;
+  }
+
+  #fifth-section{
+    height: auto;
+    width: 800px;
+    margin: 60px auto;
+    padding-bottom: 20px;
     background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-rows: auto;
