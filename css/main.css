@@ -6,11 +6,10 @@
 }
 header{
   display: grid;
-  grid-auto-flow: 100%;
-  background: #232526;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  width: 100%;
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
   height: 600px;
 }
 nav{
@@ -93,7 +92,7 @@ nav{
   margin: 15px auto;
   color: #ecf0f1;
   font-size: 19px;
-  /* width: 54%; */
+  max-width: 100%;
   font-family: 'Montserrat', sans-serif;
 }
 .header_animation {
@@ -102,11 +101,11 @@ nav{
   color: #fff;
   font-family: monospace;
   height: 40%;
-  overflow: hidden; 
-  border-right: .15em solid orange; 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em; 
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
   animation:
   typing 4s steps(35, end),
   blink-caret .5s step-end infinite;
@@ -114,19 +113,19 @@ nav{
 
 
 @keyframes typing {
-  from { 
-      width: 0 
-  } to { 
-      width: 50% 
+  from {
+      width: 0
+  } to {
+      width: 70%
   }
 }
 
 
 @keyframes blink-caret {
-  from, to { 
-      border-color: transparent 
-  } 30% { 
-      border-color: white 
+  from, to {
+      border-color: transparent
+  } 30% {
+      border-color: white
   }
 }
 #search-bar{
@@ -372,3 +371,6 @@ footer{
   font-weight: 600;
   letter-spacing: 2px;
 }
+
+
+/* Mobile */
