@@ -81,15 +81,6 @@
         },
         correctAnswer: "b"
       },
-      {
-        question: "",
-        answers: {
-          a: "",
-          b: "",
-          c: ""
-        },
-        correctAnswer: ""
-      }
     ];
   
     function buildQuiz() {
