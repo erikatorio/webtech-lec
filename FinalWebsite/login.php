@@ -15,7 +15,7 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
         $_SESSION['username'] = $username;
 
         echo "Successfully logged in!";
-        //echo "<a href='logout.php'>Logout</a>";
+        echo "<a href='logout.php'>Logout</a>";
 
         $active = "UPDATE accounts SET status='1' WHERE username='$username'";
         mysqli_query($link, $active);
