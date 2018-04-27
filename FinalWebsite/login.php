@@ -14,13 +14,12 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
     if ($user[0] == $username && $user[1] == $password) {
         $_SESSION['username'] = $username;
 
-        echo "Successfully logged in!";
-        echo "<a href='logout.php'>Logout</a>";
+        Header("Location: home.html");
 
         $active = "UPDATE accounts SET status='1' WHERE username='$username'";
         mysqli_query($link, $active);
     } else {
         echo "Invalid Login Credentials";
-        echo "<a href='login.html'><br>Back</a>";
+        echo "<a href='index.html'><br>Back</a>";
     }
 }
