@@ -10,4 +10,4 @@ if (isset($_SESSION['username'])) {
 }
 
 unset($_SESSION['username']);
-header('Location: login.html');
+header('Location: index.html');
