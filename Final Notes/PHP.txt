@@ -1,0 +1,149 @@
+What is PHP?
+	PHP stands for "Hypertext Preprocessor" 
+	It is an scripting language that is widely used for suiting web development that can be embedded in HTML.
+	It is free
+TOPICS
+
+PHP ARRAY
+	PHP array is the same in java's array. The function of the PHP array is also the same with java. An array stores values with one or more than one values.
+Example:
+
+<?php
+$cars = array("Volvo", "BMW", "Toyota"); 
+echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+?>
+
+PHP - Multidimensional Arrays
+	PHP Multidimensional arrays is simply an array that stores up more than one array. 
+	To further understand Multidimensional Arrays let us take a look at this example.
+
+	<!DOCTYPE html>
+	<html>
+	<body>
+
+	<?php
+	$cars = array
+	(
+  	array("Volvo",22,18),
+ 	array("BMW",15,13),
+	array("Saab",5,2),
+  	array("Land Rover",17,15)
+	 );
+  
+	echo $cars[0][0].": In stock: ".$cars[0][1].", sold: ".$cars[0][2].".<br>";
+	echo $cars[1][0].": In stock: ".$cars[1][1].", sold: ".$cars[1][2].".<br>";
+	echo $cars[2][0].": In stock: ".$cars[2][1].", sold: ".$cars[2][2].".<br>";
+	echo $cars[3][0].": In stock: ".$cars[3][1].", sold: ".$cars[3][2].".<br>";
+	?>
+
+	</body>
+	</html>
+
+	In PHP the same rule in loop applies, you can add a for loop inside another for loop for some reasons. 
+	EXAMPLE
+
+	<?php
+	for ($row = 0; $row < 4; $row++) {
+  	echo "<p><b>Row number $row</b></p>";
+  	echo "<ul>";
+  	for ($col = 0; $col < 3; $col++) {
+   		echo "<li>".$cars[$row][$col]."</li>";
+  	}
+  	echo "</ul>";
+	}
+	?>
+
+PHP Include Files
+	The include function is simply equivalent to insert function in some of the scriptings. The include function copies all the codes in a file and applies it to the file where the include is specied. The include is most likely linking external php files into the other php file that will inherit the functionalities and design of the external file. 
+
+	EXAMPLES
+
+-------------------------------------------------------------
+	<html>
+	<body>
+
+	<h1>Welcome to my home page!</h1>
+	<p>Some text.</p>
+	<p>Some more text.</p>
+	<?php include 'footer.php';?>
+
+	</body>
+	</html>
+-------------------------------------------------------------
+	<!DOCTYPE html>
+	<html>
+	<body>
+
+	<h1>Welcome to my home page!</h1>
+	<?php include 'vars.php';
+	echo "I have a $color $car.";
+	?>
+
+	</body>
+	</html>
+-------------------------------------------------------------
+	<!DOCTYPE html>
+	<html>
+	<body>
+
+	<h1>Welcome to my home page!</h1>
+	<?php include 'noFileExists.php';
+	echo "I have a $color $car.";
+	?>
+
+	</body>
+	</html>
+
+
+PHP File upload (Image)
+	File upload in PHP is also possible to upload files into your server.
+
+	To do this here are some phases:
+	1). Configure the php.ini
+	2). Create a HTML Form
+	3). Create a Upload File PHP Script 
+
+Configure the php.ini
+	To further move along on file upload configure your php.ini and allow file upload in order to upload files from the server. 
+	Go to your php.ini and locate the line "file_uploads" and enable it. To enable it your code mus look like this "file_upload = on"
+
+Create a HTML Form 
+	In order to apply the file upload in php, you must also have a HTML form. Below is a sample code for an HTML form.
+	<!DOCTYPE html>
+	<html>
+	<body>
+
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+	    Select image to upload:
+	    <input type="file" name="fileToUpload" id="fileToUpload">
+	    <input type="submit" value="Upload Image" name="submit">
+	</form>
+
+	</body>
+	</html>
+
+	*Note:
+		The method form needs the method request post 
+		The form also needs the attribute enctype="multipart/form-data"
+		The enctype="multipart/form-data" specifies the content to be submitted without it the file upload will  not work
+
+Create Upload File PHP Script
+	Here is an example of an upload script
+	<?php
+	$target_dir = "uploads/";
+	$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+	$uploadOk = 1;
+	$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+	// Check if image file is a actual image or fake image
+	if(isset($_POST["submit"])) {
+	    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+	    if($check !== false) {
+	        echo "File is an image - " . $check["mime"] . ".";
+	        $uploadOk = 1;
+	    } else {
+	        echo "File is not an image.";
+	        $uploadOk = 0;
+	    }
+	}
+	?>
+	
