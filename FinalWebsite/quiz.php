@@ -45,13 +45,19 @@ while ($row = mysqli_fetch_assoc($result)) {
         $questions[$questionIndex]['theQuestion'] = $row['question'];
 
         $questions[$questionIndex]['choices'] = array();
+
+        $questions[$questionIndex]['correct'] = $row['correctanswer'];
     }
 
     if($choiceID != $row['id']) {
         $choiceIndex++;
         $choiceID = $row['id'];
+        $choicekeys = array(a, b, c);
 
-        $questions[$questionIndex]['choices'][$choiceIndex]['a'] = $row['choice'];
+        //$questions[$questionIndex]['choices'][$choiceIndex]['a'] = $row['choice'];
+        //for($i = 0; $i < $choicekeys.count(); $i++) {
+            $questions[$questionIndex]['choices'][$choiceIndex][strval($choiceIndex+1)] = $row['choice'];
+        //}
     }
 }
 
