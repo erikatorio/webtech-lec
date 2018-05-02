@@ -1,5 +1,7 @@
 $primaryColor: rgb(233, 233, 233) !important
 $secondaryColor: rgb(255, 255, 255) !important
+// fonts
+$primaryFont: 'Roboto', sans-serif
 *
   margin: 0
   padding: 0
@@ -7,7 +9,10 @@ $secondaryColor: rgb(255, 255, 255) !important
 
 body, html
   background-color: $primaryColor
-
+// navbar
+.navbar
+  background-color: $primaryColor
+// sign up
 .login
   background-color: $secondaryColor
   height: 30rem
@@ -33,3 +38,27 @@ body, html
   background-color: #fdcb6e
   border: 0rem
   font-size: 1.2rem
+
+// home page
+#logos
+    height: 3rem
+    width: 3rem
+.userProgress
+  background-color: #333
+  height: 20rem
+// home
+.banner
+  height: 30rem
+  background-color: $primaryColor
+#banner-title
+  font-size: 5rem
+  font-family: $primaryFont
+  color: #ffbe76
+#sayIng
+  font-family: 'Lato', sans-serif
+  color: #535c68
+
+// catalog
+.catalog
+  height: 40rem
+  background-color: $secondaryColor
