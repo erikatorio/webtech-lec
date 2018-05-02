@@ -54,10 +54,7 @@ while ($row = mysqli_fetch_assoc($result)) {
         $choiceID = $row['id'];
         $choicekeys = array(a, b, c);
 
-        //$questions[$questionIndex]['choices'][$choiceIndex]['a'] = $row['choice'];
-        //for($i = 0; $i < $choicekeys.count(); $i++) {
-            $questions[$questionIndex]['choices'][$choiceIndex][strval($choiceIndex+1)] = $row['choice'];
-        //}
+        $questions[$questionIndex]['choices'][$choiceIndex][strval($choiceIndex+1)] = $row['choice'];
     }
 }
 
