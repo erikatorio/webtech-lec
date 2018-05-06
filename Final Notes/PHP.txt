@@ -9,45 +9,38 @@ PHP ARRAY
 Example:
 
 <?php
-$cars = array("Volvo", "BMW", "Toyota"); 
-echo "I like " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+$ballpen = array("HBW", "Pilot", "G-Tech"); 
+echo "Available Ballpen's as of 2018 " . $ballpen[0] . ", " . $ballpen[1] . " and " . $ballpen[2] . ".";
 ?>
 
 PHP - Multidimensional Arrays
 	PHP Multidimensional arrays is simply an array that stores up more than one array. 
 	To further understand Multidimensional Arrays let us take a look at this example.
 
-	<!DOCTYPE html>
-	<html>
-	<body>
-
 	<?php
-	$cars = array
+	$ballpen = array
 	(
-  	array("Volvo",22,18),
- 	array("BMW",15,13),
-	array("Saab",5,2),
-  	array("Land Rover",17,15)
+  	array("HBW",22,18),
+ 	array("Pilot",15,13),
+	array("G-Tech",5,2),
+  	array("Faber Castle",17,15)
 	 );
   
-	echo $cars[0][0].": In stock: ".$cars[0][1].", sold: ".$cars[0][2].".<br>";
-	echo $cars[1][0].": In stock: ".$cars[1][1].", sold: ".$cars[1][2].".<br>";
-	echo $cars[2][0].": In stock: ".$cars[2][1].", sold: ".$cars[2][2].".<br>";
-	echo $cars[3][0].": In stock: ".$cars[3][1].", sold: ".$cars[3][2].".<br>";
+	echo $ballpen[0][0].": In stock: ".$ballpen[0][1].", sold: ".$ballpen[0][2].".<br>";
+	echo $ballpen[1][0].": In stock: ".$ballpen[1][1].", sold: ".$ballpen[1][2].".<br>";
+	echo $ballpen[2][0].": In stock: ".$ballpen[2][1].", sold: ".$ballpen[2][2].".<br>";
+	echo $ballpen[3][0].": In stock: ".$ballpen[3][1].", sold: ".$ballpen[3][2].".<br>";
 	?>
-
-	</body>
-	</html>
 
 	In PHP the same rule in loop applies, you can add a for loop inside another for loop for some reasons. 
 	EXAMPLE
 
 	<?php
-	for ($row = 0; $row < 4; $row++) {
-  	echo "<p><b>Row number $row</b></p>";
+	for ($rowNum = 0; $rownNum < 4; $rowNum++) {
+  	echo "<p><b>Number of row: $rowNum</b></p>";
   	echo "<ul>";
-  	for ($col = 0; $col < 3; $col++) {
-   		echo "<li>".$cars[$row][$col]."</li>";
+  	for ($column = 0; $column < 3; $column++) {
+   		echo "<li>".$ballpen[$rowNum][$column]."</li>";
   	}
   	echo "</ul>";
 	}
@@ -62,10 +55,8 @@ PHP Include Files
 	<html>
 	<body>
 
-	<h1>Welcome to my home page!</h1>
-	<p>Some text.</p>
-	<p>Some more text.</p>
-	<?php include 'footer.php';?>
+	<h1>Welcome to Webtek Ninja!</h1>
+	<?php include 'Welcome.php';?>
 
 	</body>
 	</html>
@@ -74,21 +65,9 @@ PHP Include Files
 	<html>
 	<body>
 
-	<h1>Welcome to my home page!</h1>
-	<?php include 'vars.php';
-	echo "I have a $color $car.";
-	?>
-
-	</body>
-	</html>
--------------------------------------------------------------
-	<!DOCTYPE html>
-	<html>
-	<body>
-
-	<h1>Welcome to my home page!</h1>
-	<?php include 'noFileExists.php';
-	echo "I have a $color $car.";
+	<h1>Welcome to Webtek Ninja!</h1>
+	<?php include 'pens.php';
+	echo "My pen is a $ballpen.";
 	?>
 
 	</body>
@@ -111,12 +90,16 @@ Create a HTML Form
 	In order to apply the file upload in php, you must also have a HTML form. Below is a sample code for an HTML form.
 	<!DOCTYPE html>
 	<html>
+	<head>
+		<title> Uploading a file </title>
+	</head>
+
 	<body>
 
 	<form action="upload.php" method="post" enctype="multipart/form-data">
-	    Select image to upload:
-	    <input type="file" name="fileToUpload" id="fileToUpload">
-	    <input type="submit" value="Upload Image" name="submit">
+	    Choose image to upload:
+	    <input type="file" name="UploadFile" id="UploadFile">
+	    <input type="submit" value="Upload" name="submit">
 	</form>
 
 	</body>
