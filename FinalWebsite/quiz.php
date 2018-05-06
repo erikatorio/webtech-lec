@@ -2,7 +2,7 @@
 session_start();
 require('connect.php');
 
-$query = "SELECT questions.question_id, question, questions.quiz_id, correctanswer, choices.id, choice FROM quiz JOIN questions ON quiz.quiz_id = questions.quiz_id JOIN choices ON questions.question_id = choices.question_id WHERE quiz.quiz_id = 2";
+$query = "SELECT questions.question_id, question, questions.quiz_id, correctanswer, choices.idchoices, choices.a, choices.b, choices.c FROM quiz JOIN questions ON quiz.quiz_id = questions.quiz_id JOIN choices ON questions.question_id = choices.question_id WHERE quiz.quiz_id = 2";
 
 $result = mysqli_query($link, $query) or die(mysqli_error($link));
 
@@ -49,17 +49,20 @@ while ($row = mysqli_fetch_assoc($result)) {
         $questions[$questionIndex]['correct'] = $row['correctanswer'];
     }
 
-    if($choiceID != $row['id']) {
+    if($choiceID != $row['idchoices']) {
         $choiceIndex++;
-        $choiceID = $row['id'];
+        $choiceID = $row['idchoices'];
         //$choicekeys = array(a, b, c);
 
-        $questions[$questionIndex]['choices'][$choiceIndex][strval($choiceIndex+1)] = $row['choice'];
+        $questions[$questionIndex]['choices'][$choiceIndex] = array(
+            'a' => $row['a'],
+            'b' => $row['b'],
+            'c' => $row['c']
+        );
     }
 }
-$j = json_encode($questions)
+$j = json_encode($questions);
 ?>
-
 <script type="text/javascript">
 const q = <?php echo $j?>;
 console.log(q)
