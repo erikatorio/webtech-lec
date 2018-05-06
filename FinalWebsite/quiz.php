@@ -52,10 +52,15 @@ while ($row = mysqli_fetch_assoc($result)) {
     if($choiceID != $row['id']) {
         $choiceIndex++;
         $choiceID = $row['id'];
-        $choicekeys = array(a, b, c);
+        //$choicekeys = array(a, b, c);
 
         $questions[$questionIndex]['choices'][$choiceIndex][strval($choiceIndex+1)] = $row['choice'];
     }
 }
+$j = json_encode($questions)
+?>
 
-echo json_encode($questions);
+<script type="text/javascript">
+const q = <?php echo $j?>;
+console.log(q)
+</script>
