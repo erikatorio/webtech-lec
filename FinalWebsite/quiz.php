@@ -2,7 +2,7 @@
 session_start();
 require('connect.php');
 
-$query = "SELECT questions.question_id, question, questions.quiz_id, correctanswer, choices.id, choice FROM quiz JOIN questions ON quiz.quiz_id = questions.quiz_id JOIN choices ON questions.question_id = choices.question_id WHERE quiz.quiz_id = 1";
+$query = "SELECT questions.question_id, question, questions.quiz_id, correctanswer, choices.id, choice FROM quiz JOIN questions ON quiz.quiz_id = questions.quiz_id JOIN choices ON questions.question_id = choices.question_id WHERE quiz.quiz_id = 2";
 
 $result = mysqli_query($link, $query) or die(mysqli_error($link));
 
