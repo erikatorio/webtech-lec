@@ -35,7 +35,7 @@ while ($row = mysqli_fetch_assoc($result)) {
             'a' => $row['a'],
             'b' => $row['b'],
             'c' => $row['c']
-        );
+        );;
     }
 }
 echo json_encode($questions);
