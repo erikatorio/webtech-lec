@@ -6,13 +6,13 @@ require('connect.php');
 if(isset($_GET['result'])) {
     $username =  $_SESSION['username'];
     $today = date("F j, Y, g:i a"); 
-    $result = "";
-    $quiz = "";
+    $result = $_GET['result'];
+    $quiz = ""; //get quiz id from quiz.php
 
     $score = "UPDATE quiz_taken SET date_taken='$today', points_accumulated='$result', username='$username', quiz_taken='$quiz'"; 
     $result = mysqli_query($link, $score) or die(mysqli_error($link));
 
     if($result) {
-        
+
     }
 }
