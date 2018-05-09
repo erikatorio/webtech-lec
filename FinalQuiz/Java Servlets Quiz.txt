@@ -1,0 +1,69 @@
+1. What are Servlets?
+	a. Java Servlet is a server side technology that runs on a web application server
+	b. Servlets are used to create dynamic web pages in a web application
+	c. Both of the above
+	
+Answer: c
+	
+2. What is the method used to get the value of a form parameter?
+	a. request.getParameterValues()
+	b. request.getParameter() 
+	c. request.getParameterNames()
+
+Answer: b
+
+3. This method is only called when the servlet is created
+	a. start() method
+	b. init() method
+	c. startserv() method
+
+Answer: b
+	
+4. What is the method used to get cookies in servlet?
+	a. request.getCookies()
+	b. cookies.getCookies()
+	c. get.requestCookies()
+
+Answer: a
+
+5. This method is only called when the life cycle of servlet ends
+	a. end() method
+	b. stop()method
+	c. destroy()method
+
+Answer: c
+	
+6. It is the entire process of servlet from its creation till the destruction
+	a. Servlet Life Span
+	b. Servlet Life Cycle
+	c. Servlet Cycle
+
+Answer: b
+	
+7. Which of the following method retrieves the name of HTTP method?
+	a. request.getMethod()
+	b. retrieve.getMethod()
+	c. method.getName()
+
+Answer: c
+
+8. Which of the following is not a valid servlet filter?
+	a. Media Filters
+	b. Encryption Filters
+	c. Image Conversion Filters
+	
+Answer: a
+
+9. It is an of element of web.xml that is used to specify the error handler in servlets
+	a. error-handler
+	b. error-page
+	c. error-exception
+	
+Answer: b
+
+10. This method is called to perform the requested task
+	a. service() method
+	b. perform() method
+	c. doTask() method
+	
+Answer: a

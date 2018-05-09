@@ -1,32 +1,13 @@
 <?php
 session_start();
 require('connect.php');
-
-$query = "SELECT questions.question_id, question, questions.quiz_id, correctanswer, choices.id, choice FROM quiz JOIN questions ON quiz.quiz_id = questions.quiz_id JOIN choices ON questions.question_id = choices.question_id WHERE quiz.quiz_id = 1";
+//pass quiz_id here using $_GET, javascript of topic home page (the start button per subtopic has a value attribute) would have click event then 
+// https://stackoverflow.com/questions/8191124/send-javascript-variable-to-php-variable 
+if(isset($_GET['id'])) {
+    $quizid = $_GET['id'];
+    $query = "SELECT questions.question_id, question, questions.quiz_id, correctanswer, choices.idchoices, choices.a, choices.b, choices.c FROM quiz JOIN questions ON quiz.quiz_id = questions.quiz_id JOIN choices ON questions.question_id = choices.question_id WHERE quiz.quiz_id = '$quizid'";
 
 $result = mysqli_query($link, $query) or die(mysqli_error($link));
-
-// $questionfield = array_fill_keys(array(question), null);
-
-// $choicekeys = array(a, b, c);
-// $choicefields = array_fill_keys($choice_keys, null);
-
-// $questions = array();
-// $choice = array();
-
-// while ($row = mysqli_fetch_assoc($result)) {
-//     $questionID = $row['question_id'];
-//     $choiceID = $row['id'];
-//     if(isset($questions[$questionID]['choices'])) {
-//         $questions[$questionID]['choices'][] = array_intersect_key($choiceID, $choicefields);
-//     } else {
-//         $questions[$questionID] = array_intersect_key($row, $questionfield);
-//         $questions[$questionID]['choices'] = array(array_intersect_key($, $choicefields));
-//     }
-// }
-
-// $questions = array_values($questions);
-// echo json_encode($questions);
 
 $questions = array();
 
@@ -42,20 +23,25 @@ while ($row = mysqli_fetch_assoc($result)) {
         $choiceIndex = -1;
         $questionID = $row['question_id'];
 
-        $questions[$questionIndex]['theQuestion'] = $row['question'];
+        $questions[$questionIndex]['question'] = $row['question'];
 
-        $questions[$questionIndex]['choices'] = array();
+        $questions[$questionIndex]['answers'] = array();
 
-        $questions[$questionIndex]['correct'] = $row['correctanswer'];
+        $questions[$questionIndex]['correctAnswer'] = $row['correctanswer'];
     }
 
-    if($choiceID != $row['id']) {
+    if($choiceID != $row['idchoices']) {
         $choiceIndex++;
-        $choiceID = $row['id'];
-        $choicekeys = array(a, b, c);
+        $choiceID = $row['idchoices'];
+        $a = 
 
-        $questions[$questionIndex]['choices'][$choiceIndex][strval($choiceIndex+1)] = $row['choice'];
+        $questions[$questionIndex]['answers'][$choiceIndex] = array(
+            'a' => $row['a'],
+            'b' => $row['b'],
+            'c' => $row['c']
+        );
     }
 }
-
 echo json_encode($questions);
+}
+?>
