@@ -1,0 +1,69 @@
+1. Server-side scripting tool that was built on Chrome’s JS Engine or the V8 engine.
+	a. Javascript
+	b. NodeJS
+	c. Java Servlet
+
+Answer: b 
+
+2. NodeJS is __________ meaning code execution is smooth because it is, after all, built on Chrome’s V8 JS Engine.
+	a. fast
+	b. asynchronous
+	c. 
+
+Answer: a 
+
+3. NodeJS was created by
+	a. Ryan Lee
+	b. Ryan Reynolds
+	c. Ryan Dahl
+	
+Answer: c 
+
+4. The maintenance and development of NodeJS was then later sponsored by __________
+	a. Joyers
+	b. Joyent
+	c. Joyetch
+
+Answer: b 
+
+5. NodeJS has a lot of packages that can be used for development. Such packages are installed through __________ which is a JavaScript package manager and also the largest registry for softwares.
+	a. NPQ
+	b. NPN
+	c. NPM
+	
+Answer: c 
+
+6. NodeJS variable declaration is the same as __________ which uses const, var, and let. 
+	a. JavaScript
+	b. Servlet
+	c. Java
+
+Answer: a
+
+7. What is the node command issued when a NodeJS file is executed
+	a. node.js
+	b. node app.js
+	c. app.js node
+	
+Answer: b 
+
+8. NodeJS has a module named __________ which allows data to be transferred through HTTP.
+	a. https
+	b. http
+	c. httpr
+	
+Answer: b 
+
+9. A Node.js web application framework that provides rich set of features for mobile and web applications.
+	a. Express JS
+	b. Express Java
+	c. Express Node
+	
+Answer: a
+
+10. It is a package or API that can be used by Node JS which renders views and data can be passed to it.
+	a. Express JS
+	b. JavaScript
+	c. Pug
+	
+Answer: c
