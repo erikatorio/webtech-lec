@@ -5,7 +5,7 @@ function initialize() {
         if (request.readyState == 4 && request.status == 200){
             var q = JSON.parse(request.responseText);
             var a = request.responseText;
-            //console.log(q);
+            console.log(q);
             function buildQuiz() {
                 const output = [];
             

@@ -5,7 +5,7 @@ function initialize() {
         if (request.readyState == 4 && request.status == 200){
             var q = JSON.parse(request.responseText);
             var a = request.responseText;
-            console.log(a);
+            console.log(q);
             function buildQuiz() {
                 const output = [];
             
@@ -13,7 +13,7 @@ function initialize() {
                     const answers = [];
             
                     for (letter in currentQuestion.answers) {
-                        console.log(currentQuestion.answers[letter].a);
+                        //console.log(currentQuestion.answers[letter].a);
                         answers.push(
                             `<label>
                             <input type="radio" name="question${questionNumber}" value="a">
@@ -51,7 +51,7 @@ function initialize() {
                 quizContainer.innerHTML = output.join('');
             }
         
-            function showResults() {
+            function sendResults() {
                 const answerContainers = quizContainer.querySelectorAll(".answers");
             
                 let correct = 0;
@@ -69,14 +69,14 @@ function initialize() {
                     answerContainers[questionNumber].style.color = "red";
                     }
                 });
-                window.location.href = "recordquiz.php?result="+correct;
-                if (correct == 1) {
-                    resultsContainer.innerHTML = `You correctly answered ${correct} question out of ${q.length} questions!`;
-                } else if (correct == 0) {
-                    resultsContainer.innerHTML = `You have no correct answers!`;
-                } else {
-                    resultsContainer.innerHTML = `You correctly answered ${correct} questions out of ${q.length} questions!`;
-                }
+                window.location.href = "recordquiz.php?result="+correct+"&id="+1;
+                // if (correct == 1) {
+                //     resultsContainer.innerHTML = `You correctly answered ${correct} question out of ${q.length} questions!`;
+                // } else if (correct == 0) {
+                //     resultsContainer.innerHTML = `You have no correct answers!`;
+                // } else {
+                //     resultsContainer.innerHTML = `You correctly answered ${correct} questions out of ${q.length} questions!`;
+                // }
             
             }
         
@@ -129,15 +129,14 @@ function initialize() {
             showSlide(0);
         
             resetButton.addEventListener("click", restartQuiz);
-            submitButton.addEventListener("click", showResults);
+            submitButton.addEventListener("click", sendResults);
             previousButton.addEventListener("click", showPreviousSlide);
             nextButton.addEventListener("click", showNextSlide);
         }
     };
-    var id = 2;
-    console.log(id);
+    //console.log(id);
+    var id = 3;
     request.open('GET', 'quiz.php?id='+id, true);
     request.send();
 }
-
 initialize();
