@@ -5,10 +5,10 @@
 	
 Answer: c
 	
-2. What is the method used to get the value of a form parameter?
-	a. request.getParameterValues()
-	b. request.getParameter() 
-	c. request.getParameterNames()
+2. In Java Servlet Variable Scope, what level is used to store the user specific data?
+	a. Application Level
+	b. User/Session Level 
+	c. Iteration Level
 
 Answer: b
 
@@ -19,10 +19,10 @@ Answer: b
 
 Answer: b
 	
-4. What is the method used to get cookies in servlet?
-	a. request.getCookies()
-	b. cookies.getCookies()
-	c. get.requestCookies()
+4. It contains the data value and is assigned with a specific datatype
+	a. Variable
+	b. Data Type
+	c. Container
 
 Answer: a
 
@@ -40,24 +40,24 @@ Answer: c
 
 Answer: b
 	
-7. Which of the following method retrieves the name of HTTP method?
-	a. request.getMethod()
-	b. retrieve.getMethod()
-	c. method.getName()
+7. A server-side technology similar to Servlet
+	a. ASP
+	b. CORBA
+	c. JSP (Java Server Pages)
 
 Answer: c
 
-8. Which of the following is not a valid servlet filter?
-	a. Media Filters
-	b. Encryption Filters
-	c. Image Conversion Filters
+8. A Life Cycle method of JSP that is used for request handling
+	a. jspService() method
+	b. jspDoTask() method
+	c. jspService() method
 	
 Answer: a
 
-9. It is an of element of web.xml that is used to specify the error handler in servlets
-	a. error-handler
-	b. error-page
-	c. error-exception
+9. _______ method handles the HEAD request
+	a. doHid() 
+	b. doHead()
+	c. doHeed()
 	
 Answer: b
 
@@ -67,3 +67,60 @@ Answer: b
 	c. doTask() method
 	
 Answer: a
+
+11. It is used to execute java source code in JSP
+	a. Expression Tag
+	b. Declaration Tag
+	c. Scriplet Tag
+	
+Answer: c 
+
+12. In Java OR operator, the logical operator ("||") only checks the second condition if the first condition is true
+	a. True
+	b. False
+	c. Either
+	
+Answer: b
+
+13. Who created the Servlet1 specification?
+	a. Peter Berg
+	b. Berners Lee
+	c. Pavni Diwanji
+	
+Answer: c 
+
+14. In JSP directive elements, this is a directive that defines attributes that apply to an entire JSP pages
+	a. include directive
+	b. page directive
+	c. taglib directive
+	
+Answer: b
+
+15. It is a set of multiple elements with similar data type
+	a. Array
+	b. Elements
+	c. Variables
+	
+Answer: a
+
+16. There are three types of JSP directives except
+	a. include directive
+	b. libtag directive
+	c. page directive
+	
+Answer: b 
+
+17. There are three possible way to create a servlet except
+	a. By implementing Servlet interface,
+	b. By inheriting GenericServlet class
+	c. By inheriting HttpRequest class
+	
+Answer: c
+
+18. _______ method returns the time when HttpServletRequest was last modified
+	a. getModified()
+	b. getLastModified()
+	c. getModifiedTime()
+
+Answer: b
+	
