@@ -74,15 +74,13 @@
     margin-left: 50px;
   }
   #results {
-    display: block;
+    display: none;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     background-color: #fdcb6e;
-    border: 2px solid #333;
   }
   .results {
     height: 25px;
     text-align: center;
     display: block;
-
   }
