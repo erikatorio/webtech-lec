@@ -2,7 +2,7 @@
 session_start();
 require('connect.php');
 
-if (isset($_POST['username']) and isset($_POST['password']) and isset($_POST['fullname']) and isset($_POST['email'])) {
+//if (isset($_POST['fullname']) and isset($_POST['username']) and isset($_POST['email']) and isset($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
     $name = $_POST['fullname'];
@@ -15,10 +15,7 @@ if (isset($_POST['username']) and isset($_POST['password']) and isset($_POST['fu
         $_SESSION['username'] = $username;
 
         Header("Location: home.html");
-
-        $active = "UPDATE accounts SET status='1' WHERE username='$username'";
-        mysqli_query($link, $active);
     } else {
         Header("Location: index.html");
     }
-}
+//}
