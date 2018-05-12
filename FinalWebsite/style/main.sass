@@ -11,7 +11,16 @@ body, html
   background-color: $secondaryColor
 // navbar
 .navbar
-  background-color: $primaryColor
+  background-color: rgb(255, 255, 255)
+  .nav-link
+    color: rgb(138, 206, 131) !important
+    font-family: 'Lato', sans-serif
+    font-size: 1.1rem
+// login
+.signUp
+  height: 30rem
+  position: relative
+  top: 5rem
 // sign up
 .login
   background-color: $secondaryColor
@@ -43,25 +52,26 @@ body, html
 #logos
     height: 3rem
     width: 3rem
-.userProgress
-  background-color: #333
-  height: 20rem
 // home
 .banner
   height: 30rem
-  background-color: $primaryColor
+  background-color: rgb(138, 206, 131) !important
 #banner-title
   font-size: 5rem
   font-family: $primaryFont
-  color: #ffbe76
+  color: rgb(255, 255, 255)
 #sayIng
   font-family: 'Lato', sans-serif
-  color: #535c68
+  color: rgb(255, 255, 255)
 
 // catalog
 .catalog
   height: auto
-  background-color: $secondaryColor
+  background-color: rgb(233, 233, 233)
+  padding-bottom: 5rem
+  .btn-primary
+    background-color: rgb(138, 206, 131)
+    border: 0rem
 #Layer_1
   max-width: 100%
   max-height: 100%
@@ -98,38 +108,43 @@ body, html
   top: 2rem
   color: $secondaryColor
 p
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif
   line-height: 1.8rem
   text-align: justify
-  
+
 //header animation
-.header_animation 
-  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+.header_animation
   font-size: 30px
   color: #fff
-  font-family: monospace;
-  height: 40%
+  font-family: monospace
+  height: 2rem
   overflow: hidden
-  border-right: .15em solid orange;
+  border-right: .15em solid orange
   white-space: nowrap
   margin: 0 auto
   letter-spacing: .15em
-  animation:
-  typing 4s steps(35, end),
-  blink-caret .5s step-end infinite
+  animation: typing 4s steps(35, end), blink-caret .5s step-end infinite
 
-
-
-@keyframes typing 
-  from 
+@keyframes typing
+  from
     width: 0
-  to 
+  to
     width: 70%
 
 
-@keyframes blink-caret 
-  from, to 
+@keyframes blink-caret
+  from, to
       border-color: transparent
   30%
     border-color: white
 
+footer
+  height: 3rem
+  background-color: #333
+  .copyright
+    position: relative
+    top: 1rem
+    color: rgb(138, 206, 131) !important
+    font-size: 1rem
+    letter-spacing: 2px
+    font-family: 'Lato', sans-serif
