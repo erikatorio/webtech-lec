@@ -19,7 +19,6 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
         $active = "UPDATE accounts SET status='1' WHERE username='$username'";
         mysqli_query($link, $active);
     } else {
-        echo "Invalid Login Credentials";
-        echo "<a href='index.html'><br>Back</a>";
+        Header("Location: index.html");
     }
 }
