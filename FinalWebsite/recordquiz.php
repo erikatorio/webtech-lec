@@ -6,7 +6,7 @@ require('connect.php');
 //get the value of the quiz name and result through javascript (pass the variable from javascript to php)
 if(isset($_GET['result']) and isset($_GET['id'])) {
     $username =  $_SESSION['username'];
-    $today = date("F j, Y, g:i a"); 
+    $today = date("F j, Y, g:i a");
     $result = $_GET['result'];
     //echo $result;
     $quiz = $_GET['id']; //get quiz id from quiz.php
@@ -68,7 +68,7 @@ if(isset($_GET['result']) and isset($_GET['id'])) {
       </ul>
     </div>
   </nav>
-  <div class="results">
+  <div class="results mt-5">
       <?php $result = $_GET['result'];
         echo $result;
       ?>
