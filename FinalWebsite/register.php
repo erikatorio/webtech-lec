@@ -8,7 +8,7 @@ if (isset($_POST['username']) and isset($_POST['password']) and isset($_POST['fu
     $name = $_POST['fullname'];
     $email = $_POST['email'];
 
-    $newuser = "INSERT INTO accounts (username, password, email, name) VALUES ('$usernamw', '$password', '$email', '$name')";
+    $newuser = "INSERT INTO accounts (username, password, email, name) VALUES ('$username', '$password', '$email', '$name')";
     $insert = mysqli_query($link, $user) or die(mysqli_error($link));
 
     if($insert) {

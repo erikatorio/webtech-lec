@@ -5,7 +5,7 @@ require('connect.php');
 $username =  $_SESSION['username'];
 //echo $username;
 
-$profile = "SELECT username FROM accounts WHERE username='$username'";
+$profile = "SELECT username, name FROM accounts WHERE username='$username'";
 $result = mysqli_query($link, $profile) or die(mysqli_error($link));
 $user = mysqli_fetch_row($result);
 //echo $user[0];
@@ -15,6 +15,7 @@ $total = mysqli_fetch_row($scoreresult);
 //echo $total[0];
 $info = array();
 $info['username'] = $user[0];
+$info['name'] = $user[1];
 $info['points']= $total[0];
 
 echo json_encode($info);

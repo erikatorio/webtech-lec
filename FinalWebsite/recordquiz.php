@@ -1,5 +1,6 @@
 <?php
 session_start();
+date_default_timezone_get();
 require('connect.php');
 
 //get the value of the quiz name and result through javascript (pass the variable from javascript to php)
