@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Code ninja</title>
+  <title>Code Ninja</title>
   <link rel="stylesheet" href="../Bootstrap/css/bootstrap-grid.css">
   <link rel="stylesheet" href="../Bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="../Bootstrap/css/bootstrap-reboot.css">
@@ -84,9 +84,15 @@
           <div class="row">
             <p>Here is a syntax of if statement:</p>
           </div>
-          <div class="row">
-            <p>Insert code here</p>
-          </div>
+			<figure>
+			<pre>
+			<code>
+				if(condition){  
+				//code to be executed if condition is true
+				}  
+			</code>
+			</pre>
+			</figure>
           <div class="row">
             <h3>if-else Statement</h3>
           </div>
@@ -96,9 +102,17 @@
           <div class="row">
             <p>Here is a syntax of if-else statement:</p>
           </div>
-          <div class="row">
-            <p>insert code here</p>
-          </div>
+         <figure>
+			<pre>
+			<code>
+				if(condition){  
+				//code to be executed if condition is true  
+				}else{  
+				//code to be executed if condition is false  
+				}  
+			</code>
+			</pre>
+			</figure>
           <div class="row">
             <h3>if-else-if ladder Statement</h3>
           </div>
@@ -108,10 +122,24 @@
           <div class="row">
             <p>Here is a syntax of if-else-if ladder statement:</p>
           </div>
-          <div class="row">
-            <p>insert code here</p>
-          </div>
-          <div class="row">
+			<figure>
+			<pre>
+			<code>
+				if(condition1){
+				//code to be executed if condition1 is true
+				}else if(condition2){
+				//code to be executed if condition2 is true
+				}
+				else if(condition3){
+				//code to be executed if condition3 is true
+				}
+				else{
+				//code to be executed if all the conditions are false
+				}
+			</code>
+			</pre>
+			</figure>
+          <div class="row mt-5">
             <h3>Java Switch</h3>
           </div>
           <div class="row">
@@ -120,10 +148,24 @@
           <div class="row">
             <p>Here is a syntax for switch statement:</p>
           </div>
-          <div class="row">
-            <p>insert code here</p>
-          </div>
-          <div class="row">
+			<figure>
+			<pre>
+			<code>
+				switch(expression){    
+				case value1:    
+				 //code  
+				 break;  //optional  
+				case value2:    
+				 //code 
+				 break;  //optional  
+				......    
+				default:     
+				 //code to be executed if all cases are not matched    
+				} 
+			</code>
+			</pre>
+			</figure>
+          <div class="row mt-3">
             <h3>Java For Loop</h3>
           </div>
           <div class="row">
@@ -132,11 +174,16 @@
           <div class="row">
             <p>Here is a syntax for for loop:</p>
           </div>
-          <div class="row">
-            <p>insert code here</p>
-          </div>
-
-          <div class="row">
+			<figure>
+			<pre>
+			<code>
+				for(initialization;condition;increment/decrement){  
+				//code 
+				}  
+			</code>
+			</pre>
+			</figure>
+          <div class="row mt-3">
             <h3>Java While Loop</h3>
           </div>
           <div class="row">
@@ -145,10 +192,16 @@
           <div class="row">
             <p>Here is a syntax for while loop:</p>
           </div>
-           <div class="row">
-            <p>insert code here</p>
-          </div>
-        <div class="row">
+			<figure>
+			<pre>
+			<code>
+				while(condition){  
+				//code 
+				}  
+			</code>
+			</pre>
+			</figure>
+        <div class="row mt-3">
           <h3>Java Do-While Loop</h3>
         </div>
         <div class="row">
@@ -157,10 +210,16 @@
         <div class="row">
           <p>Here is a syntax for do-while loop:</p>
         </div>
-        <div class="row">
-            <p>insert code here</p>
-          </div>
-          <div class="row">
+			<figure>
+			<pre>
+			<code>
+				do{  
+				//code 
+				}while(condition); 
+			</code>
+			</pre>
+			</figure>
+          <div class="row mt-3">
             <h3>Java AND Operator </h3>
           </div>
           <div class="row">
@@ -169,13 +228,25 @@
            <div class="row">
             <p>The bitwise “&” operator always checks both conditions whether first condition is true or false.</p>
           </div>
-               <div class="row">
+              <div class="row">
             <p>Here is a sample code using the AND operator:</p>
           </div>
-            <div class="row">
-            <p>insert code here</p>
-          </div>
-          <div class="row">
+		  
+			<figure>
+			<pre>
+			<code>
+				class OperatorExample1{  
+				public static void main(String args[]){  
+				int a=10;  
+				int b=5;  
+				int c=20;  
+				System.out.println(a&gt;b&amp;&amp;a&lt;c);//true &amp;&amp; true = true    
+				System.out.println(a&lt;b&amp;a&lt;c);//false &amp; true = false  
+				}}
+			</code>
+			</pre>
+			</figure>
+          <div class="row mt-3">
             <h3>Java OR Operator</h3>
           </div>
           <div class="row">
@@ -187,12 +258,21 @@
            <div class="row">
             <p>Here is a sample code using the OR operator:</p>
           </div>
-             <div class="row">
-            <p>insert code here</p>
-          </div>
-
-      
-<div class="row">
+			<figure>
+			<pre>
+			<code>
+				class OperatorExample2{  
+				public static void main(String args[]){  
+				int a=10;  
+				int b=5;  
+				int c=20;  
+				System.out.println(a&amp;ltb||a&lt;c);//false || true = true  
+				System.out.println(a&gt;b|a&lt;c);//true | true = true  
+				}}  
+			</code>
+			</pre>
+			</figure>
+		    <div class="row">
             <div class="col-6"></div>
             <div class="col-sm-12 col-md-6 text-right">
               <button type="button" class="btn btn-success col-6" name="button">Next</button>

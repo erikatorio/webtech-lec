@@ -63,9 +63,39 @@
 		  <div class="row mt-3">
 			<p>Pug is a package or API that can be used by NodeJS which renders views and data can be passed to it. Pug is installed through NPM.</p>
           </div>
-		 <div class="row">
-			<script src="https://gist.github.com/sonnyby/0e2f11a19e3a1d60acfbc1543f812507.js"></script>
-		 </div>
+		  <div class="row">
+		  <p>Syntax:</p>
+		  </div>
+		<figure>
+		<pre>
+		<code>
+			pug.render(&lt;view name&gt;, &lt;data to be sent&gt;);
+		</pre>
+		</code>
+		<figure>
+		<div class="row">
+		  <p>Sample Code:</p>
+		</div>
+		<figure>
+		<pre>
+		<code>
+			//header.pug
+			div#header
+				
+			  h1 Welcome to Code Ninja!
+				p Become a novice to a ninja!
+
+			A pug file simply creates a template which will render a view once rendered.
+			
+				const app = require(‘express’); 
+			app.use(‘view engine’, ‘pug’);
+
+			app.get(‘/’, (request, response) => {
+				response.render(‘header’);
+			});
+		</code>
+		</pre>
+		</figure>
           <div class="row">
             <div class="col-6"></div>
             <div class="col-sm-12 col-md-6 text-right">
