@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code Ninja</title>
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../style/main.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <a class="navbar-brand ml-5" href="../home.html">
+    <img src="../../image/Logo1x.png" alt="" id="logos">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto mr-5">
+      <li class="nav-item active">
+        <a class="nav-link" href="../home.html">Catalog</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Profile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="../../server/logout.php">Logout</a>
+          <a class="dropdown-item" href="../profile.html">Profile</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid wrapper-content">
+    <div class="row ml-2 mr-3 mt-5">
+      <!-- <div class="col-sm-12 col-md-3">
+        <div class="container userProgress">
+
+        </div>
+      </div> -->
+      <div class="col-sm-12 col-md-12 test">
+        <div class="container">
+          <div class="row mt-5">
+            <h3>Web Security</h3>
+          </div>
+		  <div class="row mt-3">
+            <h4><span class="emphasize">A. 2017 OWASP TOP 10</span></h4>
+		  </div>
+		  <div class="row mt-3">
+			<h5>Injection</h5>
+          </div>
+		  <div>
+		    <p>Sending of unauthorized data to a query which can lead to unvoluntary commands or unauthorized access of data.</p>
+		  </div>
+		   <div class="row">
+			<h5>Broken Authentication</h5>
+          </div>
+		  <div>
+			<p>This threat leads to the compromising of passwords or encryption keys which can also lead to unauthorized access of data.</p>
+		  </div>
+		   <div class="row">
+			<h5>Sensitive Data Exposure</h5>
+          </div>
+		  <div>
+		  <p>Sensitive data encompasses information such as healthcare or financial information being used for their benefit.</p>
+		  </div>
+		   <div class="row">
+			<h5>XML External Entities</h5>
+          </div>
+		  <div>
+			<p>XML external entities hold information that may expose data such as ports which could lead to remote attacks or denial of service attacks.</p>
+		  </div>
+		   <div class="row">
+			<h5>Broken Access Control</h5>
+          </div>
+		   <div>
+		    <p>Flawed user authorization can be used by attackers to view hidden files or change user restrictions.</p>
+		   </div>
+		   <div class="row">
+			<h5>Security Misconfiguration</h5>
+          </div>
+		  <div>
+		  <p>This involves security measures done but are misconfigured or flawed.</p>
+		  </div>
+		   <div class="row">
+			<h5>Cross-site Scripting(XSS)</h5>
+          </div>
+		  <div>
+		  <p>Untrusted data is embedded into a new or existing web page which could lead to redirection to malicious sites or hijacking of user sessions.</p>
+		  </div>
+		   <div class="row">
+			<h5>Insecure Deserialization</h5>
+          </div>
+		  <div>
+		  <p>This is done remotely most of the time and leads to injection attacks.</p>
+		  </div>
+		   <div class="row">
+			<h5>Using Components with Known Vulnerabilities</h5>
+          </div>
+		  <div>
+		  <p>A vulnerable API or framework which attackers can use to get inside a system.</p> 
+		  </div>
+		   <div class="row">
+			<h5>Insufficient Logging and Monitoring</h5>
+          </div>
+		  <div>
+		  <p>Lenient monitoring of who accesses the system will lead to a breach.</p>
+		  </div>
+		  <div class="row mt-5">
+            <h4><span class="emphasize">B. Preventive Measures</span></h4>
+		  </div>
+		  <div class="row mt-3">
+			<h5>Software updates</h5>
+		  </div>
+			<p>Hackers found a way of infiltrating older versions of softwares so it is best to keep them updated.</p>
+		  <div class="row">
+			<h5>User permissions</h5>
+		  </div>
+		    <p>Proper analyzing what your users can do to the system is vital and it is best not to be too trusting.</p>
+		 <div class="row">
+			<h5>SSH</h5>
+		  </div>
+		<p>A secure shell encrypts communication between two machines.</p>
+		 <div class="row">
+			<h5>Validation</h5>
+		  </div>
+		<p>Validation is done between the server and client to prevent unknown entities from breaching the website.</p>
+		<div class="row">
+			<h5>Complex Passwords</h5>
+		  </div>
+		<p>Passwords should be something other people would be able to guess but don’t make it too complex that you will forget it.</p>
+		<div class="row">
+			<h5>HTTPS</h5>
+		</div>
+		<p>This will provide security over the internet.</p> 
+        </div>
+      </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
