@@ -6,12 +6,12 @@ if (isset($_POST['username']) and isset($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $query = "SELECT * FROM accounts WHERE username='$username' AND password='$password'";
+    $query = "SELECT * FROM accounts WHERE username='$username'";
 
     $result = mysqli_query($link, $query) or die(mysqli_error($link));
 
     $user = mysqli_fetch_row($result);
-    if ($user[0] == $username && $user[1] == $password) {
+    if ($user[0] == $username && password_verify($password, $user[1])) {
         $_SESSION['username'] = $username;
 
         Header("Location: home.html");

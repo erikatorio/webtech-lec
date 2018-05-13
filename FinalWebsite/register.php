@@ -7,9 +7,10 @@ require('connect.php');
     $password = $_POST['password'];
     $name = $_POST['fullname'];
     $email = $_POST['email'];
+    $hpass = password_hash($password, PASSWORD_DEFAULT);
 
-    $newuser = "INSERT INTO accounts (username, password, email, name) VALUES ('$username', '$password', '$email', '$name')";
-    $insert = mysqli_query($link, $user) or die(mysqli_error($link));
+    $newuser = "INSERT INTO accounts (username, password, email, name) VALUES ('$username', '$hpass', '$email', '$name')";
+    $insert = mysqli_query($link, $newuser) or die(mysqli_error($link));
 
     if($insert) {
         $_SESSION['username'] = $username;
