@@ -6,6 +6,7 @@ $primaryFont: 'Roboto', sans-serif
   margin: 0
   padding: 0
   box-sizing: border-box
+  word-spacing: normal !important
 
 body, html
   background-color: $primaryColor
@@ -129,7 +130,7 @@ body, html
   background-color: $secondaryColor
   cursor: pointer
   .row
-    background-color: rgb(249, 250, 250)
+    background-color: rgb(249, 240, 240)
     a
       color: #333
       &:hover
@@ -201,9 +202,14 @@ footer
 // next button
 .btn-success
   height: 3rem
-  border-radius: 0rem
+  border-radius: 3rem
   border: 0rem
   font-family: 'Lato', sans-serif
   font-size: 1.5rem
   margin-bottom: 6rem
   margin-top: 5rem
+  background-color: rgb(255, 190, 118)
+  &:hover
+    background-color: #fff
+    color: #333
+    border: 1px solid #000
