@@ -6,7 +6,7 @@ require('connect.php');
 //get the value of the quiz name and result through javascript (pass the variable from javascript to php)
 if(isset($_GET['result']) and isset($_GET['id'])) {
     $username =  $_SESSION['username'];
-    $today = date("F j, Y, g:i a");
+    $today = date("Y-m-d");
     $result = $_GET['result'];
     //echo $result;
     $quiz = $_GET['id']; //get quiz id from quiz.php
