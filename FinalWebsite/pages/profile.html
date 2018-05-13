@@ -44,9 +44,79 @@
       </ul>
     </div>
   </nav>
-  <div id="profile-container">
-
+  <div class="container userprofile">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 text-center userPic">
+          <img src="../image/lvl4.png" class="img-fluid" alt="">
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="container mt-5">
+          <div class="row mt-3">
+            <div class="col-12">
+              <h2 id="userName">Username: JessieMTabilisma</h2>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <h3 id="user-Name">Name: Jessie Martin Tabilisma</h3>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <h2 id="userMail">Email: jessiemtabilisma@gmail.com</h2>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <button type="button" class="btn btn-primary">
+                Points <span class="badge badge-light">900</span>
+              </button>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" name="button">Change Account Settings</button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Account setting</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <footer class="text-center">
+    <h5 class="copyright">
+      9340A-G4©Code ninja
+    </h5>
+  </footer>
    <!-- Bootstrap script -->
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
