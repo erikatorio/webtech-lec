@@ -76,13 +76,10 @@
               <li>getLastModified method returns the time when HttpServletRequest was last modified</li>
             </ul>
           </div>
-          <div class="row">
+          <div class="row mt-5">
             <h3>HTTP Request</h3>
           </div>
-            <div class="row">
-           <hr>
-          </div>
-             <div class="row">
+             <div class="row mt-3">
           <h3>Parameters</h3>
           </div>
              <div class="row">
@@ -95,13 +92,15 @@
             <p>Request header consists of its name followed by a colon and its value pairs. It allows the client and the server to pass the request or response. </p>
           </div>
           <div class="row">
-            <p>Sample Code:
-</p>
+            <p>Sample Code:</p>
           </div>
-          <div class="row">
-            <p>String contentLength = request.getHeader("Content-Length");</p>
-          </div>
-
+		  <figure>
+			<pre>
+			<code>
+				String contentLength = request.getHeader("Content-Length");
+			</code>
+			</pre>
+		  </figure>
         <div class="row">
             <h3>InputStream</h3>
           </div>
@@ -111,9 +110,13 @@
           <div class="row">
             <p>Sample Code:</p>
           </div>
-          <div class="row">
-            <p>InputStream requestBodyInput = request.getInputStream();</p>
-          </div>
+         <figure>
+			<pre>
+			<code>
+				InputStream requestBodyInput = request.getInputStream();
+			</code>
+			</pre>
+		  </figure>
           <div class="row">
             <h3>Session</h3>
           </div>
@@ -123,54 +126,56 @@
           <div class="row">
             <p>Sample Code:</p>
           </div>
-          <div class="row">
-            <p>HttpSession session = request.getSession();</p>
-          </div>
+			<figure>
+			<pre>
+			<code>
+				HttpSession session = request.getSession();
+			</code>
+			</pre>
+			</figure>
           <div class="row">
             <h3>Servlet Context</h3>
           </div>
-             <!--
-          <div class="row">
-            <p></p>
-          </div>
-        -->
          <div class="row">
             <p>The ServletContext holds information about the web application. </p>
           </div>
            <div class="row">
             <p>Sample Code:</p>
           </div>
-
-          <div class="row">
-              <p>ServletContext context = request.getSession().getServletContext();</p>
-            </div>
-        <div class="row">
+		  <figure>
+			<pre>
+			<code>
+				ServletContext context = request.getSession().getServletContext();
+			</code>
+			</pre>
+		  </figure>
+        <div class="row mt-5">
           <h3>HTTP Response</h3>
          </div>
-        <div class="row">
-                  <hr>
-       </div>
-        <div class="row">
+        <div class="row mt-3">
            <h3>Writing HTML</h3>
         </div>
-          <div class="row">
-            <p>You can obtain the PrintWriter from the HttpResponse object to be able to send back HTML to the browser like this:</p>
-          </div>
-            <div class="row">
-            <p>PrintWriter writer = response.getWriter();</p>
-          </div>
-            <div class="row">
-            <p>writer.write("<html><body>GET/POST response</body></html>");</p>
-          </div>
+		<figure>
+			<pre>
+			<code>
+				PrintWriter writer = response.getWriter();
+				writer.write("<html><body>GET/POST response</body></html>");
+			</code>
+			</pre>
+		  </figure>
             <div class="row">
             <h3>Headers</h3>
           </div>
             <div class="row">
             <p>The HttpRequest contains HTTP headers. Before any data is written on the response, you must first set the headers like this:</p>
           </div>
-            <div class="row">
-            <p>response.setHeader("Header-Name", "Header Value");</p>
-          </div>
+           	<figure>
+			<pre>
+			<code>
+				response.setHeader("Header-Name", "Header Value");
+			</code>
+			</pre>
+		  </figure>
             <div class="row">
             <h3>Content-Type</h3>
           </div>
@@ -181,33 +186,41 @@
             <div class="row">
             <p>To obtain the type of a content from a response header just execute this command:</p>
           </div>
-          <div class="row">
-            <p>response.setHeader("Content-Type", "text/html");</p>
-          </div>
+		  <figure>
+			<pre>
+			<code>
+				response.setHeader("Content-Type", "text/html");
+			</code>
+			</pre>
+		  </figure>
           <div class="row">
             <h3>Writing Text</h3>
           </div>
           <div class="row">
             <p>Instead of HTML, you can give back the text file only to the browser like this:</p>
           </div>
-          <div class="row">
-            <p>response.setHeader("Content-Type", "text/plain");</p>
-          </div>
-          <div class="row">
-            <p>PrintWriter writer = response.getWriter();</p>
-          </div>
-          <div class="row">
-            <p>writer.write("This is just plain text!");</p>
-          </div>
+         <figure>
+			<pre>
+			<code>
+				response.setHeader("Content-Type", "text/plain");
+				PrintWriter writer = response.getWriter();
+				writer.write("This is just plain text!");
+			</code>
+			</pre>
+		  </figure>
           <div class="row">
             <h3>Redirecting to a different web address</h3>
           </div>
           <div class="row">
             <p>From your servlet, you can change and redirect the web addres like this: </p>
           </div>
-          <div class="row">
-            <p>response.sendRedirect("http://www.google.com");</p>
-          </div>
+          <figure>
+			<pre>
+			<code>
+				response.sendRedirect("http://www.google.com");
+			</code>
+			</pre>
+		  </figure>
           <div class="row">
             <h3>Creating a Servlet using Tomcat Server</h3>
           </div>
@@ -219,28 +232,17 @@
               <li>Create a directory structure</li>
               <li>Create a Servlet</li>
               <p>The servlet can be created in any of these three ways:</p>
-              <ul>
+            <ul class="mb-3">
               <li>By implementing Servlet interface,</li>
               <li>By inheriting GenericServlet class</li>
               <li>By inheriting HttpServlet class</li>
-            </ul>
+			</ul>
               <li>Compile the Servlet</li>
               <li>Create a deployment configuration file</li>
               <li>Start the server and project</li>
               <li>Access the servlet</li>
             </ol>
           </div>
-          <div class="row">
-            <p></p>
-          </div>
-          <div class="row">
-            <p></p>
-          </div>
-
-        
-        
-
-
           <div class="row">
             <div class="col-6"></div>
             <div class="col-sm-12 col-md-6 text-right">

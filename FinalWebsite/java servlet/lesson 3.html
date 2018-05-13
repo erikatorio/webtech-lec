@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Code ninja</title>
+  <title>Code Ninja</title>
   <link rel="stylesheet" href="../Bootstrap/css/bootstrap-grid.css">
   <link rel="stylesheet" href="../Bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="../Bootstrap/css/bootstrap-reboot.css">
@@ -60,9 +60,6 @@
           <div class="row mt-5">
             <h3>Variable</h3>
           </div>
-          <div class="row">
-            <hr>
-          </div>
           <div class="row mt-3">
             <p>A variable contains a data value and is assigned with a specific datatype. Here are the three types of variables in Java:</p>
 			<ul>
@@ -71,16 +68,29 @@
 			<li>Static variable – it is declared as static and it cannot be local.</li>
 			</ul>
           </div>
- 
-          <div class="row mt-3">
-            <script src="https://gist.github.com/JessieMTabilisma/e5362952689e1500f49cf1b95b190769.js"></script>
-          </div>
+		  <div class="row">
+			<p>Here is a sample code:</p>
+		  </div>
+          <figure>
+			<pre>
+			<code>
+				class Sample{//start of class
 
-          <div class="row mt-5">
+				int a=10;//instance variable
+
+				static int b=100;//static variable
+
+				void method(){
+				int c=50;//local variable
+				}
+
+				}//end of class
+			</code>
+			</pre>
+			</figure>
+
+          <div class="row mt-3">
             <h3>Data Types</h3>
-          </div>
-          <div class="row">
-            <hr>
           </div>
 		  <div class="row">
 		  <p>Data types are classification of  values stored in the variable. There are two types of data types in Java:</p>
@@ -88,24 +98,13 @@
 		  <div class="row">
 		  <ul>
 		  <li>Primitive data types</li>
-	
 			<p>Under this data type are Strings, Arrays etc.</p>
-			
 			<li>Non-primitive data types</li>
-			
 			<p>under this data type are Boolean and Numeric. </p>
-			
 			</ul>
 		  </div>
-      
           <div class="row mt-3">
-            <script src="https://gist.github.com/JessieMTabilisma/3879b0183807dbb897bb8faa15b6822f.js"></script>
-          </div>
-          <div class="row mt-5">
             <h3>Array</h3>
-          </div>
-          <div class="row">
-            <hr>
           </div>
           <div class="row">
             <p>
@@ -120,33 +119,33 @@
           <div class="row">
             <p>Here are three different syntax to declare an array:</p>
             </div>
-            <div class="row">
-            <ul>
-              <li>dataType[] array_name;</li>
-              <li>dataType []array_name; </li>
-              <li>dataType array_name[];</li>
-            </ul>
-            
-            </div>
-            <div class="row">
+           <figure>
+			<pre>
+			<code>
+				dataType[] array_name;
+				dataType []array_name; 
+				dataType array_name[];
+			</code>
+			</pre>
+			</figure>
+          <div class="row">
             <ol start="2">
-
-              <li>Multidimensional Array</li>
+             <li>Multidimensional Array</li>
             </ol>
           </div>
           <div class="row">
             <p>Here are four different syntax to declare multidimensional array:</p>
-
           </div>
-          <div class="row">
-            <ul>
-              <li>dataType[][] arrRefVar;</li>
-              <li>dataType [][]arrRefVar; </li>
-              <li>dataType arrRefVar[][]; </li>
-              <li>dataType []arrRefVar[];</li>
-            </ul>
-          </div>
-        
+          <figure>
+			<pre>
+			<code>
+				dataType[][] arrRefVar;   
+				dataType [][]arrRefVar; 
+				dataType arrRefVar[][]; 
+				dataType []arrRefVar[];
+			</code>
+			</pre>
+			</figure>
           <div class="row">
             <div class="col-6"></div>
             <div class="col-sm-12 col-md-6 text-right">
