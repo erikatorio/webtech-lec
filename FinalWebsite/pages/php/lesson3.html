@@ -60,21 +60,21 @@
           </div>
           <div class="row mt-3">
             <p>
-              PHP array is similar to what we know of to java programming. An array stores values with one or more values. 
-			  Example if you want to store many objects like numbers in your program you can store them using an array 
-			  instead of defining each numbers. Let us say you want to store 50 numbers in your program, so instead of 
+              PHP array is similar to what we know of to java programming. An array stores values with one or more values.
+			  Example if you want to store many objects like numbers in your program you can store them using an array
+			  instead of defining each numbers. Let us say you want to store 50 numbers in your program, so instead of
 			  defining the with variables and values you can store them on an array that has a length of 50.</p>
 		  </div>
 		  <div class="row">
-			  <p>There are 3 different types of arrays that we can use, which are Numeric Array, Associative Array, and 
-			  Multidimensional Array. Numeric Array is an array that has an Numeric index and the values are displayed 
-			  or can be accessed in a linear fashion. Associative Array is the opposite of that of the Numeric array, 
-			  this array uses Strings as indexes instead of numeric likewise with its linear fashion it is stricter than that 
-			  of numeric array. Lastly multidimensional array is from the word itself contains more than one array and its 
+			  <p>There are 3 different types of arrays that we can use, which are Numeric Array, Associative Array, and
+			  Multidimensional Array. Numeric Array is an array that has an Numeric index and the values are displayed
+			  or can be accessed in a linear fashion. Associative Array is the opposite of that of the Numeric array,
+			  this array uses Strings as indexes instead of numeric likewise with its linear fashion it is stricter than that
+			  of numeric array. Lastly multidimensional array is from the word itself contains more than one array and its
 			  values can also be use with multiple indexes.</p>
 			  </div>
 		  <div class="row">
-			<p>Note: The order of precedence in an array is displayed of their indexes. The first index is 0. 
+			<p>Note: The order of precedence in an array is displayed of their indexes. The first index is 0.
 			For example, if you have 5 values stored in an array their corresponding indexes are as follows: 0,1,2,3,4.</p>
           </div>
           <div class="row">
@@ -85,7 +85,7 @@
 			<code>
 				  &lt;?php
 					$evenNumbers = array( 2, 4, 6, 8, 10);
-				 
+
 					foreach($evenNumbers as $value ) {
 						echo &quot;Value is $value &lt;br /&gt;&quot;;
 					}
@@ -117,11 +117,11 @@
 			      $evenNumbers[2] = &quot;six&quot;;
 			      $evenNumbers[3] = &quot;eight&quot;;
 			      $evenNumbers[4] = &quot;ten&quot;;
-								
+
 			      foreach( $evenNumbers as $value ) {
 			        echo &quot;Value is $value &lt;br /&gt;&quot;;
-			      }		
-			    ?&gt;  
+			      }
+			    ?&gt;
 			</code>
 			</pre>
 			</figure>
@@ -145,12 +145,12 @@
 			<code>
 			    &lt;?php
 			      $grades = array(&quot;Erika&quot; =&gt; 90, &quot;Sonny&quot; =&gt; 85, &quot;Jessie&quot; =&gt; 80, &quot;Kenan&quot; =&gt; 75);
-					 
+
 			      echo &quot;The grade of Erika in webtek is &quot;. $grades['Erika']. &quot;&lt;br /&gt;&quot;;
 			      echo &quot;The grade of Sonny in webtek is &quot;. $grades['Sonny']. &quot;&lt;br /&gt;&quot;;
 			      echo &quot;The grade of Jessie in webtek is &quot;. $grades['Jessie']. &quot;&lt;br /&gt;&quot;;
 			      echo &quot;The grade of Kenan in webtek is &quot;. $grades['Kenan']. &quot;&lt;br /&gt;&quot;;
-			    ?&gt;				
+			    ?&gt;
 			</code>
 			</pre>
 			</figure>
@@ -172,28 +172,28 @@
 			<pre>
 			<code>
 			    &lt;?php
-			      $grade = array( 
+			      $grade = array(
 			      &quot;Erika&quot; =&gt; array (
 			      &quot;Webtek&quot; =&gt; 90,
-			      &quot;ProgApps&quot; =&gt; 87,	
+			      &quot;ProgApps&quot; =&gt; 87,
 			      &quot;Database&quot; =&gt; 85,
 			      &quot;SMA&quot; =&gt; 80
 			      ),
-						
+
 			      &quot;Sonny&quot; =&gt; array (
 			      &quot;Webtek&quot; =&gt; 93,
 			      &quot;ProgApps&quot; =&gt; 87,
 			      &quot;Database&quot; =&gt; 88,
 			      &quot;SMA&quot; =&gt; 81
 			      ),
-						
+
 			      &quot;Jessie&quot; =&gt; array (
 			      &quot;Webtek&quot; =&gt; 93,
 			      &quot;ProgApps&quot; =&gt; 89,
 			      &quot;Database&quot; =&gt; 78,
 			      &quot;SMA&quot; =&gt; 75
 			      ),
-			
+
 			      &quot;Kenan&quot; =&gt; array (
 			      &quot;Webtek&quot; =&gt; 88,
 			      &quot;ProgApps&quot; =&gt; 78,
@@ -201,20 +201,20 @@
 			      &quot;SMA&quot; =&gt; 95
 			      )
 			      );
-					
+
 				  echo &quot;Grade for Erika in Webtek : &quot; ;
-				  echo $grade['Erika']['Webtek'] . &quot;&lt;br /&gt;&quot;; 
-					 
+				  echo $grade['Erika']['Webtek'] . &quot;&lt;br /&gt;&quot;;
+
 				  echo &quot;Grade for Sonny in ProgApps : &quot;;
-				  echo $grade['Sonny']['ProgApps'] . &quot;&lt;br /&gt;&quot;; 
-					 
+				  echo $grade['Sonny']['ProgApps'] . &quot;&lt;br /&gt;&quot;;
+
 				  echo &quot;Grade for Jessie in Database : &quot; ;
-				  echo $grade['Jessie']['Database'] . &quot;&lt;br /&gt;&quot;; 
-					 
+				  echo $grade['Jessie']['Database'] . &quot;&lt;br /&gt;&quot;;
+
 				  echo &quot;Grade for Kenan in SMA : &quot; ;
-				  echo $grade['Kenan']['SMA'] . &quot;&lt;br /&gt;&quot;; 
-					 
-				?&gt;				
+				  echo $grade['Kenan']['SMA'] . &quot;&lt;br /&gt;&quot;;
+
+				?&gt;
 			</code>
 			</pre>
 			</figure>
@@ -229,7 +229,7 @@
 				Grade for Kenan in SMA : 95
             </div>
           </div>
-		  
+
           <div class="row mt-5">
             <p>Now you have learned <span class="emphasize"> the basics of array in php </span>. Uncomment line 8 to line 11 below to see it in action.</p>
           </div>
@@ -246,6 +246,11 @@
       </div>
     </div>
 </div>
+<footer class="text-center">
+  <h5 class="copyright">
+    9340A-G4©Code ninja
+  </h5>
+</footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
