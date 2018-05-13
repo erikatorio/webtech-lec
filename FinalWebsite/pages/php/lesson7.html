@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code Ninja</title>
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../../Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../style/main.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <a class="navbar-brand ml-5" href="../home.html">
+    <img src="../../image/Logo1x.png" alt="" id="logos">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto mr-5">
+      <li class="nav-item active">
+        <a class="nav-link" href="../home.html">Catalog</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Profile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="../../server/logout.php">Logout</a>
+          <a class="dropdown-item" href="../profile.html">Profile</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container-fluid wrapper-content">
+    <div class="row ml-2 mr-3 mt-5">
+      <!-- <div class="col-sm-12 col-md-3">
+        <div class="container userProgress">
+
+        </div>
+      </div> -->
+      <div class="col-sm-12 col-md-12 test">
+        <div class="container">
+          <div class="row mt-5">
+            <h3>Connecting to Database</h3>
+          </div>
+          <div class="row">
+            <p>In PHP, you can connect your php script to a database. The most common and popular database that was being used is the MySQL database.</p>
+		  </div>
+			<div class="row">
+			<p>Firstly, you must configure your MySqli if it is properly installed to your computer if not download and install MySQLi in  http://php.net/manual/en/mysqli.installation.php</p>
+			</div>
+			<div class="row">
+			<p>You can also use PDO which can be found and installed in this site http://php.net/manual/en/pdo.installation.php
+			</p>
+			</div>
+		    <div class="row mt-5">
+            <h4>Example MySQL:</h4>
+          </div>
+		  <figure>
+			<pre>
+			<code>
+			&lt;?php 
+				$db_host =  'localhost';
+				$db_name = login;
+				$db_user = 'root';
+				$db_pass = '';
+
+				$mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name);
+				//error handler
+				if($mysqli-&gt;connect_error){
+				 printf(&quot;Connection failed&quot; %s\n, $mysql-&gt;connect_error);
+					exit();
+				}
+			?>
+			</code>
+			</pre>
+			</figure>
+       
+          <div class="row mt-5">
+            <h4>Example PDO:</h4>
+          </div>
+		  <figure>
+			<pre>
+			<code>
+			&lt;?php
+				$servername = &quot;localhost&quot;;
+				$user = &quot;root&quot;;
+				$pass = &quot;&quot;;
+				try {
+				 $con = new PDO(&quot;mysql:host=$servername;dbname=myDB&quot;, $user, $pass);
+					
+					$con-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+					echo &quot;Successfully connected&quot;; 
+				 }
+				catch(PDOException $er)
+					{
+					echo &quot;Connection failed: &quot; . $er-&gt;getMessage();
+					}	
+			?&gt;
+			</code>
+			</pre>
+			</figure>
+          <div class="row">
+            <div class="col-6"></div>
+            <div class="col-sm-12 col-md-6 text-right">
+              <a href="lesson8.html" class="btn btn-success col-6">Next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
