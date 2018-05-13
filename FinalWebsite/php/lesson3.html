@@ -60,75 +60,179 @@
           <div class="row mt-5">
             <h3>PHP Array</h3>
           </div>
-          <div class="row">
-            <hr>
-          </div>
           <div class="row mt-3">
             <p>
-              PHP array is similar to what we know of to java programming. An array stores values with one or more values. Example if you want to store many objects like numbers in your program you can store them using an array instead of defining each numbers. Let us say you want to store 50 numbers in your program, so instead of defining the with variables and values you can store them on an array that has a length of 50.
-
-There are 3 different types of arrays that we can use, which are Numeric Array, Associative Array, and Multidimensional Array. Numeric Array is an array that has an Numeric index and the values are displayed or can be accessed in a linear fashion. Associative Array is the opposite of that of the Numeric array, this array uses Strings as indexes instead of numeric likewise with its linear fashion it is stricter than that of numeric array. Lastly multidimensional array is from the word itself contains more than one array and its values can also be use with multiple indexes.
-<br>
-Note: The order of precedence in an array is displayed of their indexes. The first index is 0. For example, if you have 5 values stored in an array their corresponding indexes are as follows: 0,1,2,3,4.
-            </p>
+              PHP array is similar to what we know of to java programming. An array stores values with one or more values. 
+			  Example if you want to store many objects like numbers in your program you can store them using an array 
+			  instead of defining each numbers. Let us say you want to store 50 numbers in your program, so instead of 
+			  defining the with variables and values you can store them on an array that has a length of 50.</p>
+		  </div>
+		  <div class="row">
+			  <p>There are 3 different types of arrays that we can use, which are Numeric Array, Associative Array, and 
+			  Multidimensional Array. Numeric Array is an array that has an Numeric index and the values are displayed 
+			  or can be accessed in a linear fashion. Associative Array is the opposite of that of the Numeric array, 
+			  this array uses Strings as indexes instead of numeric likewise with its linear fashion it is stricter than that 
+			  of numeric array. Lastly multidimensional array is from the word itself contains more than one array and its 
+			  values can also be use with multiple indexes.</p>
+			  </div>
+		  <div class="row">
+			<p>Note: The order of precedence in an array is displayed of their indexes. The first index is 0. 
+			For example, if you have 5 values stored in an array their corresponding indexes are as follows: 0,1,2,3,4.</p>
           </div>
           <div class="row">
-            <script src="https://gist.github.com/JessieMTabilisma/ecb09451c954a4b688b5cdd193f57dd4.js"></script>
-          </div>
+			<p>Example of Numeric Array:</p>
+		  </div>
+		  <figure>
+			<pre>
+			<code>
+				  &lt;?php
+					$evenNumbers = array( 2, 4, 6, 8, 10);
+				 
+					foreach($evenNumbers as $value ) {
+						echo &quot;Value is $value &lt;br /&gt;&quot;;
+					}
+				  ?&gt;
+			</code>
+			</pre>
+			</figure>
+			<div class="row">
+			<p>The output of the code should be: </p>
+			</div>
           <div class="row">
             <div class="container output">
               Value is 2<br>
-               Value is 4 <br>
-               Value is 6  <br>
+              Value is 4 <br>
+              Value is 6 <br>
               Value is 8 <br>
-               Value is 10 
+              Value is 10 
             </div>
           </div>
           <div class="row mt-5">
-            <script src="https://gist.github.com/JessieMTabilisma/dd9f5804da12cc821ef2cfb336f91a10.js"></script>
+            <p>Create Numeric Array in another way:</p>
           </div>
-          <div class="row">
-            <p>Create array in another way</p>
-          </div>
-          <div class="row">
-            <script src="https://gist.github.com/JessieMTabilisma/ee892adf9fb8fa2e51cab54129a694cf.js"></script>
-          </div>
+		  <figure>
+			<pre>
+			<code>
+			    &lt;?php
+			      $evenNumbers[0] = &quot;two&quot;;
+			      $evenNumbers[1] = &quot;four&quot;;
+			      $evenNumbers[2] = &quot;six&quot;;
+			      $evenNumbers[3] = &quot;eight&quot;;
+			      $evenNumbers[4] = &quot;ten&quot;;
+								
+			      foreach( $evenNumbers as $value ) {
+			        echo &quot;Value is $value &lt;br /&gt;&quot;;
+			      }		
+			    ?&gt;  
+			</code>
+			</pre>
+			</figure>
+			<div class="row">
+			<p>The output of the code should be: </p>
+			</div>
           <div class="row">
             <div class="container output">
-              Value is two  <br>
+              Value is two<br>
               Value is four <br>
-               Value is six <br>
-               Value is eight <br>
-               Value is ten 
+              Value is six <br>
+              Value is eight <br>
+              Value is ten 
             </div>
           </div>
           <div class="row mt-5">
-            <h3>Associative array</h3>
+            <h3>Associative Array</h3>
           </div>
+          <figure>
+			<pre>
+			<code>
+			    &lt;?php
+			      $grades = array(&quot;Erika&quot; =&gt; 90, &quot;Sonny&quot; =&gt; 85, &quot;Jessie&quot; =&gt; 80, &quot;Kenan&quot; =&gt; 75);
+					 
+			      echo &quot;The grade of Erika in webtek is &quot;. $grades['Erika']. &quot;&lt;br /&gt;&quot;;
+			      echo &quot;The grade of Sonny in webtek is &quot;. $grades['Sonny']. &quot;&lt;br /&gt;&quot;;
+			      echo &quot;The grade of Jessie in webtek is &quot;. $grades['Jessie']. &quot;&lt;br /&gt;&quot;;
+			      echo &quot;The grade of Kenan in webtek is &quot;. $grades['Kenan']. &quot;&lt;br /&gt;&quot;;
+			    ?&gt;				
+			</code>
+			</pre>
+			</figure>
           <div class="row">
-            <hr>
-          </div>
-          <div class="row mt-3">
-            <script src="https://gist.github.com/JessieMTabilisma/501b99d8375329e6aeadce144ab160cb.js"></script>
-          </div>
+			<p>The output of the code should be: </p>
+		</div>
           <div class="row">
             <div class="container output">
               The grade of Erika in webtek is 90<br>
-               The grade of Sonny in webtek is 85 <br>
+              The grade of Sonny in webtek is 85<br>
               The grade of Jessie in webtek is 80<br>
-               The grade of Kenan in webtek is 75
+              The grade of Kenan in webtek is 75
             </div>
           </div>
           <div class="row mt-5">
-            <h3>Multidimensional array</h3>
+            <h3>Multidimensional Array</h3>
           </div>
+		  <figure>
+			<pre>
+			<code>
+			    &lt;?php
+			      $grade = array( 
+			      &quot;Erika&quot; =&gt; array (
+			      &quot;Webtek&quot; =&gt; 90,
+			      &quot;ProgApps&quot; =&gt; 87,	
+			      &quot;Database&quot; =&gt; 85,
+			      &quot;SMA&quot; =&gt; 80
+			      ),
+						
+			      &quot;Sonny&quot; =&gt; array (
+			      &quot;Webtek&quot; =&gt; 93,
+			      &quot;ProgApps&quot; =&gt; 87,
+			      &quot;Database&quot; =&gt; 88,
+			      &quot;SMA&quot; =&gt; 81
+			      ),
+						
+			      &quot;Jessie&quot; =&gt; array (
+			      &quot;Webtek&quot; =&gt; 93,
+			      &quot;ProgApps&quot; =&gt; 89,
+			      &quot;Database&quot; =&gt; 78,
+			      &quot;SMA&quot; =&gt; 75
+			      ),
+			
+			      &quot;Kenan&quot; =&gt; array (
+			      &quot;Webtek&quot; =&gt; 88,
+			      &quot;ProgApps&quot; =&gt; 78,
+			      &quot;Database&quot; =&gt; 76,
+			      &quot;SMA&quot; =&gt; 95
+			      )
+			      );
+					
+				  echo &quot;Grade for Erika in Webtek : &quot; ;
+				  echo $grade['Erika']['Webtek'] . &quot;&lt;br /&gt;&quot;; 
+					 
+				  echo &quot;Grade for Sonny in ProgApps : &quot;;
+				  echo $grade['Sonny']['ProgApps'] . &quot;&lt;br /&gt;&quot;; 
+					 
+				  echo &quot;Grade for Jessie in Database : &quot; ;
+				  echo $grade['Jessie']['Database'] . &quot;&lt;br /&gt;&quot;; 
+					 
+				  echo &quot;Grade for Kenan in SMA : &quot; ;
+				  echo $grade['Kenan']['SMA'] . &quot;&lt;br /&gt;&quot;; 
+					 
+				?&gt;				
+			</code>
+			</pre>
+			</figure>
+			 <div class="row">
+			<p>The output of the code should be: </p>
+		</div>
           <div class="row">
-            <hr>
+            <div class="container output">
+				Grade for Erika in Webtek : 90<br>
+				Grade for Sonny in ProgApps : 87<br>
+				Grade for Jessie in Database : 78<br>
+				Grade for Kenan in SMA : 95
+            </div>
           </div>
+		  
           <div class="row mt-5">
-          <script src="https://gist.github.com/JessieMTabilisma/21b56ccf630dd1273253cf770a0441c6.js"></script>
-          </div>
-          <div class="row">
             <p>Now you have learned <span class="emphasize"> the basics of array in php </span>. Uncomment line 8 to line 11 below to see it in action.</p>
           </div>
           <div class="row mt-5">

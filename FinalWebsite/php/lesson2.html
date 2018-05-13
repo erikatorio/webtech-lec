@@ -58,13 +58,10 @@
       <div class="col-sm-12 col-md-12 test">
         <div class="container">
           <div class="row mt-5">
-            <h3>PHP Data types and Array</h3>
-          </div>
-          <div class="row">
-            <hr>
+            <h3>PHP Data Types and Array</h3>
           </div>
           <div class="row mt-3">
-            <p>PHP Data Types</p>
+            <h4>PHP Data Types</h4>
           </div>
           <div class="row">
             <p>In php you can store your data by using data types, this data types are also familiar In java. This variable can store data depending on their kind like numeric, Boolean, array, and more. This are the data types that php supports.</p>
@@ -81,93 +78,136 @@
             </ul>
           </div>
           <div class="row mt-5">
-            <h3>PHP integer</h3>
+            <h4>PHP Integer</h4>
           </div>
-          <div class="row">
-            <hr>
-          </div>
+		  <div class="row">
+			<p>An integer is non-decimal<br>
+			An integer is a whole number<br>
+			An integer is not a fraction</p>
+		  </div>
+		  <div class="row">
+			<p>Example of PHP Integer:</p>
+		  </div>
+		  <figure>
+			<pre>
+			<code>
+				  &lt;?php
+				    $integer = 1000;
+				    var_dump($integer);
+				  ?&gt;
+			</code>
+			</pre>
+			</figure>
           <div class="row mt-3">
-            <script src="https://gist.github.com/JessieMTabilisma/e5362952689e1500f49cf1b95b190769.js"></script>
-          </div>
-
-          <div class="row mt-5">
             <h3>PHP String</h3>
-          </div>
-          <div class="row">
-            <hr>
           </div>
           <div class="row mt-3">
             <p>This are characters or any texts that you prefer but strings should be inside “quotes. Either you can use Single ‘ ‘ or double quotes “ ”.Example of PHP String </p>
           </div>
+		   <div class="row">
+			<p>Example of PHP String:</p>
+		  </div>
+		  <figure>
+			<pre>
+			<code>
+			    &lt;?php
+			      $hello = &ldquo;Anya ngy Lubong?&rdquo;;
+			      $hi = &lsquo;Anya ngy?&rsquo;;
+			      echo $hello &lsquo;&lt;br&gt;&rsquo;;
+			      echo $hi;
+			    ?&gt;
+			</code>
+			</pre>
+			</figure>
           <div class="row mt-3">
-            <script src="https://gist.github.com/JessieMTabilisma/3879b0183807dbb897bb8faa15b6822f.js"></script>
-          </div>
-          <div class="row mt-5">
             <h3>PHP Boolean</h3>
           </div>
           <div class="row">
-            <hr>
-          </div>
-          <div class="row">
             <p>
-              Example of Boolean
+              Example of PHP Boolean:
               <br>$t = true;<br>
               $f = false;
             </p>
           </div>
-          <div class="row mt-5">
+          <div class="row mt-3">
             <h3>PHP Array</h3>
-          </div>
-          <div class="row">
-            <hr>
           </div>
           <div class="row">
             <p>
               It stores one or more values in one variable.
             </p>
           </div>
-          <div class="row">
-            <script src="https://gist.github.com/JessieMTabilisma/b773dae4f41e93cae57e03b945364f10.js"></script>
-          </div>
+		  <div class="row">
+			<p>Example of PHP Array:</p>
+		  </div>
+		  <figure>
+			<pre>
+			<code>
+			    &lt;?php
+			      $members = array(&ldquo;Trio&rdquo;, &ldquo;Young&rdquo;, &ldquo;Matabilis&rdquo;, &ldquo;Sea&rdquo;);
+			      var_dump($members);
+			    ?&gt;
+			</code>
+			</pre>
+			</figure>
           <div class="row">
             <p>Note: the <span class="emphasize">var_dump</span> function is used to display the data type and its value.</p>
           </div>
-          <div class="row mt-5">
+          <div class="row mt-3">
             <h3>PHP Object</h3>
-          </div>
-          <div class="row">
-            <hr>
           </div>
           <div class="row">
             <p>
               Stores data and information for processing data.
-	To create an object in PHP, it is a must to declare the object explicitly.
-	First thing to do is to create a class.
+			  To create an object in PHP, it is a must to declare the object explicitly.
+			  First thing to do is to create a class.
             </p>
           </div>
-          <div class="row">
-            <script src="https://gist.github.com/JessieMTabilisma/29abb237d67738b325ac2ee34b197cf3.js"></script>
-          </div>
+		   <div class="row">
+			<p>Example of PHP Object:</p>
+		  </div>
+			<figure>
+			<pre>
+			<code>	
+			    &lt;?php
+			      class Slippers {
+			        function Slippers(){
+			          $this -&gt; brand = &ldquo;Sandugo&rdquo;;
+			        }
+			      }
+			    //create a new object
+			    $feet = new Slippers();
+			    //show object properties
+			    echo $feet-&gt;brand;
+			    ?&gt;
+			</code>
+			</pre>
+			</figure>
           <div class="row mt-5">
             <h3>PHP NULL value</h3>
           </div>
           <div class="row">
-            <hr>
-          </div>
-          <div class="row">
             <p>Null means there are no values. </p>
           </div>
-          <div class="row">
-            <script src="https://gist.github.com/JessieMTabilisma/9cdbfcc0ff7770d840ee9e707890cbc7.js"></script>
-          </div>
-          <div class="row mt-5">
+		   <div class="row">
+			<p>Example of PHP NULL value:</p>
+		  </div>
+		  <figure>
+			<pre>
+			<code>
+			   &lt;?php
+			      $hello = &ldquo;Anya ngy Lubong?&rdquo;;
+			      $hello = null;
+			      var_dump($hello);
+			   ?&gt;
+			</code>
+			</pre>
+			</figure>
+          <div class="row mt-3">
             <h3>PHP Resource</h3>
           </div>
           <div class="row">
-            <hr>
-          </div>
-          <div class="row">
-            This data type is special in PHP because this stores references outside the php script. 
+            <p>This data type is special in PHP because this stores references outside the php script.</p> 
           </div>
           <div class="row">
             <div class="col-6"></div>

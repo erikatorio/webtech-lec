@@ -58,94 +58,69 @@
       <div class="col-sm-12 col-md-12 test">
         <div class="container">
           <div class="row mt-5">
-            <h3>Loops</h3>
+            <h3>Connecting to Database</h3>
           </div>
           <div class="row">
-            <hr>
+            <p>In PHP, you can connect your php script to a database. The most common and popular database that was being used is the MySQL database.</p>
+		  </div>
+			<div class="row">
+			<p>Firstly, you must configure your MySqli if it is properly installed to your computer if not download and install MySQLi in  http://php.net/manual/en/mysqli.installation.php</p>
+			</div>
+			<div class="row">
+			<p>You can also use PDO which can be found and installed in this site http://php.net/manual/en/pdo.installation.php
+			</p>
+			</div>
+		    <div class="row mt-5">
+            <h4>Example MySQL:</h4>
           </div>
-          <div class="row mt-3">
-            <p>
-              Is it possible to create a code that will run the same code again and again? Instead of populating your source code with same code, here loops come in handy.
-            </p>
+		  <figure>
+			<pre>
+			<code>
+			&lt;?php 
+				$db_host =  'localhost';
+				$db_name = login;
+				$db_user = 'root';
+				$db_pass = '';
+
+				$mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name);
+				//error handler
+				if($mysqli-&gt;connect_error){
+				 printf(&quot;Connection failed&quot; %s\n, $mysql-&gt;connect_error);
+					exit();
+				}
+			?>
+			</code>
+			</pre>
+			</figure>
+       
+          <div class="row mt-5">
+            <h4>Example PDO:</h4>
           </div>
-          <div class="row">
-            Different loop statements:<br>
-            <p>
-            <br><span class="emphasize">while</span> – like the if statement that executes the code if it is true<br>
-            <span class="emphasize">do while</span> – it will first execute the code once and when it is confirmed it is true it will now run the code repeatedly<br>
-            <span class="emphasize">for</span> – it will execute the codes depending on the number of times that was specified<br>
-            <span class="emphasize">for...each</span> – only works with arrays</p>
-          </div>
-		  <div class="rows">
-			<p>while loop example:</p>
-		  </div>
-			<figure>
+		  <figure>
 			<pre>
 			<code>
-			&lt;?php 
-			  $number = 1; 
-
-			  while($number &lt;= 3) {
-				echo &quot;The number is: $number &lt;br&gt;&quot;;
-				$number++;
-			  } 
+			&lt;?php
+				$servername = &quot;localhost&quot;;
+				$user = &quot;root&quot;;
+				$pass = &quot;&quot;;
+				try {
+				 $con = new PDO(&quot;mysql:host=$servername;dbname=myDB&quot;, $user, $pass);
+					
+					$con-&gt;setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+					echo &quot;Successfully connected&quot;; 
+				 }
+				catch(PDOException $er)
+					{
+					echo &quot;Connection failed: &quot; . $er-&gt;getMessage();
+					}	
 			?&gt;
 			</code>
 			</pre>
 			</figure>
-			<div class="rows">
-			<p>do while loop example:</p>
-		  </div>
-			<figure>
-			<pre>
-			<code>
-			&lt;?php 
-			  $number = 1; 
-
- 			  do{
-				echo &quot;The number is: $number &lt;br&gt;&quot;;
-				$number++;
-			  } while($number &lt;= 3);
-			?&gt;
-			</code>
-			</pre>
-			</figure>
-			
-			 <div class="rows">
-			<p>for loop example:</p>
-		  </div>
-			<figure>
-			<pre>
-			<code>
-			&lt;?php 
-			  for ($i = 0; $i &lt;= 5; $i++) {
-				echo &quot;Number: $i &quot;;
-			  } 
-			?&gt;
-			</code>
-			</pre>
-			</figure>
-
-			 <div class="rows">
-			<p>for each loop example:</p>
-		  </div>
-			<figure>
-			<pre>
-			<code>
-			&lt;?php 
-			  $subjects = array(&quot;webtek&quot;, &quot;progapps&quot;, &quot;database&quot;, &quot;networks&quot;); 
-			  foreach ($subjects as $val) {
-				echo &quot;$val &lt;br&gt;&quot;;
-			  }
-			?&gt;
-			</code>
-			</pre>
-			</figure>
-			
           <div class="row">
             <div class="col-6"></div>
             <div class="col-sm-12 col-md-6 text-right">
-              <button type="button" class="btn btn-success" name="button">Next lesson</button>
+              <button type="button" class="btn btn-success col-6" name="button">Next</button>
             </div>
           </div>
         </div>

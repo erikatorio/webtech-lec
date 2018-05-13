@@ -58,32 +58,100 @@
       <div class="col-sm-12 col-md-12 test">
         <div class="container">
           <div class="row mt-5">
-            <h3>Conditional structure</h3>
+            <h3>Conditional Structure</h3>
           </div>
-          <div class="row">
-            <hr>
-          </div>
+         
           <div class="row mt-3">
             <p>
               Sometimes we want to write our code with conditions wherein it will only execute if the condition have been met.
             </p>
           </div>
           <div class="row">
-            Here are some conditional statements:<br>
+            Here are some conditional statements:<br><br>
             If statement – if condition is true it will execute the code<br>
             If..else statement - if condition is true it will execute the code otherwise it will execute the code that lies on false. <br>
             If...elseif…else statement – if conditions is true it will execute the codes for multiple condtions<br>
             Switch statement – selects one of code to execute
           </div>
-          <div class="row mt-5">
-            <script src="https://gist.github.com/JessieMTabilisma/4b251fab3c940bdd0b8c5bbc625aa492.js"></script>
-          </div>
-          <div class="row mt-5">
-            <script src="https://gist.github.com/JessieMTabilisma/4f1c588f8ef5fbcb7cdf37d211f4ac91.js"></script>
-          </div>
-          <div class="row">
-            <script src="https://gist.github.com/JessieMTabilisma/5457b9568a7130068313f8019261d468.js"></script>
-          </div>
+		  <div class="row mt-3">
+		  <p>if statement example:</p>
+		  </div>
+		  <figure>
+			<pre>
+			<code>
+			      &lt;?php
+			        $x = 1;
+			        $y = 2;
+			        if ($x &lt; $y) {
+			          echo &quot;x is less than y&quot;;
+			        }
+			      ?&gt;
+			</code>
+			</pre>
+			</figure>
+			<div class="row">
+		  <p>if else statement example:</p>
+		  </div>
+		   <figure>
+			<pre>
+			<code>
+			    &lt;?php
+			      $x = 1;
+			      $y = 2;
+			      if ($x &lt; $y) {
+			        echo &quot;x is less than y&quot;;
+			      }else{
+			        echo &quot;y is greater than x&quot;;
+			      }
+			    ?&gt;
+			</code>
+			</pre>
+			</figure>
+			<div class="row">
+		  <p>if else if statement example:</p>
+		  </div>
+		   <figure>
+			<pre>
+			<code>
+			    &lt;?php
+			      $x = 1;
+			      $y = 2;
+			      if ($x &lt; $y) {
+			        echo &quot;x is less than y&quot;;
+			      }elseif($x &gt; $y){
+			        echo &quot;y is greater than x&quot;;
+			      }else{
+			        echo &quot;x is equal to y&quot;;
+			      }
+			    ?&gt;
+			</code>
+			</pre>
+			</figure>
+			  <div class="row">
+		  <p>switch statement example:</p>
+		  </div>
+		     <figure>
+			<pre>
+			<code>
+			    &lt;?php
+			      $favsubject = &quot;webtek&quot;;
+			      switch ($grade) {
+			        case &quot;webtek&quot;:
+			          echo &quot;Your favorite subject is webtek!&quot;;
+			         break;
+			        case &quot;ProgApps&quot;:
+			          echo &quot;Your favorite subject is ProgApps!&quot;;
+			         break;
+			        case &quot;Database&quot;:
+			          echo &quot;Your favorite subject is Database!&quot;;
+			         break;
+			        default:
+			          echo &quot;Your favorite subject is neither webtek, ProgApps, nor Database!&quot;;
+			      }
+			    ?&gt;
+			</code>
+			</pre>
+			</figure>
           <div class="row">
             <p>Uncomment the sample code below and practice what you have learn in this lesson.</p>
           </div>

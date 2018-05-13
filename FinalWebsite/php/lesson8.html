@@ -58,94 +58,81 @@
       <div class="col-sm-12 col-md-12 test">
         <div class="container">
           <div class="row mt-5">
-            <h3>Loops</h3>
+            <h3>PHP and HTTP Request</h3>
           </div>
           <div class="row">
-            <hr>
+            <p>In PHP, to send information details to the web server there are 2 ways for the user to send information details to the server this method is the Get and the POST method.</p>
+		  </div>
+			<div class="row">
+			<p>What is the GET method?<br>
+			The get method is an http method request that is an array of variables and this variable are passed on to the script through url parameters.</p>
+			</div>
+		    <div class="row mt-3">
+            <h4>Base code for our examples:</h4>
           </div>
-          <div class="row mt-3">
-            <p>
-              Is it possible to create a code that will run the same code again and again? Instead of populating your source code with same code, here loops come in handy.
-            </p>
+		  <figure>
+			<pre>
+			<code>
+			&lt;html&gt;
+			&lt;body&gt;
+				Welcome to WebTek Ninja!
+				Welcome &lt;?php echo $_POST[&quot;name&quot;]; ?&gt;&lt;br&gt;
+				Your ID number is: &lt;?php echo $_POST[&quot;idnumber&quot;]; ?&gt;
+
+			&lt;/body&gt;
+			&lt;/html&gt;
+			</code>
+			</pre>
+			</figure>
+       
+          <div class="row mt-5">
+            <h4>Example of GET method:</h4>
           </div>
-          <div class="row">
-            Different loop statements:<br>
-            <p>
-            <br><span class="emphasize">while</span> – like the if statement that executes the code if it is true<br>
-            <span class="emphasize">do while</span> – it will first execute the code once and when it is confirmed it is true it will now run the code repeatedly<br>
-            <span class="emphasize">for</span> – it will execute the codes depending on the number of times that was specified<br>
-            <span class="emphasize">for...each</span> – only works with arrays</p>
+		  <figure>
+			<pre>
+			<code>
+			&lt;!DOCTYPE HTML&gt;
+			&lt;html&gt;  
+			&lt;body&gt;
+				&lt;form action=&quot;welcome_get.php&quot; method=&quot;get&quot;&gt;
+				Name: &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br&gt;
+				ID number: &lt;input type=&quot;text&quot; name=&quot;idnumber&quot;&gt;&lt;br&gt;
+				&lt;input type=&quot;submit&quot;&gt;
+				&lt;/form&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+			</code>
+			</pre>
+			</figure>
+			<div class="row">
+			<p>What is the POST method?<br>
+			The post method is also an http method that and is also an array of variables. </p>
+			</div>
+			<div class="row mt-5">
+            <h4>Example of POST method:</h4>
           </div>
-		  <div class="rows">
-			<p>while loop example:</p>
-		  </div>
-			<figure>
+		  <figure>
 			<pre>
 			<code>
-			&lt;?php 
-			  $number = 1; 
+			&lt;!DOCTYPE HTML&gt;
+			&lt;html&gt;  
+			&lt;body&gt;
 
-			  while($number &lt;= 3) {
-				echo &quot;The number is: $number &lt;br&gt;&quot;;
-				$number++;
-			  } 
-			?&gt;
-			</code>
-			</pre>
-			</figure>
-			<div class="rows">
-			<p>do while loop example:</p>
-		  </div>
-			<figure>
-			<pre>
-			<code>
-			&lt;?php 
-			  $number = 1; 
+				&lt;form action=&quot;welcome.php&quot; method=&quot;post&quot;&gt;
+				Name: &lt;input type=&quot;text&quot; name=&quot;name&quot;&gt;&lt;br&gt;
+				ID Number: &lt;input type=&quot;text&quot; name=&quot;idnumber&quot;&gt;&lt;br&gt;
+				&lt;input type=&quot;submit&quot;&gt;
+				&lt;/form&gt;
 
- 			  do{
-				echo &quot;The number is: $number &lt;br&gt;&quot;;
-				$number++;
-			  } while($number &lt;= 3);
-			?&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
 			</code>
 			</pre>
 			</figure>
-			
-			 <div class="rows">
-			<p>for loop example:</p>
-		  </div>
-			<figure>
-			<pre>
-			<code>
-			&lt;?php 
-			  for ($i = 0; $i &lt;= 5; $i++) {
-				echo &quot;Number: $i &quot;;
-			  } 
-			?&gt;
-			</code>
-			</pre>
-			</figure>
-
-			 <div class="rows">
-			<p>for each loop example:</p>
-		  </div>
-			<figure>
-			<pre>
-			<code>
-			&lt;?php 
-			  $subjects = array(&quot;webtek&quot;, &quot;progapps&quot;, &quot;database&quot;, &quot;networks&quot;); 
-			  foreach ($subjects as $val) {
-				echo &quot;$val &lt;br&gt;&quot;;
-			  }
-			?&gt;
-			</code>
-			</pre>
-			</figure>
-			
           <div class="row">
             <div class="col-6"></div>
             <div class="col-sm-12 col-md-6 text-right">
-              <button type="button" class="btn btn-success" name="button">Next lesson</button>
+              <button type="button" class="btn btn-success col-6" name="button">Next</button>
             </div>
           </div>
         </div>

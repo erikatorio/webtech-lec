@@ -58,94 +58,57 @@
       <div class="col-sm-12 col-md-12 test">
         <div class="container">
           <div class="row mt-5">
-            <h3>Loops</h3>
+            <h3>User Defined Functions</h3>
           </div>
           <div class="row">
-            <hr>
+            <p>Aside from built-in functions in php, we can create our own function. The function in php is similar to other languages like that of the javascript functions. This functions are codes that will process codes when called and it will return a value. You can always have the option to use either built-in functions or create your own functions. </p>
           </div>
-          <div class="row mt-3">
-            <p>
-              Is it possible to create a code that will run the same code again and again? Instead of populating your source code with same code, here loops come in handy.
-            </p>
+		    <div class="row mt-5">
+            <h4>Creating a Function:</h4>
           </div>
-          <div class="row">
-            Different loop statements:<br>
-            <p>
-            <br><span class="emphasize">while</span> – like the if statement that executes the code if it is true<br>
-            <span class="emphasize">do while</span> – it will first execute the code once and when it is confirmed it is true it will now run the code repeatedly<br>
-            <span class="emphasize">for</span> – it will execute the codes depending on the number of times that was specified<br>
-            <span class="emphasize">for...each</span> – only works with arrays</p>
-          </div>
-		  <div class="rows">
-			<p>while loop example:</p>
-		  </div>
-			<figure>
+		  <figure>
 			<pre>
 			<code>
-			&lt;?php 
-			  $number = 1; 
-
-			  while($number &lt;= 3) {
-				echo &quot;The number is: $number &lt;br&gt;&quot;;
-				$number++;
-			  } 
-			?&gt;
-			</code>
-			</pre>
-			</figure>
-			<div class="rows">
-			<p>do while loop example:</p>
-		  </div>
-			<figure>
-			<pre>
-			<code>
-			&lt;?php 
-			  $number = 1; 
-
- 			  do{
-				echo &quot;The number is: $number &lt;br&gt;&quot;;
-				$number++;
-			  } while($number &lt;= 3);
-			?&gt;
-			</code>
-			</pre>
-			</figure>
-			
-			 <div class="rows">
-			<p>for loop example:</p>
-		  </div>
-			<figure>
-			<pre>
-			<code>
-			&lt;?php 
-			  for ($i = 0; $i &lt;= 5; $i++) {
-				echo &quot;Number: $i &quot;;
-			  } 
-			?&gt;
-			</code>
-			</pre>
-			</figure>
-
-			 <div class="rows">
-			<p>for each loop example:</p>
-		  </div>
-			<figure>
-			<pre>
-			<code>
-			&lt;?php 
-			  $subjects = array(&quot;webtek&quot;, &quot;progapps&quot;, &quot;database&quot;, &quot;networks&quot;); 
-			  foreach ($subjects as $val) {
-				echo &quot;$val &lt;br&gt;&quot;;
+			&lt;?php
+			  function greetMe() {
+				echo &quot;Good Morning!&quot;;
 			  }
+				greetMe(); 
 			?&gt;
 			</code>
 			</pre>
 			</figure>
+       
+          <div class="row mt-5">
+            <h4>Function Arguments:</h4>
+          </div>
+		  <div class="row">
+			<p>You can also use arguments in a function. Arguments are the same of those variables.</p>
+		  </div>
+		  <div class="row">
+			<p>Example:</p>
+		  </div>
+		  <figure>
+			<pre>
+			<code>
+			&lt;?php
+			  function sureName($sname) {
+				echo &quot;$sname Co&lt;br&gt;&quot;;
+			  }
 			
+			  sureName(&quot;John&quot;);
+			  sureName(&quot;Yuan&quot;);
+			  sureName(&quot;Estrel&quot;);
+			  sureName(&quot;Levi&quot;);
+			  sureName(&quot;Pete&quot;);
+			?&gt;
+			</code>
+			</pre>
+			</figure>
           <div class="row">
             <div class="col-6"></div>
             <div class="col-sm-12 col-md-6 text-right">
-              <button type="button" class="btn btn-success" name="button">Next lesson</button>
+              <button type="button" class="btn btn-success col-6" name="button">Next</button>
             </div>
           </div>
         </div>
