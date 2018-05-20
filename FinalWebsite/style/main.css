@@ -8,6 +8,7 @@
 input[type='text'],
 input[type='number'],
 input[type='password'],
+button,
 textarea {
   outline: none;
   box-shadow: none !important;
@@ -268,7 +269,55 @@ figure {
 
 .wrapper-discussion {
   height: 100vh;
+  position: relative;
+  padding: 5rem;
   background-color: whitesmoke;
+}
+
+.wrapper-discussion .forum-container {
+  height: auto;
+}
+
+.wrapper-discussion .forum-container .header {
+  height: 15rem;
+}
+
+.wrapper-discussion .forum-container .header h2 {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #353b48;
+  position: relative;
+  top: 2rem;
+}
+
+.wrapper-discussion .forum-container .header p {
+  color: #01a3a4;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.wrapper-discussion .forum-container .header .btn-primary {
+  border: 0rem;
+  border-radius: 0.2rem;
+  background-color: #fafafa;
+  font-family: 'Lato', sans-serif;
+  color: #353b48;
+}
+
+.wrapper-discussion .forum-container .header .btn-primary:hover {
+  color: #fafafa;
+  background-color: #353b48;
+}
+
+.wrapper-discussion .forum-container .container {
+  background-color: white;
+  height: 10rem;
+}
+
+.wrapper-discussion .forum-container .side-design {
+  height: 10rem;
+  width: 1rem;
+  background-color: #333333;
 }
 
 footer {

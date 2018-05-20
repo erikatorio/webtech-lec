@@ -10,6 +10,7 @@ $primaryFont: 'Roboto', sans-serif
 input[type='text'],
 input[type='number'],
 input[type='password'],
+button,
 textarea 
   outline: none
   box-shadow:none !important
@@ -196,7 +197,40 @@ figure
 // wrapper discussion
 .wrapper-discussion
   height: 100vh
+  position: relative
+  padding: 5rem
   background-color: rgb(245, 245, 245)
+  .forum-container
+    height: auto
+    .header
+      height: 15rem
+      h2
+        font-family: 'Lato', sans-serif
+        text-transform: uppercase
+        font-size: 2rem
+        color: #353b48
+        position: relative
+        top: 2rem
+      p
+        color: #01a3a4
+        font-family: 'Open Sans Condensed', sans-serif
+      .btn-primary
+        border: 0rem
+        border-radius: 0.2rem
+        background-color: rgb(250, 250, 250)
+        font-family: 'Lato', sans-serif
+        color: #353b48
+        &:hover
+          color: rgb(250, 250, 250)
+          background-color: #353b48
+    .container  
+      background-color: rgb(255, 255, 255)
+      height: 10rem
+    .side-design
+      height: 10rem
+      width: 1rem
+      background-color: #333333
+
 footer
   height: 8rem
   background-color: rgb(244, 247, 248)
