@@ -52,30 +52,28 @@
       <div class="col-sm-12 col-md-6">
         <div class="container mt-5">
           <div class="row mt-3">
-            <div class="col-12">
-              <h2 id="userName">Username: JessieMTabilisma</h2>
+            <div class="col-12" id="vusername">
+              
+            </div>
+          </div>
+          <div class="row mt-3" >
+            <div class="col-12" id="vname">
+              
             </div>
           </div>
           <div class="row mt-3">
-            <div class="col-12">
-              <h3 id="user-Name">Name: Jessie Martin Tabilisma</h3>
+            <div class="col-12" id="vemail">
+              
             </div>
           </div>
           <div class="row mt-3">
-            <div class="col-12">
-              <h2 id="userMail">Email: jessiemtabilisma@gmail.com</h2>
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-12">
-              <button type="button" class="btn btn-primary">
-                Points <span class="badge badge-light">900</span>
-              </button>
+            <div class="col-12" id="vpoints">
+              
             </div>
           </div>
           <div class="row mt-5">
             <div class="col-12">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" name="button">Change Account Settings</button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" name="button">Edit Profile Information</button>
               <!-- Modal -->
               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -87,21 +85,24 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      <form>
+                      <form action="../server/editprofile.php" method="POST">
                         <div class="form-group">
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+                          <input name="username" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
                         </div>
                         <div class="form-group">
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                          <input name="fullname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
                         </div>
                         <div class="form-group">
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                          <input name="password" type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password">
                         </div>
+                        <div class="form-group">
+                            <input name="email" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                          </div>
                       </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
                     </div>
                   </div>
                 </div>
