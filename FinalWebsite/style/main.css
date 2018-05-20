@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-spacing: normal !important;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='password'],
+textarea {
+  outline: none;
+  box-shadow: none !important;
+  text-decoration: none;
+}
+
+body, html {
+  background-color: #f8f8f8 !important;
+}
+
+body ul, html ul {
+  margin-left: 5rem;
+  list-style-type: circle;
+}
+
+body h4, html h4 {
+  font-family: 'Gothic A1', sans-serif;
+}
+
+body code, html code {
+  font-family: monospace, monospace;
+  font-size: 1rem;
+  line-height: 2;
+  color: #fff;
+}
+
+.navbar {
+  background-color: white !important;
+}
+
+.navbar .nav-link {
+  color: #8ace83 !important;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+}
+
+.signUp {
+  border-radius: 0.5rem;
+  height: 30rem;
+  position: relative;
+  top: 10rem;
+  background-color: #8ace83;
+}
+
+.signUp .form-group {
+  position: relative;
+  top: 6rem;
+}
+
+.signUp .form-group .form-control {
+  height: 3rem;
+}
+
+.signUp .btn-primary {
+  position: relative;
+  top: 7rem;
+  height: 3rem;
+  border: 0rem;
+  background-color: #333;
+}
+
+.login {
+  background-color: white !important;
+  height: 30rem;
+  border-radius: 0.2rem;
+}
+
+.login h5 {
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+
+#logo {
+  height: 4rem;
+  width: 4rem;
+}
+
+#username {
+  border: 0.1rem solid #55efc4;
+  height: 3.5rem;
+  border-left: 0rem;
+}
+
+#password {
+  border: 0.1rem solid #55efc4;
+  height: 3.5rem;
+  border-left: 0rem;
+}
+
+#usrIcon {
+  border: 0.1rem solid #55efc4;
+  background-color: white !important;
+  border-right: 0rem;
+}
+
+#log {
+  height: 3rem;
+  text-transform: uppercase;
+  background-color: #fdcb6e;
+  border: 0rem;
+  font-size: 1.2rem;
+}
+
+#logos {
+  height: 3rem;
+  width: 3rem;
+}
+
+.banner {
+  height: 30rem;
+  background-color: #8ace83 !important;
+}
+
+#banner-title {
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+#sayIng {
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+
+.card {
+  background-color: white !important;
+  border: 0rem;
+  border-radius: 0rem;
+}
+
+.card .btn-primary {
+  height: 2.5rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.catalog {
+  height: auto;
+  background-color: #e9e9e9;
+  padding-bottom: 5rem;
+}
+
+.catalog .btn-primary {
+  background-color: #8ace83;
+  border: 0rem;
+  margin-bottom: 2rem;
+}
+
+#Layer_1 {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.banner-topic {
+  height: 20rem;
+  background-color: #8ace83 !important;
+}
+
+.topic-color {
+  background-color: #8ace83 !important;
+}
+
+#description {
+  text-align: justify;
+  position: relative;
+  top: 5rem;
+  font-size: 1rem;
+  font-family: 'Gothic A1', sans-serif;
+  line-height: 150% !important;
+  color: white;
+}
+
+#startTopic {
+  border-radius: 0rem;
+  position: relative;
+  top: 5rem;
+  height: 3rem;
+}
+
+.track-card {
+  height: 9rem;
+  background-color: white !important;
+  cursor: pointer;
+}
+
+.track-card .row {
+  background-color: #f9f0f0;
+}
+
+.track-card .row a {
+  color: #333;
+}
+
+.track-card .row a:hover {
+  text-decoration: underline dotted !important;
+}
+
+.track-card:hover {
+  background-color: #333;
+}
+
+.status {
+  height: 7rem;
+  border-radius: 10rem;
+  width: 7rem;
+  background-color: #ffbe76;
+}
+
+#statusCode {
+  text-align: center;
+  position: relative;
+  top: 2rem;
+  color: white !important;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
+figure {
+  background-color: #373a40;
+}
+
+.header_animation {
+  font-size: 30px;
+  color: #fff;
+  font-family: monospace;
+  height: 2rem;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typing 4s steps(35, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  30% {
+    border-color: white;
+  }
+}
+
+footer {
+  height: 8rem;
+  background-color: #f4f7f8;
+  bottom: 0rem !important;
+  width: 100vw;
+}
+
+footer .banner-footer h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+footer .banner-footer ul {
+  list-style-type: none;
+}
+
+footer .banner-footer ul li {
+  line-height: 150%;
+  padding-top: 0.5rem;
+}
+
+footer .banner-footer ul li a {
+  color: #718093;
+}
+
+footer .banner-footer ul li a:hover {
+  text-decoration: none;
+  color: #273c75;
+}
+
+footer .footer-catalog h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+footer .footer-catalog ul {
+  list-style-type: none;
+}
+
+footer .footer-catalog ul li {
+  line-height: 150%;
+  padding-top: 0.5rem;
+}
+
+footer .footer-catalog ul li a {
+  color: #718093;
+}
+
+footer .footer-catalog ul li a:hover {
+  text-decoration: none;
+  color: #273c75;
+}
+
+footer .footer-child {
+  height: 3rem;
+  position: relative;
+  top: 5rem;
+  bottom: 0rem;
+  border-top: 1px solid #e9e9e9;
+}
+
+footer .footer-child h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  color: #718093;
+}
+
+.results {
+  height: 5rem;
+  background-color: #8ace83;
+  color: #fff;
+}
+
+.btn-success {
+  height: 3rem;
+  border-radius: 3rem;
+  border: 0rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 6rem;
+  margin-top: 5rem;
+  background-color: #ffbe76;
+}
+
+.btn-success:hover {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #000;
+}
+
+.userprofile {
+  position: relative;
+  top: 5rem;
+  height: 30rem;
+  background-color: #444;
+  border-radius: 5rem;
+}
+
+.userprofile .userPic {
+  height: 30rem;
+  background-color: #e9e9e9;
+}
+
+.userprofile .userPic img {
+  position: relative;
+  top: 5rem;
+}
+
+.userprofile h2 {
+  font-family: monospace, monospaces;
+  color: #8ace83 !important;
+}
+
+.userprofile h3 {
+  font-family: monospace, monospaces;
+  color: #8ace83 !important;
+}
+
+.userprofile .modal-content {
+  border-bottom: 0rem;
+}
+
+.userprofile .modal-content .modal-header {
+  border-bottom: 0rem;
+}
+
+.userprofile .modal-content .modal-footer {
+  border-top: 0rem;
+}
+
+.userprofile .badge-light:hover {
+  background-color: transparent;
+}
+/*# sourceMappingURL=main.css.map */
