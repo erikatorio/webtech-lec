@@ -11,7 +11,7 @@ function topic() {
                     output.push(
                         `
                         <div class="container">
-                        <a href="getposts?id=${currentTopic.topic_id}">
+                        <a href="../server/getposts?id=${currentTopic.topic_id}">
                             <div class="row mt-2">
                                 <div class="col-1">
                                   <div class="side-design">
