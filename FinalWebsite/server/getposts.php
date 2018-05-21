@@ -86,9 +86,10 @@
               <div class="row mt-5">
                 <div class="col-8">
                     <div class="container">
+                    <h3 class="mt-5">Add Comment:</h3>
                             <form method="POST" action="addcomment.php?id=<?php echo $_GET['id']?>&topic=<?php echo $_GET['topic']; ?>&title=<?php echo $_GET['title']; ?>&description=<?php echo$_GET['description']; ?>">
                                     <div class="form-group">
-                                        <textarea class="form-control col-12" id="postComment" rows="10" name="comment"></textarea>
+                                        <textarea class="form-control col-12" id="postComment" rows="10" name="comment" placeholder=""></textarea>
                                     </div>
                                     <div class="form-group text-right">
                                         <button type="submit" class="btn btn-primary col-3">Post</button>
