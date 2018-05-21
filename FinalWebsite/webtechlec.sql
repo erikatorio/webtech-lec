@@ -41,7 +41,7 @@ CREATE TABLE `accounts` (
 
 LOCK TABLES `accounts` WRITE;
 /*!40000 ALTER TABLE `accounts` DISABLE KEYS */;
-INSERT INTO `accounts` VALUES ('amysantiago','$2y$10$qv1LxIMswBNw6enCjVsNJuAFREVzXV5eA1v4/FSk/EN5mpdM.dL66',0,'amy@gmail.com','Amy Santiago'),('supergirl','$2y$10$fb1ie5rC1ZLlnHAwEt/wpe6X1YRWXFuab1AYUt7NgAY.xXqSfwIkK',0,'supergirl@gmail.com','Kara Danvers'),('theflash','$2y$10$cJFLo0cGliHIB7IOIeCz0OqIcGKG08U71HWpXOn7fFkdGHfjU7TKy',0,'theflash@gmail.com','Barry Allen');
+INSERT INTO `accounts` VALUES ('amyperalta','$2y$10$42ARsWKlLKh8XMdodTQ5recbblM62vVS1Nz2X.U6U8cjjIiuPaszy',0,'amyp@gmail.com','Amy Peralta'),('batgirl','$2y$10$H43yDr0yA9Nsuau5GVbF.Oy0tKTyahQmaZTxqxd4ISGtLQBiQajaS',0,'batgirl@email.com','Barbara Gordon'),('fastestmanalive','$2y$10$6oXfbGqZpUWxvb3t7Y4a5eeZFW1wJxque90BfMxFpUzYUPeBW8zSu',0,'theflash@gmail.com','Bartholomew Henry Allen'),('jessie','$2y$10$WDpQk1WhKk/QiQ48wsCawO1p4hgd9tGlAmE2pck0/WpILWWwCAMkS',0,'jessie@gmail.com','jessie tabilisma'),('jessietabilisma','$2y$10$58hi/nTSIzMq4Zm.l3qGheSlsOOdDSw2VLUiME1RE5ZJBKy7i3RxC',0,'jessie.tabilisma@yahoo.com','Jessie Tabilisma'),('Mangganda','$2y$10$6vD03.PMXB.QLH8W4NBpYuMmHxWYJyZI/2Mj946IyDhhIIT4qhDDu',0,'jodyadriennneee@gmail.com','Jody Dong-e');
 /*!40000 ALTER TABLE `accounts` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -72,6 +72,36 @@ LOCK TABLES `choices` WRITE;
 /*!40000 ALTER TABLE `choices` DISABLE KEYS */;
 INSERT INTO `choices` VALUES (1,'Java Servlet is a server side technology that runs on a web application server','Servlets are used to create dynamic web pages in a web application','Both of the above',1),(2,'Application Level','User/Session Level','Iteration Level',2),(3,'start() method','init() method','startserv() method',3),(4,'Variable','Data Type','Container',4),(5,'end() method','stop()method','destroy() method',5),(6,'Servlet Life Span','Servlet Life Cycle','Servlet Cycle',6),(7,'ASP','CORBA','JSP (Java Server Pages)',7),(8,'jspService() method','jspDoTask() method','jspService() method',8),(9,'doHid()','doHead()','doHeed()',9),(10,'service() method','perform() method','doTask() method',10),(11,'Expression Tag','Declaration Tag','Scriplet Tag',11),(12,'True','False','Either',12),(13,'Peter Berg','Berners Lee','Pavni Diwanji',13),(14,'include directive','page directive','taglib directive',14),(15,'Array','Elements','Variables',15),(16,'include directive','libtag directive','page directive',16),(17,'By implementing Servlet interface','By inheriting GenericServlet class','By inheriting HttpRequest class',17),(18,'getModified()','getLastModified()','getModifiedTime()',18),(19,'Hypertext Preprocessor','Personal Hypertext Preprocessor','Personal Home Processor',19),(20,'Explicit','Implicit','Both',20),(21,'concatenate() method','Plus sign (+)',' A dot (.)',21),(22,'Backslash','Dollar sign','var key word',22),(23,'array() method','[]','Both',23),(24,'=>','-->','==',24),(25,'func keyword','function keyword','Both',25),(26,'echo','print','Both',26),(27,'db','mysqli','dbase',27),(28,'pdo','mongodb','mariadb',28),(29,'SUPER_GLOBAL','$_SUPERGLOBAL','$SuperGlobal',29),(30,'$_GET','$_POST','$_RETRIEVE',30),(31,'node.js','node app.js','app.js node',31),(32,'Javascript','NodeJS','Java Servlet',32),(33,'fast','asynchronous','synchronous',33),(34,'Ryan Lee','Ryan Reynolds','Ryan Dahl',34),(35,'Joyers','Joyent','Joyetch',35),(36,'NPQ','NPN','NPM',36),(37,'JavaScript','Servlet','Java',37),(38,'https','http','httpr',38),(39,'Express JS','Express Java','Express Node',39),(40,'Express JS','JavaScript','Pug',40);
 /*!40000 ALTER TABLE `choices` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `comments`
+--
+
+DROP TABLE IF EXISTS `comments`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `comments` (
+  `comment_id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) NOT NULL,
+  `topic_id` int(11) NOT NULL,
+  `comment` varchar(500) NOT NULL,
+  PRIMARY KEY (`comment_id`),
+  KEY `topic_idx` (`topic_id`),
+  KEY `userposter_idx` (`username`),
+  CONSTRAINT `topic` FOREIGN KEY (`topic_id`) REFERENCES `topic` (`topic_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `userposter` FOREIGN KEY (`username`) REFERENCES `accounts` (`username`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `comments`
+--
+
+LOCK TABLES `comments` WRITE;
+/*!40000 ALTER TABLE `comments` DISABLE KEYS */;
+INSERT INTO `comments` VALUES (14,'batgirl',3,'try: \r\n<br>\r\nvar http = require(\'http\'); \r\n<br>\r\nhttp.createServer(function (req, res) { \r\n<br>\r\n//code here \r\n<br>\r\n}).listen(8080);'),(15,'amyperalta',5,'you should use mysqli prepared statements. more info here: http://php.net/manual/en/pdo.prepared-statements.php'),(16,'amyperalta',3,'thanks!'),(17,'batgirl',5,'thank you!');
+/*!40000 ALTER TABLE `comments` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -152,8 +182,37 @@ CREATE TABLE `quiz_taken` (
 
 LOCK TABLES `quiz_taken` WRITE;
 /*!40000 ALTER TABLE `quiz_taken` DISABLE KEYS */;
-INSERT INTO `quiz_taken` VALUES ('0000-00-00',2,'supergirl',2),('0000-00-00',0,'supergirl',2),('0000-00-00',0,'supergirl',2),('0000-00-00',0,'supergirl',2),('0000-00-00',0,'supergirl',2),('0000-00-00',0,'supergirl',2),('0000-00-00',0,'amysantiago',2),('0000-00-00',0,'amysantiago',2),('0000-00-00',0,'amysantiago',1),('0000-00-00',3,'amysantiago',1),('0000-00-00',0,'amysantiago',1),('0000-00-00',0,'amysantiago',1),('0000-00-00',0,'amysantiago',1),('0000-00-00',0,'amysantiago',2),('0000-00-00',6,'amysantiago',1),('2018-05-13',10,'theflash',1),('2018-05-13',1,'amysantiago',1);
+INSERT INTO `quiz_taken` VALUES ('0000-00-00',2,'jessie',2),('0000-00-00',0,'jessie',2),('0000-00-00',0,'jessie',2),('0000-00-00',0,'jessie',2),('0000-00-00',0,'jessie',2),('0000-00-00',0,'jessie',2),('2018-05-13',10,'fastestmanalive',1),('2018-05-13',1,'jessie',2),('2018-05-15',12,'jessietabilisma',1),('2018-05-15',11,'Mangganda',1),('2018-05-15',7,'Mangganda',1),('2018-05-15',0,'jessie',1),('2018-05-21',12,'batgirl',1);
 /*!40000 ALTER TABLE `quiz_taken` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `topic`
+--
+
+DROP TABLE IF EXISTS `topic`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `topic` (
+  `topic_id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) NOT NULL,
+  `topic_title` varchar(255) NOT NULL,
+  `topic_name` varchar(45) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  PRIMARY KEY (`topic_id`),
+  KEY `topicposter_idx` (`username`),
+  CONSTRAINT `topicposter` FOREIGN KEY (`username`) REFERENCES `accounts` (`username`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `topic`
+--
+
+LOCK TABLES `topic` WRITE;
+/*!40000 ALTER TABLE `topic` DISABLE KEYS */;
+INSERT INTO `topic` VALUES (3,'amyperalta','Create Server','Node.js','How can i create a server in Node.js?'),(5,'batgirl','Injection','Web Security','What can i do to prevent this if im using PHP?');
+/*!40000 ALTER TABLE `topic` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -169,4 +228,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-13 18:31:36
+-- Dump completed on 2018-05-22  7:22:50
