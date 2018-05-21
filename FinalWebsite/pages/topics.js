@@ -19,7 +19,7 @@ function topic() {
                                   </div>
                                 </div>
                                 <div class="col-11">
-                                  <h3 class="mt-3">${currentTopic.topic_name}</h3>
+                                  <h3 class="mt-3">${currentTopic.topic_title} (${currentTopic.topic_name})</h3>
                                   <h10 class="mt-3">Made by: ${currentTopic.username}</h4>
                                   <p>${currentTopic.description}</p>
                                 </div>
