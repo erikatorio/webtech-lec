@@ -8,7 +8,7 @@
 input[type='text'],
 input[type='number'],
 input[type='password'],
-button,
+button, select,
 textarea {
   outline: none;
   box-shadow: none !important;
@@ -322,6 +322,38 @@ figure {
   background-color: #353b48;
 }
 
+.wrapper-discussion .forum-container .header .modal-content {
+  border: 0rem;
+  border-radius: 0.5rem;
+}
+
+.wrapper-discussion .forum-container .header .modal-content .modal-header {
+  background-color: #ffeaa7;
+  border: 0rem;
+  border-top-radius: 0.5rem;
+}
+
+.wrapper-discussion .forum-container .header .modal-content .modal-header .modal-title {
+  color: #2c3e50;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+
+.wrapper-discussion .forum-container .header .modal-content .modal-header span {
+  color: #ffffff;
+}
+
+.wrapper-discussion .forum-container .header .modal-content .modal-body .container {
+  height: auto;
+}
+
+.wrapper-discussion .forum-container .header .modal-content .modal-body .container .form-control {
+  border: 0rem;
+  background-color: #f4f4f4;
+  color: #34495e !important;
+  font-family: 'Lato', sans-serif;
+}
+
 .wrapper-discussion .forum-container .container {
   background-color: white;
   height: 10rem;
@@ -335,7 +367,6 @@ figure {
 
 footer {
   height: 8rem;
-  background-color: #f4f7f8;
   bottom: 0rem !important;
   width: 100vw;
 }

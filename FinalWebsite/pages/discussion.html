@@ -32,11 +32,7 @@
           <a class="nav-link" href="home.html">Catalog<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-<<<<<<< HEAD
-          <a class="nav-link" href="discussion.html">Discussion<span class="sr-only">(current)</span></a>
-=======
           <a class="nav-link" href="discussion.html">Community<span class="sr-only">(current)</span></a>
->>>>>>> 5946ec899b867a2ba69add9e661a82c380590037
         </li>
       </ul>
       <ul class="navbar-nav ml-auto mr-5">
@@ -64,10 +60,60 @@
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, quibusdam quae officia culpa sint, porro repellendus necessitatibus nesciunt illum perspiciatis modi impedit velit ea deserunt exercitationem assumenda, illo nemo labore? Suscipit voluptas nisi adipisci autem reprehenderit id possimus quas nemo consectetur. Dicta facilis quod sapiente sit? Quae amet omnis inventore.</p>
                             </div>
                             <div class="col-sm-12 col-md-4 text-right">
-                                <button type="button" class="btn btn-primary">
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTopic">
                                     <i class="fas fa-plus"></i>
                                     &nbsp;Add topic
                                 </button>
+                                <!-- modal add topic -->
+                                <!-- Button trigger modal -->
+                                  <div class="modal fade" id="addTopic" tabindex="-1" role="dialog" aria-labelledby="addTopic" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Add topic</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="container">
+                                            <div class="row">
+                                              <div class="col-12 text-left">
+                                                <label for="category" class="mt-1">Category</label>
+                                                <div class="form-group">
+                                                  <select class="form-control" id="exampleFormControlSelect1">
+                                                    <option>Java servlet</option>
+                                                    <option>PHP</option>
+                                                    <option>Nodejs</option>
+                                                    <option>Websecurity</option>
+                                                  </select>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-12">
+                                                <div class="form-group">
+                                                  <input type="text" class="form-control col-12" placeholder="Topic title">
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="row">
+                                              <div class="col-12">
+                                                <div class="form-group">
+                                                  <textarea class="form-control col-12" id="postMessage" rows="6"></textarea>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary">Post</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <!-- end -->
                             </div>
                         </div>
                     </div>
