@@ -11,11 +11,10 @@ function topic() {
                     output.push(
                         `
                         <div class="container">
-                        <a href="../server/getposts?id=${currentTopic.topic_id}">
+                        <a href="../server/getposts.php?id=${currentTopic.topic_id}&topic=${currentTopic.topic_name}&title=${currentTopic.topic_title}&description=${currentTopic.description}">
                             <div class="row mt-2">
                                 <div class="col-1">
                                   <div class="side-design">
-                                    
                                   </div>
                                 </div>
                                 <div class="col-11">
