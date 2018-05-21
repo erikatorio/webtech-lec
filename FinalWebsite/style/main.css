@@ -291,6 +291,11 @@ figure {
   height: auto;
 }
 
+.wrapper-discussion .forum-container a {
+  text-decoration: none !important;
+  color: #2c3e50;
+}
+
 .wrapper-discussion .forum-container .header {
   height: 15rem;
 }
@@ -499,5 +504,10 @@ footer .footer-child h5 {
 
 .userprofile .badge-light:hover {
   background-color: transparent;
+}
+
+.wrapper-topic {
+  height: 100vh auto;
+  background-color: #e9e9e9;
 }
 /*# sourceMappingURL=main.css.map */
