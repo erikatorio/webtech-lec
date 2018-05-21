@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../svg-with-js/css/fa-svg-with-js.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
     <link rel="icon" type="image/png" href="../image/course_logo.png">
   </head>
   <body>
