@@ -75,17 +75,18 @@
                                             <span aria-hidden="true"><i class="fas fa-times"></i></span>
                                           </button>
                                         </div>
+                                        <form method="POST" action="../server/addtopic.php">
                                         <div class="modal-body">
                                           <div class="container">
                                             <div class="row">
                                               <div class="col-12 text-left">
                                                 <label for="category" class="mt-1">Category</label>
                                                 <div class="form-group">
-                                                  <select class="form-control" id="exampleFormControlSelect1">
-                                                    <option>Java servlet</option>
-                                                    <option>PHP</option>
-                                                    <option>Nodejs</option>
-                                                    <option>Websecurity</option>
+                                                  <select class="form-control" id="exampleFormControlSelect1" name="topic">
+                                                    <option value="Java Servlet">Java Servlet</option>
+                                                    <option value="PHP">PHP</option>
+                                                    <option value="Node.js">Node.js</option>
+                                                    <option value="Web Security">Web Security</option>
                                                   </select>
                                                 </div>
                                               </div>
@@ -93,14 +94,14 @@
                                             <div class="row">
                                               <div class="col-12">
                                                 <div class="form-group">
-                                                  <input type="text" class="form-control col-12" placeholder="Topic title">
+                                                  <input type="text" class="form-control col-12" placeholder="Topic title" name="title">
                                                 </div>
                                               </div>
                                             </div>
                                             <div class="row">
                                               <div class="col-12">
                                                 <div class="form-group">
-                                                  <textarea class="form-control col-12" id="postMessage" rows="6"></textarea>
+                                                  <textarea class="form-control col-12" id="postMessage" rows="6" name="post"></textarea>
                                                 </div>
                                               </div>
                                             </div>
@@ -108,8 +109,9 @@
                                         </div>
                                         <div class="modal-footer">
                                           <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-                                          <button type="button" class="btn btn-primary">Post</button>
+                                          <button type="submit" class="btn btn-primary">Post</button>
                                         </div>
+                                        </form>
                                       </div>
                                     </div>
                                   </div>
