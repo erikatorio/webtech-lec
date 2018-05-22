@@ -379,7 +379,7 @@ figure {
 }
 
 .wrapper-discussion .forum-container .side-design {
-  height: 10rem;
+  height: auto;
   width: 1rem;
   background-color: #333333;
 }
