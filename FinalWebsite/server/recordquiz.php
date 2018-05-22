@@ -38,6 +38,7 @@ if(isset($_GET['result']) and isset($_GET['id'])) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
