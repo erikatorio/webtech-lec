@@ -50,82 +50,77 @@
       </ul>
     </div>
   </nav>
-<div class="wrapper-discussion">
-    <div class="container">
-        <div class="row">
-            <div class="container forum-container">
-                <div class="row">
-                    <div class="container-fluid header">
-                        <h2>Code ninja Discussion</h2>
-                        <div class="row mt-5">
-                            <div class="col-sm-12 col-md-8">
-                                <p>Welcome to the Code Ninja community where you can talk to other ninjas about a specific topic. Either create your own topic or join an existing one. Go ahead! Talk with your fellow ninjas.</p>
+<div class="wrapper-team">
+    <div class="container-fluid">
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="container mt-5">
+                        <div class="card col-11 ml-5 text-center" style="width:25rem; height: 30rem;">
+                            <div class="container-fluid card-header">
+                                <img class="card-img-top rounded-circle mt-3" style="height: 50%; width: 50%;"  src="../image/product-2.jpg" alt="Card image cap">
                             </div>
-                            <div class="col-sm-12 col-md-4 text-right">
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTopic">
-                                    <i class="fas fa-plus"></i>
-                                    &nbsp;Add topic
-                                </button>
-                                <!-- modal add topic -->
-                                <!-- Button trigger modal -->
-                                  <div class="modal fade" id="addTopic" tabindex="-1" role="dialog" aria-labelledby="addTopic" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel">Add topic</h5>
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true"><i class="fas fa-times"></i></span>
-                                          </button>
-                                        </div>
-                                        <form method="POST" action="../server/addtopic.php">
-                                        <div class="modal-body">
-                                          <div class="container">
-                                            <div class="row">
-                                              <div class="col-12 text-left">
-                                                <label for="category" class="mt-1">Category</label>
-                                                <div class="form-group">
-                                                  <select class="form-control" id="exampleFormControlSelect1" name="topic">
-                                                    <option value="Java Servlet">Java Servlet</option>
-                                                    <option value="PHP">PHP</option>
-                                                    <option value="Node.js">Node.js</option>
-                                                    <option value="Web Security">Web Security</option>
-                                                  </select>
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="row">
-                                              <div class="col-12">
-                                                <div class="form-group">
-                                                  <input type="text" class="form-control col-12" placeholder="Topic title" name="title">
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div class="row">
-                                              <div class="col-12">
-                                                <div class="form-group">
-                                                  <textarea class="form-control col-12" id="postMessage" rows="6" name="post"></textarea>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
-                                          <button type="submit" class="btn btn-primary">Post</button>
-                                        </div>
-                                        </form>
-                                      </div>
-                                    </div>
-                                  </div>
-                                <!-- end -->
+                            <div class="card-body mt-3">
+                                <h5 class="card-title">Erika Torio<br><span class="role">Project manager/Backend Developer</span></h5>
+                                <p class="card-text">"Noice. Smort"-<i>Jake Peralta (Brooklyn Nine Nine)</i></p>
+                                <br>
+                                <a href="https://github.com/erikatorio">
+                                    <i class="fab fa-github"></i>
+                                </a>
                             </div>
-                        </div>
+                        </div>    
                     </div>
                 </div>
-                <div class="row mt-3" >
-                        <div class="mt-4" id="topic-container">
-                            <!-- dynamic content -->
-                        </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="container mt-5">
+                        <div class="card col-11 ml-5 text-center" style="width:25rem; height: 30rem;">
+                            <div class="container-fluid card-header">
+                                <img class="card-img-top rounded-circle mt-3" style="height: 50%; width: 50%;"  src="../image/product-4.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body mt-3">
+                                <h5 class="card-title">Jessie Tabilisma<br><span class="role">Frontend Developer/ Creative Director</span></h5>
+                                <p class="card-text">"More sleep More Creative"</p>
+                                <br>
+                                <a href="https://github.com/JessieMTabilisma">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="container mt-5">
+                        <div class="card col-11 ml-5 text-center" style="width:25rem; height: 30rem;">
+                            <div class="container-fluid mx-auto card-header">
+                                <img class="card-img-top rounded-circle mt-3" style="height: 50%; width: 50%;"  src="../image/product-3.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body mt-3">
+                                <h5 class="card-title">Sonny Yang<br><span class="role">Art Director</span></h5>
+                                <p class="card-text">"Don`t be afraid, just believe" - <i>Mark 5:36</i></p>
+                                <br>
+                                <a href="https://github.com/sonnyby">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="container mt-5">
+                        <div class="card col-11 ml-5 text-center" style="width:25rem; height: 30rem;">
+                            <div class="container-fluid mx-auto card-header">
+                                <img class="card-img-top rounded-circle mt-3" style="height: 50%; width: 50%;"  src="../image/product-1.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body mt-3">
+                                <h5 class="card-title">Kenan Cea<br><span class="role">Curriculum Developer</span></h5>
+                                <p class="card-text">"Always have faith"</p>
+                                <br>
+                                <a href="https://github.com/KenanCea">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>    
+                    </div>
                 </div>
             </div>
         </div>

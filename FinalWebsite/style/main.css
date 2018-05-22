@@ -372,7 +372,7 @@ figure {
   font-family: 'Lato', sans-serif;
 }
 
-.wrapper-discussion .forum-container .container {
+.wrapper-discussion .forum-container #topic-container {
   background-color: white;
   height: 10rem;
 }
@@ -546,5 +546,44 @@ footer .footer-child h5 {
   background-color: #27ae60;
   border: 0rem;
   border-radius: 0.5rem;
+}
+
+.wrapper-team {
+  height: auto;
+  background-color: #f0f0f0;
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+.wrapper-team .card {
+  background-color: #f8f8f8 !important;
+}
+
+.wrapper-team .card .role {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+}
+
+.wrapper-team .card-header {
+  background-color: transparent;
+  border: 0rem;
+}
+
+.wrapper-team .card-header img {
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper-team .card-body {
+  text-align: left;
+}
+
+.wrapper-team .card-body a {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.wrapper-team .card-body a:hover {
+  color: #8ace83 !important;
 }
 /*# sourceMappingURL=main.css.map */
