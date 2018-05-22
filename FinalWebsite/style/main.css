@@ -56,8 +56,20 @@ body code, html code {
   color: #8ace83 !important;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
+}
+
+.navbar .nav-link:hover {
+  color: #2c3e50 !important;
+}
+
+.navbar .dropdown-menu {
+  border-radius: 0rem;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  font-family: 'Lato', sans-serif;
 }
 
 .signUp {
