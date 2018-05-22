@@ -296,8 +296,7 @@ figure {
 .wrapper-discussion {
   height: auto;
   position: relative;
-  padding: 5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 15rem;
   background-color: whitesmoke;
 }
 
