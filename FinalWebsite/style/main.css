@@ -297,6 +297,7 @@ figure {
   height: auto;
   position: relative;
   padding: 5rem;
+  padding-bottom: 5rem;
   background-color: whitesmoke;
 }
 
@@ -478,6 +479,7 @@ footer .footer-child h5 {
 .userprofile {
   position: relative;
   top: 5rem;
+  bottom: 5rem;
   height: 30rem;
   background-color: #444;
   border-radius: 5rem;
