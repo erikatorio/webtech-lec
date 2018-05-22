@@ -10,16 +10,16 @@ function topic() {
                 t.forEach((currentTopic, count) => {
                     output.push(
                         `
-                        <div class="container">
+                        <div class="container content-discuss">
                         <a href="../server/getposts.php?id=${currentTopic.topic_id}&topic=${currentTopic.topic_name}&title=${currentTopic.topic_title}&description=${currentTopic.description}">
-                            <div class="row mt-2">
+                            <div class="row">
                                 <div class="col-1">
                                   <div class="side-design">
                                   </div>
                                 </div>
                                 <div class="col-11">
-                                  <h3 class="mt-3">${currentTopic.topic_title} (${currentTopic.topic_name})</h3>
-                                  <h10 class="mt-3">Made by: ${currentTopic.username}</h4>
+                                  <h3 class="mt-4">${currentTopic.topic_title} (${currentTopic.topic_name})</h3>
+                                  <h10 class="mt-3">Posted by: ${currentTopic.username}</h4>
                                   <p>${currentTopic.description}</p>
                                 </div>
                             </div>
