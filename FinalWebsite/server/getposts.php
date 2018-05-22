@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../svg-with-js/css/fa-svg-with-js.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
     <link rel="icon" type="image/png" href="../image/course_logo.png">
   </head>
   <body>
@@ -63,7 +64,7 @@
               <div class="row mt-4">
                 <div class="col-12">
                 <h3 class="mt-5">Comments</h3>
-                    <div class="container post1">
+                    <div class="container post1 mt-5">
                     <?php
                         require('connect.php');
 
@@ -86,12 +87,13 @@
               <div class="row mt-5">
                 <div class="col-8">
                     <div class="container">
+                    <h3 class="mt-5">Add Comment:</h3>
                             <form method="POST" action="addcomment.php?id=<?php echo $_GET['id']?>&topic=<?php echo $_GET['topic']; ?>&title=<?php echo $_GET['title']; ?>&description=<?php echo$_GET['description']; ?>">
                                     <div class="form-group">
-                                        <textarea class="form-control col-12" id="postComment" rows="10" name="comment"></textarea>
+                                        <textarea class="form-control col-12" id="postComment" rows="10" name="comment" placeholder=""></textarea>
                                     </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary">Post</button>
+                                    <div class="form-group text-right">
+                                        <button type="submit" class="btn btn-primary col-3">Post</button>
                                     </div>
                             </form>
                     </div>
@@ -108,7 +110,7 @@
             <div class="container banner-footer">
               <h5>Code ninja</h5>
               <ul>
-                <li><a href="#">Discussion</a></li>
+                <li><a href="../pages/discussion.html">Discussion</a></li>
                 <li><a href="#">About us</a></li>
               </ul>
             </div>
@@ -117,17 +119,17 @@
             <div class="container footer-catalog">
               <h4>Catalog</h4>
               <ul>
-                <li>
-                  <a href="#">Java Servlet</a>
+              <li>
+                  <a href="../pages/javaservlets.html">Java Servlet</a>
                 </li>
                 <li>
-                  <a href="#">PHP</a>
+                  <a href="../pages/php.html">PHP</a>
                 </li>
                 <li>
-                  <a href="#">Nodejs</a>
+                  <a href="../pages/nodejs.html">Nodejs</a>
                 </li>
                 <li>
-                  <a href="#">Web security</a>
+                  <a href="../pages/websecurity/lesson1.html">Web security</a>
                 </li>
               </ul>
             </div>
@@ -136,17 +138,17 @@
             <div class="container footer-catalog">
                 <h4>Resources</h4>
                 <ul>
-                  <li>
-                    <a href="#">Java Servlet</a>
+                <li>
+                    <a href="https://tomcat.apache.org/tomcat-5.5-doc/servletapi/" target="_blank">Java Servlet</a>
                   </li>
                   <li>
-                    <a href="#">PHP</a>
+                    <a href="http://php.net/docs.php" target="_blank">PHP</a>
                   </li>
                   <li>
-                    <a href="#">Nodejs</a>
+                    <a href="https://nodejs.org/api/" target="_blank">Nodejs</a>
                   </li>
                   <li>
-                    <a href="#">Web security</a>
+                    <a href="https://www.owasp.org/index.php/Top_10-2017_Top_10" target="_blank">Web security</a>
                   </li>
                 </ul>
             </div>
